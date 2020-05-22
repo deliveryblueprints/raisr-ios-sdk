@@ -1,6 +1,3 @@
 [submodule "Carthage/Checkouts/comapi-sdk-ios-objc"]
 	path = Carthage/Checkouts/comapi-sdk-ios-objc
 	url = https://github.com/comapi/comapi-sdk-ios-objc.git
-[submodule "Carthage/Checkouts/SocketRocket"]
-	path = Carthage/Checkouts/SocketRocket
-	url = https://github.com/facebookarchive/SocketRocket.git

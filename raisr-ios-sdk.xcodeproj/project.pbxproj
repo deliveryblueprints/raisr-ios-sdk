@@ -11,6 +11,9 @@
 		80D52E512474332F00E96996 /* raisr_ios_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D52E472474332E00E96996 /* raisr_ios_sdk.framework */; };
 		80D52E562474332F00E96996 /* raisr_ios_sdkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52E552474332F00E96996 /* raisr_ios_sdkTests.swift */; };
 		80D52E582474332F00E96996 /* raisr_ios_sdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 80D52E4A2474332F00E96996 /* raisr_ios_sdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80D52F042477C19A00E96996 /* RaisrSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52F032477C19A00E96996 /* RaisrSDK.swift */; };
+		80D52F072477C1FB00E96996 /* RaisrConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52F062477C1FB00E96996 /* RaisrConfig.swift */; };
+		80D52F0A2477C29F00E96996 /* PushMessageListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52F092477C29F00E96996 /* PushMessageListener.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,6 +205,9 @@
 		80D52E872477B15B00E96996 /* SocketRocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SocketRocket.xcodeproj; path = Carthage/Checkouts/SocketRocket/SocketRocket.xcodeproj; sourceTree = "<group>"; };
 		80D52E9C2477B16700E96996 /* SocketRocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SocketRocket.xcodeproj; path = Carthage/Checkouts/SocketRocket/SocketRocket.xcodeproj; sourceTree = "<group>"; };
 		80D52EB52477B17300E96996 /* SocketRocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SocketRocket.xcodeproj; path = Carthage/Checkouts/SocketRocket/SocketRocket.xcodeproj; sourceTree = "<group>"; };
+		80D52F032477C19A00E96996 /* RaisrSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaisrSDK.swift; sourceTree = "<group>"; };
+		80D52F062477C1FB00E96996 /* RaisrConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaisrConfig.swift; sourceTree = "<group>"; };
+		80D52F092477C29F00E96996 /* PushMessageListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushMessageListener.swift; sourceTree = "<group>"; };
 		9F51CA672D5035238AA4F8AB /* Pods-raisr-ios-sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-raisr-ios-sdk.debug.xcconfig"; path = "Target Support Files/Pods-raisr-ios-sdk/Pods-raisr-ios-sdk.debug.xcconfig"; sourceTree = "<group>"; };
 		BBE95D5B18507CCAAA2962FD /* Pods-raisr-ios-sdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-raisr-ios-sdk.release.xcconfig"; path = "Target Support Files/Pods-raisr-ios-sdk/Pods-raisr-ios-sdk.release.xcconfig"; sourceTree = "<group>"; };
 		CE8DD303F4C7991DC3E0A0F8 /* Pods_raisr_ios_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_raisr_ios_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -250,8 +256,11 @@
 		80D52E492474332E00E96996 /* raisr-ios-sdk */ = {
 			isa = PBXGroup;
 			children = (
+				80D52F082477C28D00E96996 /* Messaging */,
+				80D52F052477C1EE00E96996 /* Config */,
 				80D52E4A2474332F00E96996 /* raisr_ios_sdk.h */,
 				80D52E4B2474332F00E96996 /* Info.plist */,
+				80D52F032477C19A00E96996 /* RaisrSDK.swift */,
 			);
 			path = "raisr-ios-sdk";
 			sourceTree = "<group>";
@@ -329,6 +338,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		80D52F052477C1EE00E96996 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				80D52F062477C1FB00E96996 /* RaisrConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		80D52F082477C28D00E96996 /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				80D52F092477C29F00E96996 /* PushMessageListener.swift */,
+			);
+			path = Messaging;
+			sourceTree = "<group>";
+		};
 		D123959EF90842799EAB038F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -401,6 +426,7 @@
 				TargetAttributes = {
 					80D52E462474332E00E96996 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 					80D52E4F2474332F00E96996 = {
 						CreatedOnToolsVersion = 10.3;
@@ -661,6 +687,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80D52F042477C19A00E96996 /* RaisrSDK.swift in Sources */,
+				80D52F0A2477C29F00E96996 /* PushMessageListener.swift in Sources */,
+				80D52F072477C1FB00E96996 /* RaisrConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -809,6 +838,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9F51CA672D5035238AA4F8AB /* Pods-raisr-ios-sdk.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -827,6 +857,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.raisr.raisr-ios-sdk";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -836,6 +867,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BBE95D5B18507CCAAA2962FD /* Pods-raisr-ios-sdk.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -862,6 +894,7 @@
 		80D52E5F2474332F00E96996 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ERV4PD24L7;
 				INFOPLIST_FILE = "raisr-ios-sdkTests/Info.plist";
@@ -880,6 +913,7 @@
 		80D52E602474332F00E96996 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ERV4PD24L7;
 				INFOPLIST_FILE = "raisr-ios-sdkTests/Info.plist";
