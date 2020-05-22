@@ -1,0 +1,2 @@
+github "comapi/comapi-sdk-ios-objc" "2.0.1"
+github "facebookarchive/SocketRocket" "0.5.1"

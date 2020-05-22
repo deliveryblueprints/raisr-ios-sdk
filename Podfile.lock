@@ -1,0 +1,20 @@
+PODS:
+  - CMPComapiFoundation (2.0.1):
+    - SocketRocket
+  - SocketRocket (0.5.1)
+
+DEPENDENCIES:
+  - CMPComapiFoundation
+
+SPEC REPOS:
+  trunk:
+    - CMPComapiFoundation
+    - SocketRocket
+
+SPEC CHECKSUMS:
+  CMPComapiFoundation: 5f3ae1dfa44639289e5bf5e2ec9afbb1011b059e
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+
+PODFILE CHECKSUM: 41b31433603599f837daaecbfba33e95dc0e5f61
+
+COCOAPODS: 1.9.1

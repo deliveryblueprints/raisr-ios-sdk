@@ -1,0 +1,6 @@
+framework module CMPComapiFoundation {
+    umbrella header "CMPComapiFoundation.h"
+    
+    export *
+    module * { export * }
+}

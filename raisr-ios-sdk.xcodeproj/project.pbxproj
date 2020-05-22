@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33AD6B6C725AA56902CCE121 /* Pods_raisr_ios_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8DD303F4C7991DC3E0A0F8 /* Pods_raisr_ios_sdk.framework */; };
 		80D52E512474332F00E96996 /* raisr_ios_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D52E472474332E00E96996 /* raisr_ios_sdk.framework */; };
 		80D52E562474332F00E96996 /* raisr_ios_sdkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52E552474332F00E96996 /* raisr_ios_sdkTests.swift */; };
 		80D52E582474332F00E96996 /* raisr_ios_sdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 80D52E4A2474332F00E96996 /* raisr_ios_sdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -20,6 +21,174 @@
 			remoteGlobalIDString = 80D52E462474332E00E96996;
 			remoteInfo = "raisr-ios-sdk";
 		};
+		80D52E7B2477B15600E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52E722477B15600E96996 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B2082D1450F597009315AF;
+			remoteInfo = SocketRocket;
+		};
+		80D52E7D2477B15600E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52E722477B15600E96996 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F668C880153E91210044DBAC;
+			remoteInfo = SocketRocketOSX;
+		};
+		80D52E7F2477B15600E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52E722477B15600E96996 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D4227621BB4358C000C1A6C;
+			remoteInfo = "SocketRocket-iOS";
+		};
+		80D52E812477B15600E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52E722477B15600E96996 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3345DC901C52ACD70083CCB8;
+			remoteInfo = "SocketRocket-tvOS";
+		};
+		80D52E832477B15600E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52E722477B15600E96996 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6BDA802145900D200FE3253;
+			remoteInfo = SRWebSocketTests;
+		};
+		80D52E852477B15600E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52E722477B15600E96996 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F62417E314D52F3C003CE997;
+			remoteInfo = TestChat;
+		};
+		80D52E902477B15B00E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52E872477B15B00E96996 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B2082D1450F597009315AF;
+			remoteInfo = SocketRocket;
+		};
+		80D52E922477B15B00E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52E872477B15B00E96996 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F668C880153E91210044DBAC;
+			remoteInfo = SocketRocketOSX;
+		};
+		80D52E942477B15B00E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52E872477B15B00E96996 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D4227621BB4358C000C1A6C;
+			remoteInfo = "SocketRocket-iOS";
+		};
+		80D52E962477B15B00E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52E872477B15B00E96996 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3345DC901C52ACD70083CCB8;
+			remoteInfo = "SocketRocket-tvOS";
+		};
+		80D52E982477B15B00E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52E872477B15B00E96996 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6BDA802145900D200FE3253;
+			remoteInfo = SRWebSocketTests;
+		};
+		80D52E9A2477B15B00E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52E872477B15B00E96996 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F62417E314D52F3C003CE997;
+			remoteInfo = TestChat;
+		};
+		80D52EA52477B16700E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52E9C2477B16700E96996 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B2082D1450F597009315AF;
+			remoteInfo = SocketRocket;
+		};
+		80D52EA72477B16700E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52E9C2477B16700E96996 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F668C880153E91210044DBAC;
+			remoteInfo = SocketRocketOSX;
+		};
+		80D52EA92477B16700E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52E9C2477B16700E96996 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D4227621BB4358C000C1A6C;
+			remoteInfo = "SocketRocket-iOS";
+		};
+		80D52EAB2477B16700E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52E9C2477B16700E96996 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3345DC901C52ACD70083CCB8;
+			remoteInfo = "SocketRocket-tvOS";
+		};
+		80D52EAD2477B16700E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52E9C2477B16700E96996 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6BDA802145900D200FE3253;
+			remoteInfo = SRWebSocketTests;
+		};
+		80D52EAF2477B16700E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52E9C2477B16700E96996 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F62417E314D52F3C003CE997;
+			remoteInfo = TestChat;
+		};
+		80D52EC22477B17300E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52EB52477B17300E96996 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B2082D1450F597009315AF;
+			remoteInfo = SocketRocket;
+		};
+		80D52EC42477B17300E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52EB52477B17300E96996 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F668C880153E91210044DBAC;
+			remoteInfo = SocketRocketOSX;
+		};
+		80D52EC62477B17300E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52EB52477B17300E96996 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D4227621BB4358C000C1A6C;
+			remoteInfo = "SocketRocket-iOS";
+		};
+		80D52EC82477B17300E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52EB52477B17300E96996 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3345DC901C52ACD70083CCB8;
+			remoteInfo = "SocketRocket-tvOS";
+		};
+		80D52ECA2477B17300E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52EB52477B17300E96996 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6BDA802145900D200FE3253;
+			remoteInfo = SRWebSocketTests;
+		};
+		80D52ECC2477B17300E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52EB52477B17300E96996 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F62417E314D52F3C003CE997;
+			remoteInfo = TestChat;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +198,13 @@
 		80D52E502474332F00E96996 /* raisr-ios-sdkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "raisr-ios-sdkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D52E552474332F00E96996 /* raisr_ios_sdkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = raisr_ios_sdkTests.swift; sourceTree = "<group>"; };
 		80D52E572474332F00E96996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80D52E722477B15600E96996 /* SocketRocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SocketRocket.xcodeproj; path = Carthage/Checkouts/SocketRocket/SocketRocket.xcodeproj; sourceTree = "<group>"; };
+		80D52E872477B15B00E96996 /* SocketRocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SocketRocket.xcodeproj; path = Carthage/Checkouts/SocketRocket/SocketRocket.xcodeproj; sourceTree = "<group>"; };
+		80D52E9C2477B16700E96996 /* SocketRocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SocketRocket.xcodeproj; path = Carthage/Checkouts/SocketRocket/SocketRocket.xcodeproj; sourceTree = "<group>"; };
+		80D52EB52477B17300E96996 /* SocketRocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SocketRocket.xcodeproj; path = Carthage/Checkouts/SocketRocket/SocketRocket.xcodeproj; sourceTree = "<group>"; };
+		9F51CA672D5035238AA4F8AB /* Pods-raisr-ios-sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-raisr-ios-sdk.debug.xcconfig"; path = "Target Support Files/Pods-raisr-ios-sdk/Pods-raisr-ios-sdk.debug.xcconfig"; sourceTree = "<group>"; };
+		BBE95D5B18507CCAAA2962FD /* Pods-raisr-ios-sdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-raisr-ios-sdk.release.xcconfig"; path = "Target Support Files/Pods-raisr-ios-sdk/Pods-raisr-ios-sdk.release.xcconfig"; sourceTree = "<group>"; };
+		CE8DD303F4C7991DC3E0A0F8 /* Pods_raisr_ios_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_raisr_ios_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +212,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33AD6B6C725AA56902CCE121 /* Pods_raisr_ios_sdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +233,8 @@
 				80D52E492474332E00E96996 /* raisr-ios-sdk */,
 				80D52E542474332F00E96996 /* raisr-ios-sdkTests */,
 				80D52E482474332E00E96996 /* Products */,
+				80D52E702477B0D000E96996 /* Frameworks */,
+				D123959EF90842799EAB038F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +265,80 @@
 			path = "raisr-ios-sdkTests";
 			sourceTree = "<group>";
 		};
+		80D52E702477B0D000E96996 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80D52EB52477B17300E96996 /* SocketRocket.xcodeproj */,
+				80D52E9C2477B16700E96996 /* SocketRocket.xcodeproj */,
+				80D52E872477B15B00E96996 /* SocketRocket.xcodeproj */,
+				80D52E722477B15600E96996 /* SocketRocket.xcodeproj */,
+				CE8DD303F4C7991DC3E0A0F8 /* Pods_raisr_ios_sdk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80D52E732477B15600E96996 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80D52E7C2477B15600E96996 /* libSocketRocket.a */,
+				80D52E7E2477B15600E96996 /* SocketRocket.framework */,
+				80D52E802477B15600E96996 /* SocketRocket.framework */,
+				80D52E822477B15600E96996 /* SocketRocket.framework */,
+				80D52E842477B15600E96996 /* SRWebSocketTests.xctest */,
+				80D52E862477B15600E96996 /* TestChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80D52E882477B15B00E96996 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80D52E912477B15B00E96996 /* libSocketRocket.a */,
+				80D52E932477B15B00E96996 /* SocketRocket.framework */,
+				80D52E952477B15B00E96996 /* SocketRocket.framework */,
+				80D52E972477B15B00E96996 /* SocketRocket.framework */,
+				80D52E992477B15B00E96996 /* SRWebSocketTests.xctest */,
+				80D52E9B2477B15B00E96996 /* TestChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80D52E9D2477B16700E96996 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80D52EA62477B16700E96996 /* libSocketRocket.a */,
+				80D52EA82477B16700E96996 /* SocketRocket.framework */,
+				80D52EAA2477B16700E96996 /* SocketRocket.framework */,
+				80D52EAC2477B16700E96996 /* SocketRocket.framework */,
+				80D52EAE2477B16700E96996 /* SRWebSocketTests.xctest */,
+				80D52EB02477B16700E96996 /* TestChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80D52EB62477B17300E96996 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80D52EC32477B17300E96996 /* libSocketRocket.a */,
+				80D52EC52477B17300E96996 /* SocketRocket.framework */,
+				80D52EC72477B17300E96996 /* SocketRocket.framework */,
+				80D52EC92477B17300E96996 /* SocketRocket.framework */,
+				80D52ECB2477B17300E96996 /* SRWebSocketTests.xctest */,
+				80D52ECD2477B17300E96996 /* TestChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D123959EF90842799EAB038F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F51CA672D5035238AA4F8AB /* Pods-raisr-ios-sdk.debug.xcconfig */,
+				BBE95D5B18507CCAAA2962FD /* Pods-raisr-ios-sdk.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -104,6 +357,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80D52E5B2474332F00E96996 /* Build configuration list for PBXNativeTarget "raisr-ios-sdk" */;
 			buildPhases = (
+				3A41BDFF8477535608C46110 /* [CP] Check Pods Manifest.lock */,
 				80D52E422474332E00E96996 /* Headers */,
 				80D52E432474332E00E96996 /* Sources */,
 				80D52E442474332E00E96996 /* Frameworks */,
@@ -164,6 +418,24 @@
 			mainGroup = 80D52E3D2474332E00E96996;
 			productRefGroup = 80D52E482474332E00E96996 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 80D52EB62477B17300E96996 /* Products */;
+					ProjectRef = 80D52EB52477B17300E96996 /* SocketRocket.xcodeproj */;
+				},
+				{
+					ProductGroup = 80D52E732477B15600E96996 /* Products */;
+					ProjectRef = 80D52E722477B15600E96996 /* SocketRocket.xcodeproj */;
+				},
+				{
+					ProductGroup = 80D52E9D2477B16700E96996 /* Products */;
+					ProjectRef = 80D52E9C2477B16700E96996 /* SocketRocket.xcodeproj */;
+				},
+				{
+					ProductGroup = 80D52E882477B15B00E96996 /* Products */;
+					ProjectRef = 80D52E872477B15B00E96996 /* SocketRocket.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				80D52E462474332E00E96996 /* raisr-ios-sdk */,
@@ -171,6 +443,177 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		80D52E7C2477B15600E96996 /* libSocketRocket.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSocketRocket.a;
+			remoteRef = 80D52E7B2477B15600E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52E7E2477B15600E96996 /* SocketRocket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SocketRocket.framework;
+			remoteRef = 80D52E7D2477B15600E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52E802477B15600E96996 /* SocketRocket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SocketRocket.framework;
+			remoteRef = 80D52E7F2477B15600E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52E822477B15600E96996 /* SocketRocket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SocketRocket.framework;
+			remoteRef = 80D52E812477B15600E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52E842477B15600E96996 /* SRWebSocketTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SRWebSocketTests.xctest;
+			remoteRef = 80D52E832477B15600E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52E862477B15600E96996 /* TestChat.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TestChat.app;
+			remoteRef = 80D52E852477B15600E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52E912477B15B00E96996 /* libSocketRocket.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSocketRocket.a;
+			remoteRef = 80D52E902477B15B00E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52E932477B15B00E96996 /* SocketRocket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SocketRocket.framework;
+			remoteRef = 80D52E922477B15B00E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52E952477B15B00E96996 /* SocketRocket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SocketRocket.framework;
+			remoteRef = 80D52E942477B15B00E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52E972477B15B00E96996 /* SocketRocket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SocketRocket.framework;
+			remoteRef = 80D52E962477B15B00E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52E992477B15B00E96996 /* SRWebSocketTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SRWebSocketTests.xctest;
+			remoteRef = 80D52E982477B15B00E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52E9B2477B15B00E96996 /* TestChat.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TestChat.app;
+			remoteRef = 80D52E9A2477B15B00E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52EA62477B16700E96996 /* libSocketRocket.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSocketRocket.a;
+			remoteRef = 80D52EA52477B16700E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52EA82477B16700E96996 /* SocketRocket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SocketRocket.framework;
+			remoteRef = 80D52EA72477B16700E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52EAA2477B16700E96996 /* SocketRocket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SocketRocket.framework;
+			remoteRef = 80D52EA92477B16700E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52EAC2477B16700E96996 /* SocketRocket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SocketRocket.framework;
+			remoteRef = 80D52EAB2477B16700E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52EAE2477B16700E96996 /* SRWebSocketTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SRWebSocketTests.xctest;
+			remoteRef = 80D52EAD2477B16700E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52EB02477B16700E96996 /* TestChat.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TestChat.app;
+			remoteRef = 80D52EAF2477B16700E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52EC32477B17300E96996 /* libSocketRocket.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSocketRocket.a;
+			remoteRef = 80D52EC22477B17300E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52EC52477B17300E96996 /* SocketRocket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SocketRocket.framework;
+			remoteRef = 80D52EC42477B17300E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52EC72477B17300E96996 /* SocketRocket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SocketRocket.framework;
+			remoteRef = 80D52EC62477B17300E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52EC92477B17300E96996 /* SocketRocket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SocketRocket.framework;
+			remoteRef = 80D52EC82477B17300E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52ECB2477B17300E96996 /* SRWebSocketTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SRWebSocketTests.xctest;
+			remoteRef = 80D52ECA2477B17300E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52ECD2477B17300E96996 /* TestChat.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TestChat.app;
+			remoteRef = 80D52ECC2477B17300E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		80D52E452474332E00E96996 /* Resources */ = {
@@ -188,6 +631,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A41BDFF8477535608C46110 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-raisr-ios-sdk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		80D52E432474332E00E96996 /* Sources */ = {
@@ -340,6 +808,7 @@
 		};
 		80D52E5C2474332F00E96996 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F51CA672D5035238AA4F8AB /* Pods-raisr-ios-sdk.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -365,6 +834,7 @@
 		};
 		80D52E5D2474332F00E96996 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBE95D5B18507CCAAA2962FD /* Pods-raisr-ios-sdk.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;

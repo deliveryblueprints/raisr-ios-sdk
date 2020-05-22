@@ -1,0 +1,1649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0609D67DA2B272806A82DAAB6F0AC37A /* SocketRocket.h in Headers */ = {isa = PBXBuildFile; fileRef = AFC53326AE93AF3C526081FF9996FC43 /* SocketRocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06AA4D4FC66E06CA775AD66648A6263D /* CMPMessagePart.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A9E3FC40886EA410407A3114EE3A92 /* CMPMessagePart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08272C37179B428518EC82C65E4D5664 /* CMPComapiConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 437B47F9C24144B62D1A03A65DF000EC /* CMPComapiConfig.m */; };
+		0A462C4229B894FCC6AE742F137F8374 /* CMPServices.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A6712625ABF00814725D3C16B5E8D8E /* CMPServices.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B41AC612C1D04F3CD15A4FE6D48BB79 /* CMPGetMessagesTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD80F7A1DF66F800F5E32234A8AFBFC0 /* CMPGetMessagesTemplate.m */; };
+		0C84374E0ED0CFBFE858DF7A1717C3E6 /* CMPResult.m in Sources */ = {isa = PBXBuildFile; fileRef = A1AE240C405DFCBFC7F7259F17B33C10 /* CMPResult.m */; };
+		0E2A75EF40D6B7A076B9C35B72260DD6 /* NSURLRequest+CMPUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = F5DEC6587DFBBA0F57C01A4E34143EF8 /* NSURLRequest+CMPUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F260D507C98C60C688BB8C4588F1BE1 /* CMPContentData.h in Headers */ = {isa = PBXBuildFile; fileRef = 60B8D128111E58B1F46F083D8AFC102C /* CMPContentData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F345C6F19D851032501129C944EB52E /* CMPSendStatusUpdateTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = ECC7AD82DFF2C818A249531D7890665B /* CMPSendStatusUpdateTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		113BF4C4E624E7A41A23A81D1A5A960E /* SocketRocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0F514575941E3D305CCEE548FD9907 /* SocketRocket-dummy.m */; };
+		1229A1020D65A198EF5F4B7BEF5355CD /* CMPMessageDeliveryStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A027E00FD0864D96242974EF503CA3 /* CMPMessageDeliveryStatus.m */; };
+		1605A733FDA4E858FBF600C7EDB4C48F /* CMPMessageParticipant.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C71552ADE6AF7C010D170D3B32E056 /* CMPMessageParticipant.m */; };
+		1640DABBB773E336F81B36AB8A6B9777 /* CMPEventDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E156A2848FF23DEC5F5668D5428886A /* CMPEventDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		172F097FAD774EDD884A60A65AB4804B /* CMPPatchProfileTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9409226DC64C8FBF6F7D0CB96EE5BD0F /* CMPPatchProfileTemplate.m */; };
+		174EEB7AD7C29635A10EAFF276CD17F0 /* CMPAPIConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF047B1E9590FB50AD6BE5C4F49725 /* CMPAPIConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17A395B675E7064119F2A7F9C7B3DBF9 /* CMPURLResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 31892F824BA3FA6487E1CF847FEB2DFD /* CMPURLResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17EE1AC14E11F972FF97EDEA5FD367EF /* CMPConversationParticipant.h in Headers */ = {isa = PBXBuildFile; fileRef = 752CEEAABF642BF10B56FBDEB0E0AB69 /* CMPConversationParticipant.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A9F5559A3F52C1233E4DF78548A2BD4 /* CMPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B65A2C42607E313BEB5F3B32F3A1441C /* CMPSessionManager.m */; };
+		1CCC3755F32965421F4742FCDCA42685 /* CMPConversationMessageEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = D570E55F22220F59888CAC2F87C65BEA /* CMPConversationMessageEvents.m */; };
+		1E1129AB8908BC109F5F2FCBBA92BD04 /* CMPProfileEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 36969B201790CE9FB99536ABA51D5BCE /* CMPProfileEvents.m */; };
+		1F4F72778374FE163A4245B69A8FA890 /* CMPComapiFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 10542490AAE30C0DE96A5664D93357D3 /* CMPComapiFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2077723814F86A5C1CEE5B952028D1E3 /* CMPSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D5FFC445A7A1ABFD727CDF1EB23DA2B /* CMPSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21CA9457D9FDBDB4A6BF5D090B5B26B4 /* CMPMessageAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = E547B833451E62AEC06B3D0428E6F9BA /* CMPMessageAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		221A69731CFC22FF63C437AC7523AD8F /* CMPConversationScope.h in Headers */ = {isa = PBXBuildFile; fileRef = 54D255BC438673D999484F53D910466C /* CMPConversationScope.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		231C5E872D101C6850D461E97948B074 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E491DB90FBDF6F65080A3E8F864CA89E /* SRWebSocket.m */; };
+		237420D9DD78F3ED24402B18F74CB9A2 /* CMPAPIConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = C357C4FA32E728E61276D30E8E1C9C19 /* CMPAPIConfiguration.m */; };
+		257A76A22FF08B4AD5EEBA2E40425768 /* SocketRocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 068BADD5644A9E0C70AB2A3FEB86C0B3 /* SocketRocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25C09F84F97F26849752A9DCBD30F173 /* CMPKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D5434A737E0AC891C054E3C5731426 /* CMPKeychain.m */; };
+		266F2AC0EDCE2179BA418764701C4C92 /* CMPMessageStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 36E0DB8218EE5AD483EAEB69A65D5F5D /* CMPMessageStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26A5D5924C6B5E1720AECB8A4F11117F /* CMPLog.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AF780AD71571BCFC6F66F7CEAEE1E3 /* CMPLog.m */; };
+		27F34902125D52A863F6626C0BE1C128 /* CMPContentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 91031A058755BDD23B729EBFB3B1BA1A /* CMPContentData.m */; };
+		285A60DA540761BC71C912644465D57A /* CMPParticipantTypingTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = CFA74F054C8D0F9EF4F4A0092C4BE667 /* CMPParticipantTypingTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A2D1D88A40445717D9985DF69AE3E5B /* CMPOrphanedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = FACBEEB3AE6F0994C6527AA4A1FDEFD1 /* CMPOrphanedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A852BCF5058B1F65C79E9CDA96A64AA /* CMPMessagingService.m in Sources */ = {isa = PBXBuildFile; fileRef = 819CE5496C66FD1652B4D73E008D28CC /* CMPMessagingService.m */; };
+		2A9CB7ED61679EE08E78A56A9B0AAC89 /* CMPSocketTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9F639F90587C1AA26D2AD293120B72 /* CMPSocketTemplate.m */; };
+		2BC87CBDDEECC1C5CDE528C99F2CB1E1 /* CMPSessionService.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C4CCBFB924E0F17D282B6DDABD3E562 /* CMPSessionService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BCBE62F28597BAA263B0643DBB09DEC /* NSString+CMPUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = DA3487ADF0654F24B94D597068F81465 /* NSString+CMPUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BDC9F2D572B84D9AF2E37317FF46EC7 /* CMPSendStatusUpdateTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8790F7263790A0F27364EAB57E5E5E /* CMPSendStatusUpdateTemplate.m */; };
+		2D93B85CE26F590681572A12E7CCB137 /* CMPMessagePart.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C79C925F535B58A02AFDA42EFCDFE5D /* CMPMessagePart.m */; };
+		30228E0187FBF7F303FB744C589FB70E /* CMPContentUploadResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B27FCB99A099BF44999FA1AAE9BA312 /* CMPContentUploadResult.m */; };
+		3054CDC4AB41F23DFA211D43F71E0301 /* CMPEventQueryTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3F47ACA3B7EAFDF5CB80A369A75EB6 /* CMPEventQueryTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30550B3B36AF10DD9F6566207B81F934 /* CMPAPNSDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 7668092440059CDA8EAC3490C74CDFEF /* CMPAPNSDetails.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32B8F23CA94C680E54D165A968F7CCCF /* CMPAuthenticationChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = CA2ACC723C73DAA72AAA9D80A4863865 /* CMPAuthenticationChallenge.m */; };
+		3308071B30FC7E43B4AD963A8BCAB955 /* CMPServices.m in Sources */ = {isa = PBXBuildFile; fileRef = C472C40DE9EC88FF4B757DD094E691A8 /* CMPServices.m */; };
+		3326521B5AEDCEB7E92E1457B829E585 /* CMPAddParticipantsTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8214C93B0DB992361B42829D26DF6885 /* CMPAddParticipantsTemplate.m */; };
+		344323A2339C6325DC4D3E669884367B /* CMPProfileService.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B9F10B2FB76DA53F9DD58099B1C667 /* CMPProfileService.m */; };
+		36ACC3A9C838C04F3D283BF82FE276D5 /* CMPComapi.m in Sources */ = {isa = PBXBuildFile; fileRef = 546168708C5D490DA0B16C75EFEC68D9 /* CMPComapi.m */; };
+		3902015EEE733DFFCF3BD04C691F68B7 /* CMPSendMessagesTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 412E2CA76F882B022B8F5D856D5C69B6 /* CMPSendMessagesTemplate.m */; };
+		3A5CC768EBD424F06E125FBB6065703A /* CMPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD28A7DFD1E48C5DBDAB89914AB0CC3 /* CMPMessage.m */; };
+		3AE6D9298CFF9B6D30D19741E2423919 /* CMPSocketEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = CA7800B42F919117512222FE758CA2C1 /* CMPSocketEvents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B2EC0F52BB3AE31DB0DBB6D94EB6165 /* CMPURLResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E10668FD0B4E14689E54AB2002A2D1 /* CMPURLResult.m */; };
+		3C9760C89662C8EBDEF8823187BDEB0D /* CMPQueryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B24B4288DC0C800CBE983D1F93C5B57 /* CMPQueryBuilder.m */; };
+		3D334826EF798D62F9DFFCA8AA52167A /* CMPSessionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 67A87B5A28DBE0BBF3F41AD78CA2F359 /* CMPSessionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EFC3CF1198DCF7B3DABD13DA2B9D599 /* CMPGetMessagesTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 025BDC39537B627CDFD437A97CB0ECCC /* CMPGetMessagesTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F6DC2AD259BD7853A5E5B9CB86F5336 /* CMPJSONDecoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CCC19C4211CBF52D82B872B793E5718 /* CMPJSONDecoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F7E5DEA2A8C02BF91DED899580EB2D4 /* CMPGetParticipantsTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA5609766C49A78052141049E29D16C /* CMPGetParticipantsTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F9AA777D0D41F56A457EFDEB3F5CE44 /* CMPMessageAlertPlatforms.m in Sources */ = {isa = PBXBuildFile; fileRef = D429D515D92CAB744807847EE6BD6792 /* CMPMessageAlertPlatforms.m */; };
+		4043170EA6B558DEE7ADA6EB3020A41E /* CMPRole.h in Headers */ = {isa = PBXBuildFile; fileRef = B2A00D2255D45759A5549551E8CCB10E /* CMPRole.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		416D0832541B0D971FBAE52734E78BDA /* CMPConversationMessageEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 67B6AE95AD5F8964BD373037C84ADF09 /* CMPConversationMessageEvents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		456FC17CD92074F9CF27F9CDF96C68C0 /* CMPUpdateConversationTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = DB867880E2D75D5D48DA56509A29B30D /* CMPUpdateConversationTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45AFA355D822DDAF45FB83CE2377AE3F /* CMPLogLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF94694B30B70F37DBCA2C5B6E9D369 /* CMPLogLevel.m */; };
+		464D62BCF955D173EDE191169394113C /* CMPSDKState.h in Headers */ = {isa = PBXBuildFile; fileRef = 1301719AACD546E551AFB8C57F0EC799 /* CMPSDKState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47581CD17AF3450299931310AA370C26 /* SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = CAD75987450BBC7317ABD28B466C49C4 /* SRWebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		479B19D3D95B449A2188E60BB2C9CDB2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA5607281B977E9F73E77EA51BCAFE7 /* CFNetwork.framework */; };
+		47DBB7DE84AB57D9C1D30AC35C4642A1 /* CMPSendMessagesResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3146AFEFEE46E3D9C16CF0A2573740 /* CMPSendMessagesResult.m */; };
+		492DC93E4A523A40C0BADA99D3B2D3C3 /* CMPContentUploadResult.h in Headers */ = {isa = PBXBuildFile; fileRef = AF3190A73F72CF417CC709F588110840 /* CMPContentUploadResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B9423CF9D615DFDD75C263A92AEC592 /* CMPRoleAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = AD956C970EFD785BD88D4D539030C075 /* CMPRoleAttributes.m */; };
+		4B9E892E6D1C5712D3940B4DD1D665A7 /* Pods-raisr-ios-sdk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9091C9BC375FF540935C838EE099CA4B /* Pods-raisr-ios-sdk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C53B6BFECE4E98977C177BBCF313B54 /* CMPComapiFoundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE287B1E2A39ABB0BDD61A104711FD8B /* CMPComapiFoundation-dummy.m */; };
+		4CBEAE07CFB0A7DF2DA10A8A23219BF5 /* CMPMessageContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 21A35324C59069CC3EDE42BCCFF8B477 /* CMPMessageContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EEF360DE840F260202699AAADC66B76 /* CMPLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 337D67FF119E2F7DD67B89D567EEE03F /* CMPLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53194F7C88BC60E8945BDAD1B805A120 /* CMPMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CCA367C13AF2F2999B9BF7904C6DF36 /* CMPMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5329FC58A8CF99937BC906A073712432 /* CMPMessageDeliveryStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D9A4279DFEDD74AE904A45CC4D85F34 /* CMPMessageDeliveryStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53C2E73B6BEAB49C3271D4CE77A402DC /* CMPRequestTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E0314C62C5661688D748F33DFBEC10 /* CMPRequestTemplate.m */; };
+		559B35EE15C8B8637CB839E9850FF169 /* CMPFileDestination.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A1AB815BDEA4E2812596186338B52F /* CMPFileDestination.m */; };
+		5601ACF7CC6F0AA3B5D5B507F8BC1E0B /* CMPComapiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB7A522F7640B1A1530D8C14F3379C /* CMPComapiClient.m */; };
+		565D7ECFE672E22AEF459805A6C917B8 /* CMPFileDestination.h in Headers */ = {isa = PBXBuildFile; fileRef = 8434B8212CD3B6EBE38C04023F40A4F3 /* CMPFileDestination.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58DAE96CEEB157575C84AC8A1771E2E6 /* CMPAddConversationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA6ADC81CE44095213206421B8AA78 /* CMPAddConversationTemplate.m */; };
+		59C235FABC16C5764F659E2B60C57D0E /* CMPUpdateProfileTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 19F011E6CBBD5F98C9E734B84C8B7D2B /* CMPUpdateProfileTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59EBE03D36C7B4FF547C45742FA6AAFC /* CMPPendingOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = D7949F82880ECAD292637626EEE0ADA4 /* CMPPendingOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ACF14611BD5C20A849D95D1DD292EDE /* CMPSendableMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CB1D1040150973C37FDF89DB797D256 /* CMPSendableMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AE5F4BC455E4431D8463278A7D59C27 /* CMPEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D121CAC7448F30C279104259A3CAA4 /* CMPEvent.m */; };
+		5D2428AE42C27F7E3875F31602CCCF81 /* CMPStartNewSessionTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F6FB00373802F6A558DD0E4DB1A93FD /* CMPStartNewSessionTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DD6651271D7DC4704686A1DFB2DB170 /* CMPMessageParticipant.h in Headers */ = {isa = PBXBuildFile; fileRef = BFBEA84BA35A6E9FE558474931EDDF28 /* CMPMessageParticipant.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E3F25337972710F1C10D0945F67AFB5 /* CMPNewConversation.m in Sources */ = {isa = PBXBuildFile; fileRef = 038E303AF17AF6C6935F8D3715E02180 /* CMPNewConversation.m */; };
+		5F650455525080A779071ACB3A4B2890 /* CMPJSONConstructable.h in Headers */ = {isa = PBXBuildFile; fileRef = D53AF241472C97D6D1822E973FD09D50 /* CMPJSONConstructable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60D71BBEC5AFD7F8AF99F7063BDA72E3 /* CMPComapiConfigBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A2C7F69E740FA36A4A52481F21163B /* CMPComapiConfigBuilder.m */; };
+		6129E4362446FA6247A4174DAA3DA088 /* CMPConversationParticipant.m in Sources */ = {isa = PBXBuildFile; fileRef = 325F88B1E4BB5FE0691FF21EEE8F4028 /* CMPConversationParticipant.m */; };
+		616307EC1195DE2A72DE0B91E407310E /* CMPUpdateProfileTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 550D111986308612BCD6628BF5151D71 /* CMPUpdateProfileTemplate.m */; };
+		61E87147455B9B1CA128A637B223785A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6686B131596461C96AAADDADF0DC2C0 /* Security.framework */; };
+		61F1DA4982F402EFCFC161085826F2A5 /* CMPProfileEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C719DB099701D67F48F5FC0C6C0922A /* CMPProfileEvents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62B345E81C8B8A25C2C63036FCB13978 /* CMPComapiConfigBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 9965178ED559E566910B49C4707B42B3 /* CMPComapiConfigBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		635C99AC8C8D0CC1156FAA6F5FB6348C /* CMPSessionService.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AB33D0B32EF3A9408645C4ACEFBBFC /* CMPSessionService.m */; };
+		63A50116F437BA7AAC6E986B30B8E4ED /* CMPDeleteConversationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3AE333F3514F8CE06624EE6152690C2 /* CMPDeleteConversationTemplate.m */; };
+		67345BA20A8FD6F4A735AE64F7EAD4E5 /* CMPResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B85400CDAE3203388E5C934F6F3AD61 /* CMPResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DCD5F29D8B589743F8EBF481E6B1E40 /* CMPJSONEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D20ED0B6F46F1621F3737E3FDCC91CC /* CMPJSONEncoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EFD1EFF8E78BB1224EE7A6B85EEA34E /* CMPAPNSDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 62079A97FB9B71B72D9ACEEACA72C22D /* CMPAPNSDetails.m */; };
+		712ED8118F3F2B5FB20A6DE851C54912 /* CMPDeleteSessionTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = DF8DB05925AC028D2D9A1207E19555EC /* CMPDeleteSessionTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71FF79E509EDD13A553552C922B47105 /* CMPSendMessagesTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89445636F7416107C69661A3E58D4E15 /* CMPSendMessagesTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		732AB807B7C2E11D68CFA8330024D30D /* CMPBroadcastDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 88CB9AB72E25C29E60F9D3103563F9BC /* CMPBroadcastDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73B79463599FCC22E86973ADCC6BF310 /* CMPSendMessagesResult.h in Headers */ = {isa = PBXBuildFile; fileRef = C0CF1A21F2FDADDDFC5EA39BCB1EFB38 /* CMPSendMessagesResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		798B3B66FD897189BB874DE2BD055035 /* CMPStateDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 604FC493552F1D0CA0E5D1A926737813 /* CMPStateDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B2E184FBD434D58876F53540AC3381D /* CMPQueryBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 98D7C3CA3B179C4A4A365ADD66AED129 /* CMPQueryBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C98B0EEBAD59DA7E537A556F5B293E6 /* NSDate+CMPUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 541880D10F488304C3307902930AD8C8 /* NSDate+CMPUtility.m */; };
+		7D2A262000A34EF4B0C920CBD45D36D3 /* CMPProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B87604922E3458A85550BD4614048B0 /* CMPProfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D5184CDE1813F9BBAAD07E35122AEF0 /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF84761A9BB49928912615B1A94F6CDB /* SocketRocket.framework */; };
+		7E1CEEEEF32ECCDBA9482A28E580564E /* CMPKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = AB44456778266D12DEF6EDC2FA50251E /* CMPKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EFAF6DC273B12DBE751D1E7E5054670 /* CMPDeleteConversationTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 54A715AFB02B9A498A58E011E3039A61 /* CMPDeleteConversationTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80F5BA99310A04AD7C1A8E09E96EA4A7 /* CMPContentUploadTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A52204D09A0B8CABE7109EDE8AFB4E /* CMPContentUploadTemplate.m */; };
+		815A5642E602FD32662DF4AEAA3002AC /* CMPSessionAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 473DDF37192450B585A7A2379E2BD303 /* CMPSessionAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82555C7C2A26AAA24765F9D63D1F60E3 /* NSURLResponse+CMPUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = F6575627D3B00FF29D0A2B104B5CEE32 /* NSURLResponse+CMPUtility.m */; };
+		82E07DB4EB168C8E2F45160D9E510CBF /* CMPAuthorizeSessionBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D96CE15485759C1B50EA8BC2C66091 /* CMPAuthorizeSessionBody.m */; };
+		83953911E2F7562F05799B78058A58DE /* CMPRequestPerforming.h in Headers */ = {isa = PBXBuildFile; fileRef = 57EC8BACF258E28EF0BF075B35CA2B40 /* CMPRequestPerforming.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83AD1E5058535FB3146965EB5A561CC1 /* CMPSocketEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = A238C2D3DECF733376FD09EBD5FE8DFC /* CMPSocketEvents.m */; };
+		83E587C2D8304A52BC2034DDC78315D2 /* CMPContentUploadTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C3161B69877E9622847A1A866A60D3 /* CMPContentUploadTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84324792FF28DD0F37ADB6A192149F6B /* CMPAuthorizeSessionTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 919C6DE17EBE644B562F6FB2102601E3 /* CMPAuthorizeSessionTemplate.m */; };
+		85F675A54EE8D1D84B02D6F0C532633A /* CMPNewConversation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0875CC7DD30DE3D2941509D2CEA85BB2 /* CMPNewConversation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86086A009E621158595C8C5F1E33A573 /* CMPStartNewSessionTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 882BB3DC143508EC308A3B1F74823257 /* CMPStartNewSessionTemplate.m */; };
+		8712951D1A1121D14B704704387CCA7C /* CMPGetConversationsTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A9778A2DD666C1362FBC9EEF0C3072 /* CMPGetConversationsTemplate.m */; };
+		87D56C727F292B83973871129D2DA61F /* CMPConversationUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AE5813865E468848C3B68BA6D4AFEA0 /* CMPConversationUpdate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88D46AF1B3855BDE134CB40E27E8D702 /* CMPAuthenticationChallenge.h in Headers */ = {isa = PBXBuildFile; fileRef = 57E3081CA24F91072052DC25A9FC8BBC /* CMPAuthenticationChallenge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89DC2AEE8A9F6A56FB048590C3CD6270 /* CMPGetConversationsTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6050D38ACCCD7F68AF562D2A3A43AD7C /* CMPGetConversationsTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AC74EF6E5BE9C1772CB0A6BCE7AA76F /* CMPHTTPHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = DEFEEE02FF6F139E6FEF1C369AD03966 /* CMPHTTPHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B6A7BFD4C4BB693CB22DA93B14C3182 /* CMPMessagingService.h in Headers */ = {isa = PBXBuildFile; fileRef = 45F16D09910FEA8A06C2C3D69FA0FF28 /* CMPMessagingService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BCA01542E01FCCCB9ECA49F5FDFA049 /* CMPEventParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 726A2EC61027E0DFDD75FD5D1AF10F50 /* CMPEventParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BDEEC3583EC5D16936A861CE9AF12FD /* NSData+CMPUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F28429E7DDCD9CF27EF0F5B769987E /* NSData+CMPUtility.m */; };
+		8D651929FBC1B8BB7A391A892EAC2BD5 /* CMPXcodeConsoleDestination.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1457739CD7E7EC8B811F20C419DF70 /* CMPXcodeConsoleDestination.m */; };
+		8D77E69C50F303C056934783736036B4 /* CMPBaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CCCE43E4651B019AAB8711E8C064C5 /* CMPBaseService.m */; };
+		8E43AD1304F51380352A56BB74B4C2DA /* CMPSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 017A2C6E1DCCF234D766BA38A817A6A0 /* CMPSession.m */; };
+		8EFF845C5D12E7E7E7B14901A0F36C1B /* CMPProfileService.h in Headers */ = {isa = PBXBuildFile; fileRef = 44B214219A475BCB4961E6BA07EC0E72 /* CMPProfileService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9040D5748AC634573625BD1C9DC19B1A /* CMPTokenState.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A9EFF600BF3097DB174FA20C746DF95 /* CMPTokenState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90E54181809BD966E3F5C6E897A5C420 /* CMPAddParticipantsTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = C7956B0108DCFED48505C5A089F14475 /* CMPAddParticipantsTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91CE2B52BADCDC3F34A16348436E74B5 /* NSURLRequest+CMPUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE2363D63769C520865E9E5234E019 /* NSURLRequest+CMPUtility.m */; };
+		92B1BDAFCAB840168C25037EC6ECE278 /* CMPParticipantTypingOffTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8326D8C466495149D2000014B5DE0AA8 /* CMPParticipantTypingOffTemplate.m */; };
+		92FF1167B3749742BA65CE330204C4DE /* CMPComapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 824B80081EA99EA31343268C18B685A4 /* CMPComapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		937C7E24F237B70D342927F984639822 /* CMPErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2C8A23B41921C3B9EFC9DCE9B87A23 /* CMPErrors.m */; };
+		987B921C868EE33DDE4071EFA59AC0AF /* CMPMessageStatusUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4787B0C705FA2D2BE63D006179C80A0 /* CMPMessageStatusUpdate.m */; };
+		98B64D9E74E48B8DA86AAA5720CF13E4 /* CMPComapiConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C67DB9F0CA45F2D2BDC1D58E25FB14F /* CMPComapiConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99CAC8C7C0784E4532533646568BDA66 /* CMPConversationUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C03D765B46D9190324E5D7064A801D /* CMPConversationUpdate.m */; };
+		9A9FC899D1949B51915F25B1E4D94AD8 /* CMPJSONRepresentable.h in Headers */ = {isa = PBXBuildFile; fileRef = 903D6EA9532F318A3B452634CC416812 /* CMPJSONRepresentable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C8FA952AEF78D42902A2B02A44E5618 /* CMPAuthorizeSessionBody.h in Headers */ = {isa = PBXBuildFile; fileRef = 532716A352D3873F395A8610D50E19C8 /* CMPAuthorizeSessionBody.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CDCB4987AF1D587F5D935A995C30BD3 /* CMPAuthorizeSessionTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0592C1608C6EF2E26A830F57BF4229F4 /* CMPAuthorizeSessionTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CEE5739479EC11401A85E9AB49EA81A /* NSURLResponse+CMPUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = CFF64EAB72A1FCF0497B38C5D4AFD7CF /* NSURLResponse+CMPUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E2BF9336C9D5380EB98214AD2534510 /* CMPSendableMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 991AB61F6D6FB1DA96F819221A9DB113 /* CMPSendableMessage.m */; };
+		9EFAD2A19C88595EE67BE612E594C206 /* CMPAddConversationTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 461E92ABC1866BF89FA16EF3CDDC9519 /* CMPAddConversationTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A004E63AAAC51D57766D179AE7AD2D14 /* CMPRemoveParticipantsTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD9783AFFDE7D7F76C81A655F903DBB /* CMPRemoveParticipantsTemplate.m */; };
+		A06A2623ED14C9A74F249E2F85F6C109 /* CMPSocketDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D66D5368283BCAB151BEB38338317065 /* CMPSocketDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1C7D87674654DA6844E6BFFCEC7BFB4 /* CMPConversationEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B3E7ED4F9BD15446C43C75773AE7BE /* CMPConversationEvents.m */; };
+		A1D1A80DE10ED33C801074FAF12C76FA /* CMPGetConversationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCC3F80B254A2219C826F352BFA2B69 /* CMPGetConversationTemplate.m */; };
+		A2298BDE7F4BB37E2D7D483ED2D598B6 /* CMPGetProfileTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = AC233B4A6F0972291D272C30FCF65BBC /* CMPGetProfileTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2EA4EE7DCC238992EE99B9F5C6157BF /* CMPConversationEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA835C61B6D4A63C72C5C241DFD70CC /* CMPConversationEvents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A389130791CC86EA2445756380FCFEFC /* CMPConversation.m in Sources */ = {isa = PBXBuildFile; fileRef = CA60FE37F95FF891F8E7A7C3C38C6535 /* CMPConversation.m */; };
+		A62FECDDB6674586D65E9BDF09D872AB /* CMPRequestTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C623E2EF63A1417BCD858BAE74EB42 /* CMPRequestTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A66717D4D948A95665438AFA7CE8EECF /* CMPRequestPerformer.h in Headers */ = {isa = PBXBuildFile; fileRef = C637BB1F11B8F595654FEFBA173BC428 /* CMPRequestPerformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6CD4C68828820BAA0EE49A8969A899D /* NSDate+CMPUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 803FBA4C317172C211F3C69AD566330C /* NSDate+CMPUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8625B5AD0C4CBD5E8FD7B3B4D10B6A6 /* CMPQueryProfilesTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AB81BD8B6D15AD3F34A954F62F59ABC /* CMPQueryProfilesTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A96995E34D6C7EB881FF7514FCA293E1 /* CMPBaseService.h in Headers */ = {isa = PBXBuildFile; fileRef = 432BF604F1FD848615DC45BC69C9E3BA /* CMPBaseService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAF6291D60E954219127DAFEC5DF904C /* CMPParticipantTypingTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = E88ECCB43291B856DE207C31CD6E1C77 /* CMPParticipantTypingTemplate.m */; };
+		AB789B057CE3F9526EEE86388AAEF0AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F8916CD1D3F2CBEE911D94D346FC9DC /* Foundation.framework */; };
+		AD1CD8689710F425806F955DD33EE96E /* CMPQueryProfilesTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F68578494B60C95EEFA6E1FB610DC28 /* CMPQueryProfilesTemplate.m */; };
+		AF41E0AACCC0A65EC36C5B044110B829 /* CMPLogLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D3AC32B6BD7C8974D4252E6735E4E95 /* CMPLogLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B021E2F3B527955AA76CD40F36E7CED7 /* CMPLogConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = A06C21AA8FF87423A8FA1BFBC5FF1239 /* CMPLogConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B127DEAFCB388C37710A5993B657A4AB /* CMPGetParticipantsTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7226974F7FF1FB5EBFA640DF62AEAD /* CMPGetParticipantsTemplate.m */; };
+		B1535C2EEF96303C0AB584C4FC4A4D3A /* CMPPatchProfileTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F5A4522FFDD746AE94DE7AB62C9268 /* CMPPatchProfileTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1A7901A6012E56BB662DB589842E1AA /* CMPBroadcastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A31F8E4DD4B3CEF9098057EA40255E4A /* CMPBroadcastDelegate.m */; };
+		B1B166C8946D00DE565A18056FFEF2DD /* CMPSessionAuthProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = DA938498C56EEC3BF3A95CA31B4A13AF /* CMPSessionAuthProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B482E7F8373B21A0FEE1E41E4DFE4A80 /* CMPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D27FDBCF30F7F6D43F6688C9A64D380 /* CMPConstants.m */; };
+		B699C9782B1FF0EC6BD15DC1628CB140 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F8916CD1D3F2CBEE911D94D346FC9DC /* Foundation.framework */; };
+		B7611086A5F223267AE9F26BEFAF23CE /* CMPRoles.m in Sources */ = {isa = PBXBuildFile; fileRef = 832FDEABCE805F23A9AA230A242B5681 /* CMPRoles.m */; };
+		B794F51AC1AA101F4185142DDF5AEC44 /* CMPRole.m in Sources */ = {isa = PBXBuildFile; fileRef = 7049A23F898D5BF3EEB7E111542E970D /* CMPRole.m */; };
+		B9C19E92BFFA259AFEF0D32A0178795C /* CMPComapiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = EB7651A5F0BE695228ADE50DCBF60347 /* CMPComapiClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAD360420107B8196F77A93E148CEEB6 /* CMPGetMessagesResult.h in Headers */ = {isa = PBXBuildFile; fileRef = CDB98346ACF4A67E5772E25E564F3EFE /* CMPGetMessagesResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADAAE8EDD82485F8D5EBBE0A7F1A88D /* CMPAuthenticationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D5E6ED3B15439B08BA37EC06C192A7A /* CMPAuthenticationDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBAE4E119BB0AF170454EF76C31E53DD /* CMPParticipantTypingOffTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 81331BDB9A3DE621974703B717632481 /* CMPParticipantTypingOffTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C085D9762B7A7F418ACF0F0845295D52 /* NSString+CMPUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9F217918C339ACB9E79D34080FDCBB /* NSString+CMPUtility.m */; };
+		C11E49F54BC4A42332F2100F019C98B4 /* CMPSetAPNSDetailsTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = C47CDC0222D768EEABF812FDA1C37166 /* CMPSetAPNSDetailsTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2D5F16C8DC3FAF3236F8B313553F664 /* CMPSessionAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E93D4622F75A4117D9DDECA441142A6 /* CMPSessionAuth.m */; };
+		C3587049BF1C39E347A10A8F6EEA97CD /* CMPRequestPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7423A33A15ECDE5EC2B2F7E5207E3654 /* CMPRequestPerformer.m */; };
+		C485A6F61F7030883393B9B98F5B9B70 /* CMPSetAPNSDetailsTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 193B8EC46DCA08E65FE24EF17DA27BFE /* CMPSetAPNSDetailsTemplate.m */; };
+		C7647941E44AD218EF91FE8403426125 /* CMPOrphanedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5DA4AB3FC78B371A8F52A48A271CFA /* CMPOrphanedEvent.m */; };
+		C86FEE0D241FD1E37FBA4356B1A32D75 /* CMPMessageAlertPlatforms.h in Headers */ = {isa = PBXBuildFile; fileRef = 31DFE55BF0F5D9162E142CB4DCB55E7A /* CMPMessageAlertPlatforms.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8707026A906CC9D66E3EBA88C8E6068 /* CMPSocketManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FE49B754FC11A23C4D7415E467D63903 /* CMPSocketManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C953C90867F436BC4FAD27D07A786EF0 /* CMPRoleAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 648F865E07F813FDA75CBBD23B83523C /* CMPRoleAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB6A7A8FCE8D2C936450CA527C70AA01 /* CMPMessageContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A57C2ADF31CB2D3B0604E423C73FD5DE /* CMPMessageContext.m */; };
+		CDACD80197465774FFE8D9C2FAE1B8C1 /* CMPRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A98B4C5DD2D24DC472238E38EB4FB1 /* CMPRequestManager.m */; };
+		CFEDC399E4B863C2FDAD26C45115AF87 /* CMPConversation.h in Headers */ = {isa = PBXBuildFile; fileRef = 39CD4FB3410ECC213611C784B0A856E0 /* CMPConversation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D00D2538796C38B943FB6DAE8C29C4E6 /* NSDateFormatter+CMPUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D62F21BE2C67914C97F5362CDDA64BD /* NSDateFormatter+CMPUtility.m */; };
+		D1105FF008BF58793B67C5D4EA052E5B /* CMPRemoveParticipantsTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = DB420D1EAD9028307B605C4E8ACEDDCA /* CMPRemoveParticipantsTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D248E2C2668C2A7DEEB34D6E61A51E16 /* CMPGetMessagesResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48147BAD0AE76169C914865B93AF2C /* CMPGetMessagesResult.m */; };
+		D349B7200504BF36CA9A4D169E3F7297 /* CMPRequestManagerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 146CCAB172372602FF53C5E209019AAE /* CMPRequestManagerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4780EF40C065CE498F2DE34F2E7DA67 /* CMPEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = CB93E5E24CF408A3DC22314675FC3419 /* CMPEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D69F2C2D6A5AB93C0C4D1D5BCAD3B550 /* CMPLogConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3207801291384E64DDAF574BC38823E2 /* CMPLogConfig.m */; };
+		D6AF5859C573FE7BAD4C9B3E7550CF93 /* CMPRequestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A07897BF836BF58FA32C92FA6C8C71BE /* CMPRequestManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D84917AE81DFFA215ACABF098FA6FFB7 /* CMPAPNSDetailsBody.m in Sources */ = {isa = PBXBuildFile; fileRef = E503564C5FF7E4D67FD85C172BE7B43E /* CMPAPNSDetailsBody.m */; };
+		D8EB628206D43B67E2B100FDBF8C7D7F /* CMPSocketTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5076172B15AD92BF3A4670796BFE7063 /* CMPSocketTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D955B9986756ECEE2027546C4D9F7471 /* CMPLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D038511CA4ABCF2390FFCF04214FB59 /* CMPLogger.m */; };
+		D965F66568A89BAFD656564A7575E02B /* Pods-raisr-ios-sdk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA5636828C55031D686A62271DF69F3 /* Pods-raisr-ios-sdk-dummy.m */; };
+		DAC2508CEDE7B2D05DB065F6BE1FB0CC /* CMPRoles.h in Headers */ = {isa = PBXBuildFile; fileRef = 93A4DB78344A67F28C3C065851A57304 /* CMPRoles.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB2AFEEB928879506D3188510F9E4156 /* CMPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F730A5C01147FBEB9D22C6E50DDF9189 /* CMPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBB012EC66219B26D38E067443FD7DA4 /* CMPMessageStatusUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AF4E12881EF4708F80C26172D55E046 /* CMPMessageStatusUpdate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEB60BD668797A396A0C90D4DD81C195 /* CMPXcodeConsoleDestination.h in Headers */ = {isa = PBXBuildFile; fileRef = 51C3999D92BE2863AF7E3CC5D52A7386 /* CMPXcodeConsoleDestination.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF23A03423E3F0CD740EE2006ED774BC /* CMPDeleteSessionTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 892A63FA89DB484E1B4CAA7D565DAAA8 /* CMPDeleteSessionTemplate.m */; };
+		E06368F84ECBB44064D1C87C19300B0D /* CMPHTTPRequestTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 092DD45BAEA02301362F5A4C20307132 /* CMPHTTPRequestTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E071E313BC13A8ABD0EBD3BF6525E041 /* CMPMessageAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 24356BB2CCCB42520BD73F95604860DA /* CMPMessageAlert.m */; };
+		E11CE66D0DF693ADC5FC2BB8427EDAE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F8916CD1D3F2CBEE911D94D346FC9DC /* Foundation.framework */; };
+		E1AE8557C317176A72D1725AEA62C62E /* CMPMessageStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B512C20964E6D752EA32F1B6ABD05E /* CMPMessageStatus.m */; };
+		E395954EC19DC71F7559F6CED3DB6452 /* CMPUpdateConversationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7798D515A535D7BC925555D55123D9A /* CMPUpdateConversationTemplate.m */; };
+		E46DAF7C12C91BCEA54D0355B60BDCDE /* CMPGetProfileTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AC650C012BDFC1114EB5DB6BAA5A77 /* CMPGetProfileTemplate.m */; };
+		E7566ED28A12CBFDB2CA24807F39B8A7 /* CMPSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BA0CB13091169206CA745B93EF386F /* CMPSocketManager.m */; };
+		E7A1994C3014E3316EB6F280B5BAA040 /* CMPLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D27F3649BB469133ED514640CF9E0DD /* CMPLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB31345E45D56D8839144BE969DA2B41 /* CMPGetConversationTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = A6265D7FFC563E09C127BD77BB237394 /* CMPGetConversationTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED90241861E9B4FDD2485C1B2DD6A7AE /* CMPAuthChallengeHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F9441BE5D60D2E36B44FE086F52D1DA /* CMPAuthChallengeHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDC364AEBE91571368368A9131ECE049 /* CMPAPNSDetailsBody.h in Headers */ = {isa = PBXBuildFile; fileRef = 1608FBF7A7392842BDB4BE72B650572F /* CMPAPNSDetailsBody.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDFD17B748D34400980A06488CD0A8AD /* CMPEventQueryTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B78F82AF0EC488BC37A1F6EC4363C38 /* CMPEventQueryTemplate.m */; };
+		EE7EBF6C4F4AA474EFF2F59B6639A830 /* CMPLoggingDestination.h in Headers */ = {isa = PBXBuildFile; fileRef = 18C8D243F9C8A218A19620CC58942C82 /* CMPLoggingDestination.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7223FE1D558A3980F202DD0064D8025 /* CMPConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A5D11327947466DD899823747281AFE /* CMPConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7433E708F493DF59851691401CF9C88 /* CMPErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = E0F1418486C0F9D6FE274F61F5FA5599 /* CMPErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB1C0DFC0BCDA1370AA42F6621333E17 /* NSDateFormatter+CMPUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 80CCA5698D32BAA3FB38D9313477474E /* NSDateFormatter+CMPUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD70BB284FE54ACC1C4B2EE876FB1425 /* CMPProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 638ED98E3252D9B841F632CE5D10F095 /* CMPProfile.m */; };
+		FE2A0FFE97BF77F68D54A9D62F036604 /* CMPHTTPHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EA9A90A85380AE53124BFD50D5B2CE /* CMPHTTPHeader.m */; };
+		FEE214BA99C795A094BB8F9FF6FA5570 /* CMPEventParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BE332D320CA4181ED091A84864897A /* CMPEventParser.m */; };
+		FF19D4023C83D537EEB176F8EC82E8F5 /* NSData+CMPUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F10B68A46CB1B138634E7AE264A314 /* NSData+CMPUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D80F7CD138E4A58CB5020A6A4752CF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C7A96D89DC72E230031937663AE5453;
+			remoteInfo = CMPComapiFoundation;
+		};
+		7A848ABBB87F17F152F9EAED28F4035F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1948D0B63D2CF6A48E18B0B292BC6091;
+			remoteInfo = SocketRocket;
+		};
+		B15B3948A1D157571A005DDB73528DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1948D0B63D2CF6A48E18B0B292BC6091;
+			remoteInfo = SocketRocket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		017A2C6E1DCCF234D766BA38A817A6A0 /* CMPSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPSession.m; path = Sources/Core/Networking/Templates/Session/Model/CMPSession.m; sourceTree = "<group>"; };
+		025BDC39537B627CDFD437A97CB0ECCC /* CMPGetMessagesTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPGetMessagesTemplate.h; path = Sources/Core/Networking/Templates/Messaging/CMPGetMessagesTemplate.h; sourceTree = "<group>"; };
+		038E303AF17AF6C6935F8D3715E02180 /* CMPNewConversation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPNewConversation.m; path = Sources/Core/Networking/Templates/Messaging/Model/CMPNewConversation.m; sourceTree = "<group>"; };
+		04C03D765B46D9190324E5D7064A801D /* CMPConversationUpdate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPConversationUpdate.m; path = Sources/Core/Networking/Templates/Messaging/Model/CMPConversationUpdate.m; sourceTree = "<group>"; };
+		0592C1608C6EF2E26A830F57BF4229F4 /* CMPAuthorizeSessionTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPAuthorizeSessionTemplate.h; path = Sources/Core/Networking/Templates/Session/CMPAuthorizeSessionTemplate.h; sourceTree = "<group>"; };
+		068BADD5644A9E0C70AB2A3FEB86C0B3 /* SocketRocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-umbrella.h"; sourceTree = "<group>"; };
+		07AC650C012BDFC1114EB5DB6BAA5A77 /* CMPGetProfileTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPGetProfileTemplate.m; path = Sources/Core/Networking/Templates/Profile/CMPGetProfileTemplate.m; sourceTree = "<group>"; };
+		0875CC7DD30DE3D2941509D2CEA85BB2 /* CMPNewConversation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPNewConversation.h; path = Sources/Core/Networking/Templates/Messaging/Model/CMPNewConversation.h; sourceTree = "<group>"; };
+		092DD45BAEA02301362F5A4C20307132 /* CMPHTTPRequestTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPHTTPRequestTemplate.h; path = Sources/Core/Networking/Templates/RequestTemplate/CMPHTTPRequestTemplate.h; sourceTree = "<group>"; };
+		0AF4E12881EF4708F80C26172D55E046 /* CMPMessageStatusUpdate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPMessageStatusUpdate.h; path = Sources/Core/Networking/Templates/Messaging/Model/CMPMessageStatusUpdate.h; sourceTree = "<group>"; };
+		0CB1D1040150973C37FDF89DB797D256 /* CMPSendableMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPSendableMessage.h; path = Sources/Core/Networking/Templates/Messaging/Model/CMPSendableMessage.h; sourceTree = "<group>"; };
+		0D27FDBCF30F7F6D43F6688C9A64D380 /* CMPConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPConstants.m; path = Sources/Core/Constants/CMPConstants.m; sourceTree = "<group>"; };
+		0F9441BE5D60D2E36B44FE086F52D1DA /* CMPAuthChallengeHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPAuthChallengeHandler.h; path = Sources/Core/Networking/SessionManager/CMPAuthChallengeHandler.h; sourceTree = "<group>"; };
+		10542490AAE30C0DE96A5664D93357D3 /* CMPComapiFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPComapiFoundation.h; path = Sources/Module/CMPComapiFoundation.h; sourceTree = "<group>"; };
+		12A9E3FC40886EA410407A3114EE3A92 /* CMPMessagePart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPMessagePart.h; path = Sources/Core/Networking/Templates/Messaging/Model/CMPMessagePart.h; sourceTree = "<group>"; };
+		12C623E2EF63A1417BCD858BAE74EB42 /* CMPRequestTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPRequestTemplate.h; path = Sources/Core/Networking/Templates/RequestTemplate/CMPRequestTemplate.h; sourceTree = "<group>"; };
+		1301719AACD546E551AFB8C57F0EC799 /* CMPSDKState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPSDKState.h; path = Sources/Core/Comapi/Client/CMPSDKState.h; sourceTree = "<group>"; };
+		13A2C7F69E740FA36A4A52481F21163B /* CMPComapiConfigBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPComapiConfigBuilder.m; path = Sources/Core/Comapi/Config/CMPComapiConfigBuilder.m; sourceTree = "<group>"; };
+		146CCAB172372602FF53C5E209019AAE /* CMPRequestManagerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPRequestManagerDelegate.h; path = Sources/Core/Networking/RequestManager/CMPRequestManagerDelegate.h; sourceTree = "<group>"; };
+		14D96CE15485759C1B50EA8BC2C66091 /* CMPAuthorizeSessionBody.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPAuthorizeSessionBody.m; path = Sources/Core/Networking/Templates/Session/Model/CMPAuthorizeSessionBody.m; sourceTree = "<group>"; };
+		1608FBF7A7392842BDB4BE72B650572F /* CMPAPNSDetailsBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPAPNSDetailsBody.h; path = Sources/Core/Networking/Templates/Push/Model/CMPAPNSDetailsBody.h; sourceTree = "<group>"; };
+		18C8D243F9C8A218A19620CC58942C82 /* CMPLoggingDestination.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPLoggingDestination.h; path = Sources/Core/Log/Destinations/CMPLoggingDestination.h; sourceTree = "<group>"; };
+		193B8EC46DCA08E65FE24EF17DA27BFE /* CMPSetAPNSDetailsTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPSetAPNSDetailsTemplate.m; path = Sources/Core/Networking/Templates/Push/CMPSetAPNSDetailsTemplate.m; sourceTree = "<group>"; };
+		19E10668FD0B4E14689E54AB2002A2D1 /* CMPURLResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPURLResult.m; path = Sources/Core/Networking/URLResult/CMPURLResult.m; sourceTree = "<group>"; };
+		19F011E6CBBD5F98C9E734B84C8B7D2B /* CMPUpdateProfileTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPUpdateProfileTemplate.h; path = Sources/Core/Networking/Templates/Profile/CMPUpdateProfileTemplate.h; sourceTree = "<group>"; };
+		1B78F82AF0EC488BC37A1F6EC4363C38 /* CMPEventQueryTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPEventQueryTemplate.m; path = Sources/Core/Networking/Templates/Messaging/CMPEventQueryTemplate.m; sourceTree = "<group>"; };
+		1C719DB099701D67F48F5FC0C6C0922A /* CMPProfileEvents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPProfileEvents.h; path = Sources/Core/Networking/Templates/Event/Model/Profile/CMPProfileEvents.h; sourceTree = "<group>"; };
+		1D038511CA4ABCF2390FFCF04214FB59 /* CMPLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPLogger.m; path = Sources/Core/Log/CMPLogger.m; sourceTree = "<group>"; };
+		1D9A4279DFEDD74AE904A45CC4D85F34 /* CMPMessageDeliveryStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPMessageDeliveryStatus.h; path = Sources/Core/Networking/Templates/Messaging/Model/CMPMessageDeliveryStatus.h; sourceTree = "<group>"; };
+		21A35324C59069CC3EDE42BCCFF8B477 /* CMPMessageContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPMessageContext.h; path = Sources/Core/Networking/Templates/Messaging/Model/CMPMessageContext.h; sourceTree = "<group>"; };
+		24356BB2CCCB42520BD73F95604860DA /* CMPMessageAlert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPMessageAlert.m; path = Sources/Core/Networking/Templates/Messaging/Model/CMPMessageAlert.m; sourceTree = "<group>"; };
+		29B9F10B2FB76DA53F9DD58099B1C667 /* CMPProfileService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPProfileService.m; path = Sources/Core/Networking/Services/Profile/CMPProfileService.m; sourceTree = "<group>"; };
+		2A5D11327947466DD899823747281AFE /* CMPConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPConstants.h; path = Sources/Core/Constants/CMPConstants.h; sourceTree = "<group>"; };
+		2A9EFF600BF3097DB174FA20C746DF95 /* CMPTokenState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPTokenState.h; path = Sources/Core/Networking/RequestManager/CMPTokenState.h; sourceTree = "<group>"; };
+		2BA835C61B6D4A63C72C5C241DFD70CC /* CMPConversationEvents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPConversationEvents.h; path = Sources/Core/Networking/Templates/Event/Model/Conversation/CMPConversationEvents.h; sourceTree = "<group>"; };
+		2BF2069826ADBA019EF71096118D8352 /* CMPComapiFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CMPComapiFoundation.framework; path = CMPComapiFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C48147BAD0AE76169C914865B93AF2C /* CMPGetMessagesResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPGetMessagesResult.m; path = Sources/Core/Networking/Templates/Messaging/Model/CMPGetMessagesResult.m; sourceTree = "<group>"; };
+		2C79C925F535B58A02AFDA42EFCDFE5D /* CMPMessagePart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPMessagePart.m; path = Sources/Core/Networking/Templates/Messaging/Model/CMPMessagePart.m; sourceTree = "<group>"; };
+		2CD28A7DFD1E48C5DBDAB89914AB0CC3 /* CMPMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPMessage.m; path = Sources/Core/Networking/Templates/Messaging/Model/CMPMessage.m; sourceTree = "<group>"; };
+		2D3AC32B6BD7C8974D4252E6735E4E95 /* CMPLogLevel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPLogLevel.h; path = Sources/Core/Log/CMPLogLevel.h; sourceTree = "<group>"; };
+		2D5E6ED3B15439B08BA37EC06C192A7A /* CMPAuthenticationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPAuthenticationDelegate.h; path = Sources/Core/Networking/Authentication/CMPAuthenticationDelegate.h; sourceTree = "<group>"; };
+		2E7226974F7FF1FB5EBFA640DF62AEAD /* CMPGetParticipantsTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPGetParticipantsTemplate.m; path = Sources/Core/Networking/Templates/Messaging/CMPGetParticipantsTemplate.m; sourceTree = "<group>"; };
+		2E8790F7263790A0F27364EAB57E5E5E /* CMPSendStatusUpdateTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPSendStatusUpdateTemplate.m; path = Sources/Core/Networking/Templates/Messaging/CMPSendStatusUpdateTemplate.m; sourceTree = "<group>"; };
+		2F8916CD1D3F2CBEE911D94D346FC9DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		31892F824BA3FA6487E1CF847FEB2DFD /* CMPURLResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPURLResult.h; path = Sources/Core/Networking/URLResult/CMPURLResult.h; sourceTree = "<group>"; };
+		31B51871E9C2C2B560F331ECFB6861CD /* CMPComapiFoundation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CMPComapiFoundation.modulemap; sourceTree = "<group>"; };
+		31DFE55BF0F5D9162E142CB4DCB55E7A /* CMPMessageAlertPlatforms.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPMessageAlertPlatforms.h; path = Sources/Core/Networking/Templates/Messaging/Model/CMPMessageAlertPlatforms.h; sourceTree = "<group>"; };
+		3207801291384E64DDAF574BC38823E2 /* CMPLogConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPLogConfig.m; path = Sources/Core/Comapi/Config/CMPLogConfig.m; sourceTree = "<group>"; };
+		325F88B1E4BB5FE0691FF21EEE8F4028 /* CMPConversationParticipant.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPConversationParticipant.m; path = Sources/Core/Networking/Templates/Messaging/Model/CMPConversationParticipant.m; sourceTree = "<group>"; };
+		32BA0CB13091169206CA745B93EF386F /* CMPSocketManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPSocketManager.m; path = Sources/Core/Networking/WebSocket/CMPSocketManager.m; sourceTree = "<group>"; };
+		337D67FF119E2F7DD67B89D567EEE03F /* CMPLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPLog.h; path = Sources/Core/Log/CMPLog.h; sourceTree = "<group>"; };
+		36969B201790CE9FB99536ABA51D5BCE /* CMPProfileEvents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPProfileEvents.m; path = Sources/Core/Networking/Templates/Event/Model/Profile/CMPProfileEvents.m; sourceTree = "<group>"; };
+		36D424265DD0850C9C93235D6D59F2DA /* CMPComapiFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CMPComapiFoundation.release.xcconfig; sourceTree = "<group>"; };
+		36E0DB8218EE5AD483EAEB69A65D5F5D /* CMPMessageStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPMessageStatus.h; path = Sources/Core/Networking/Templates/Messaging/Model/CMPMessageStatus.h; sourceTree = "<group>"; };
+		390FF3B46115E1DB76E6BD5BA7C0EA4C /* CMPComapiFoundation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CMPComapiFoundation-prefix.pch"; sourceTree = "<group>"; };
+		39CD4FB3410ECC213611C784B0A856E0 /* CMPConversation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPConversation.h; path = Sources/Core/Networking/Templates/Messaging/Model/CMPConversation.h; sourceTree = "<group>"; };
+		3AA5609766C49A78052141049E29D16C /* CMPGetParticipantsTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPGetParticipantsTemplate.h; path = Sources/Core/Networking/Templates/Messaging/CMPGetParticipantsTemplate.h; sourceTree = "<group>"; };
+		3B27FCB99A099BF44999FA1AAE9BA312 /* CMPContentUploadResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPContentUploadResult.m; path = Sources/Core/Networking/Templates/Messaging/Model/CMPContentUploadResult.m; sourceTree = "<group>"; };
+		3E93D4622F75A4117D9DDECA441142A6 /* CMPSessionAuth.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPSessionAuth.m; path = Sources/Core/Networking/Templates/Session/Model/CMPSessionAuth.m; sourceTree = "<group>"; };
+		3F68578494B60C95EEFA6E1FB610DC28 /* CMPQueryProfilesTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPQueryProfilesTemplate.m; path = Sources/Core/Networking/Templates/Profile/CMPQueryProfilesTemplate.m; sourceTree = "<group>"; };
+		40878E0FBC8FE608EEC8362E149DDB16 /* SocketRocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SocketRocket.release.xcconfig; sourceTree = "<group>"; };
+		412E2CA76F882B022B8F5D856D5C69B6 /* CMPSendMessagesTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPSendMessagesTemplate.m; path = Sources/Core/Networking/Templates/Messaging/CMPSendMessagesTemplate.m; sourceTree = "<group>"; };
+		432BF604F1FD848615DC45BC69C9E3BA /* CMPBaseService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPBaseService.h; path = Sources/Core/Networking/Services/CMPBaseService.h; sourceTree = "<group>"; };
+		437B47F9C24144B62D1A03A65DF000EC /* CMPComapiConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPComapiConfig.m; path = Sources/Core/Comapi/Config/CMPComapiConfig.m; sourceTree = "<group>"; };
+		44B214219A475BCB4961E6BA07EC0E72 /* CMPProfileService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPProfileService.h; path = Sources/Core/Networking/Services/Profile/CMPProfileService.h; sourceTree = "<group>"; };
+		44BA5847ADF16A99F99D6E49638B875C /* SocketRocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-prefix.pch"; sourceTree = "<group>"; };
+		45F16D09910FEA8A06C2C3D69FA0FF28 /* CMPMessagingService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPMessagingService.h; path = Sources/Core/Networking/Services/Messages/CMPMessagingService.h; sourceTree = "<group>"; };
+		461E92ABC1866BF89FA16EF3CDDC9519 /* CMPAddConversationTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPAddConversationTemplate.h; path = Sources/Core/Networking/Templates/Messaging/CMPAddConversationTemplate.h; sourceTree = "<group>"; };
+		473DDF37192450B585A7A2379E2BD303 /* CMPSessionAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPSessionAuth.h; path = Sources/Core/Networking/Templates/Session/Model/CMPSessionAuth.h; sourceTree = "<group>"; };
+		4C1457739CD7E7EC8B811F20C419DF70 /* CMPXcodeConsoleDestination.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPXcodeConsoleDestination.m; path = Sources/Core/Log/Destinations/CMPXcodeConsoleDestination.m; sourceTree = "<group>"; };
+		4C4CCBFB924E0F17D282B6DDABD3E562 /* CMPSessionService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPSessionService.h; path = Sources/Core/Networking/Services/Session/CMPSessionService.h; sourceTree = "<group>"; };
+		4C67DB9F0CA45F2D2BDC1D58E25FB14F /* CMPComapiConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPComapiConfig.h; path = Sources/Core/Comapi/Config/CMPComapiConfig.h; sourceTree = "<group>"; };
+		4C9F639F90587C1AA26D2AD293120B72 /* CMPSocketTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPSocketTemplate.m; path = Sources/Core/Networking/Templates/Socket/CMPSocketTemplate.m; sourceTree = "<group>"; };
+		4CCC19C4211CBF52D82B872B793E5718 /* CMPJSONDecoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPJSONDecoding.h; path = Sources/Core/Networking/JSONCoding/CMPJSONDecoding.h; sourceTree = "<group>"; };
+		4D27F3649BB469133ED514640CF9E0DD /* CMPLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPLogger.h; path = Sources/Core/Log/CMPLogger.h; sourceTree = "<group>"; };
+		5076172B15AD92BF3A4670796BFE7063 /* CMPSocketTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPSocketTemplate.h; path = Sources/Core/Networking/Templates/Socket/CMPSocketTemplate.h; sourceTree = "<group>"; };
+		51C3999D92BE2863AF7E3CC5D52A7386 /* CMPXcodeConsoleDestination.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPXcodeConsoleDestination.h; path = Sources/Core/Log/Destinations/CMPXcodeConsoleDestination.h; sourceTree = "<group>"; };
+		532716A352D3873F395A8610D50E19C8 /* CMPAuthorizeSessionBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPAuthorizeSessionBody.h; path = Sources/Core/Networking/Templates/Session/Model/CMPAuthorizeSessionBody.h; sourceTree = "<group>"; };
+		541880D10F488304C3307902930AD8C8 /* NSDate+CMPUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+CMPUtility.m"; path = "Sources/Core/Utilities/NSDate+CMPUtility.m"; sourceTree = "<group>"; };
+		546168708C5D490DA0B16C75EFEC68D9 /* CMPComapi.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPComapi.m; path = Sources/Core/Comapi/Comapi/CMPComapi.m; sourceTree = "<group>"; };
+		54A715AFB02B9A498A58E011E3039A61 /* CMPDeleteConversationTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPDeleteConversationTemplate.h; path = Sources/Core/Networking/Templates/Messaging/CMPDeleteConversationTemplate.h; sourceTree = "<group>"; };
+		54D255BC438673D999484F53D910466C /* CMPConversationScope.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPConversationScope.h; path = Sources/Core/Networking/Templates/Messaging/Model/CMPConversationScope.h; sourceTree = "<group>"; };
+		550D111986308612BCD6628BF5151D71 /* CMPUpdateProfileTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPUpdateProfileTemplate.m; path = Sources/Core/Networking/Templates/Profile/CMPUpdateProfileTemplate.m; sourceTree = "<group>"; };
+		55C71552ADE6AF7C010D170D3B32E056 /* CMPMessageParticipant.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPMessageParticipant.m; path = Sources/Core/Networking/Templates/Messaging/Model/CMPMessageParticipant.m; sourceTree = "<group>"; };
+		55F28429E7DDCD9CF27EF0F5B769987E /* NSData+CMPUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+CMPUtility.m"; path = "Sources/Core/Utilities/NSData+CMPUtility.m"; sourceTree = "<group>"; };
+		57E3081CA24F91072052DC25A9FC8BBC /* CMPAuthenticationChallenge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPAuthenticationChallenge.h; path = Sources/Core/Networking/Templates/Session/Model/CMPAuthenticationChallenge.h; sourceTree = "<group>"; };
+		57EC8BACF258E28EF0BF075B35CA2B40 /* CMPRequestPerforming.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPRequestPerforming.h; path = Sources/Core/Networking/RequestManager/CMPRequestPerforming.h; sourceTree = "<group>"; };
+		5A6712625ABF00814725D3C16B5E8D8E /* CMPServices.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPServices.h; path = Sources/Core/Networking/Services/CMPServices.h; sourceTree = "<group>"; };
+		5B24B4288DC0C800CBE983D1F93C5B57 /* CMPQueryBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPQueryBuilder.m; path = Sources/Core/Networking/Templates/Profile/Model/CMPQueryBuilder.m; sourceTree = "<group>"; };
+		5CA5607281B977E9F73E77EA51BCAFE7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		5D3F47ACA3B7EAFDF5CB80A369A75EB6 /* CMPEventQueryTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPEventQueryTemplate.h; path = Sources/Core/Networking/Templates/Messaging/CMPEventQueryTemplate.h; sourceTree = "<group>"; };
+		604FC493552F1D0CA0E5D1A926737813 /* CMPStateDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPStateDelegate.h; path = Sources/Core/Comapi/Client/CMPStateDelegate.h; sourceTree = "<group>"; };
+		6050D38ACCCD7F68AF562D2A3A43AD7C /* CMPGetConversationsTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPGetConversationsTemplate.h; path = Sources/Core/Networking/Templates/Messaging/CMPGetConversationsTemplate.h; sourceTree = "<group>"; };
+		60B8D128111E58B1F46F083D8AFC102C /* CMPContentData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPContentData.h; path = Sources/Core/Networking/Templates/Messaging/Model/CMPContentData.h; sourceTree = "<group>"; };
+		62079A97FB9B71B72D9ACEEACA72C22D /* CMPAPNSDetails.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPAPNSDetails.m; path = Sources/Core/Networking/Templates/Push/Model/CMPAPNSDetails.m; sourceTree = "<group>"; };
+		638ED98E3252D9B841F632CE5D10F095 /* CMPProfile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPProfile.m; path = Sources/Core/Networking/Templates/Profile/Model/CMPProfile.m; sourceTree = "<group>"; };
+		6459F50D88287C61D3C515346AD63CE8 /* Pods_raisr_ios_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_raisr_ios_sdk.framework; path = "Pods-raisr-ios-sdk.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		648F865E07F813FDA75CBBD23B83523C /* CMPRoleAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPRoleAttributes.h; path = Sources/Core/Networking/Templates/Messaging/Model/CMPRoleAttributes.h; sourceTree = "<group>"; };
+		64A52204D09A0B8CABE7109EDE8AFB4E /* CMPContentUploadTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPContentUploadTemplate.m; path = Sources/Core/Networking/Templates/Messaging/CMPContentUploadTemplate.m; sourceTree = "<group>"; };
+		67A87B5A28DBE0BBF3F41AD78CA2F359 /* CMPSessionDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPSessionDelegate.h; path = Sources/Core/Networking/SessionManager/CMPSessionDelegate.h; sourceTree = "<group>"; };
+		67B6AE95AD5F8964BD373037C84ADF09 /* CMPConversationMessageEvents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPConversationMessageEvents.h; path = Sources/Core/Networking/Templates/Event/Model/ConversationMessage/CMPConversationMessageEvents.h; sourceTree = "<group>"; };
+		67CCF92D608D454254C4A2097A28F229 /* Pods-raisr-ios-sdk-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-raisr-ios-sdk-acknowledgements.plist"; sourceTree = "<group>"; };
+		68D5434A737E0AC891C054E3C5731426 /* CMPKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPKeychain.m; path = Sources/Core/Security/CMPKeychain.m; sourceTree = "<group>"; };
+		6D5FFC445A7A1ABFD727CDF1EB23DA2B /* CMPSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPSession.h; path = Sources/Core/Networking/Templates/Session/Model/CMPSession.h; sourceTree = "<group>"; };
+		6DF94694B30B70F37DBCA2C5B6E9D369 /* CMPLogLevel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPLogLevel.m; path = Sources/Core/Log/CMPLogLevel.m; sourceTree = "<group>"; };
+		6E156A2848FF23DEC5F5668D5428886A /* CMPEventDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPEventDelegate.h; path = Sources/Core/Networking/Templates/Event/CMPEventDelegate.h; sourceTree = "<group>"; };
+		6EEB7A522F7640B1A1530D8C14F3379C /* CMPComapiClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPComapiClient.m; path = Sources/Core/Comapi/Client/CMPComapiClient.m; sourceTree = "<group>"; };
+		7049A23F898D5BF3EEB7E111542E970D /* CMPRole.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPRole.m; path = Sources/Core/Networking/Templates/Messaging/Model/CMPRole.m; sourceTree = "<group>"; };
+		70E0314C62C5661688D748F33DFBEC10 /* CMPRequestTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPRequestTemplate.m; path = Sources/Core/Networking/Templates/RequestTemplate/CMPRequestTemplate.m; sourceTree = "<group>"; };
+		726A2EC61027E0DFDD75FD5D1AF10F50 /* CMPEventParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPEventParser.h; path = Sources/Core/Networking/Templates/Event/CMPEventParser.h; sourceTree = "<group>"; };
+		73BE332D320CA4181ED091A84864897A /* CMPEventParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPEventParser.m; path = Sources/Core/Networking/Templates/Event/CMPEventParser.m; sourceTree = "<group>"; };
+		7423A33A15ECDE5EC2B2F7E5207E3654 /* CMPRequestPerformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPRequestPerformer.m; path = Sources/Core/Networking/RequestManager/CMPRequestPerformer.m; sourceTree = "<group>"; };
+		74A1AB815BDEA4E2812596186338B52F /* CMPFileDestination.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPFileDestination.m; path = Sources/Core/Log/Destinations/CMPFileDestination.m; sourceTree = "<group>"; };
+		750DB639431994DE9841B842AA2E1B14 /* SocketRocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SocketRocket.debug.xcconfig; sourceTree = "<group>"; };
+		752CEEAABF642BF10B56FBDEB0E0AB69 /* CMPConversationParticipant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPConversationParticipant.h; path = Sources/Core/Networking/Templates/Messaging/Model/CMPConversationParticipant.h; sourceTree = "<group>"; };
+		75CCCE43E4651B019AAB8711E8C064C5 /* CMPBaseService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPBaseService.m; path = Sources/Core/Networking/Services/CMPBaseService.m; sourceTree = "<group>"; };
+		75EA5EB03F88E1BFE644388D0BE4AE98 /* CMPComapiFoundation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CMPComapiFoundation-Info.plist"; sourceTree = "<group>"; };
+		7668092440059CDA8EAC3490C74CDFEF /* CMPAPNSDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPAPNSDetails.h; path = Sources/Core/Networking/Templates/Push/Model/CMPAPNSDetails.h; sourceTree = "<group>"; };
+		7AE5813865E468848C3B68BA6D4AFEA0 /* CMPConversationUpdate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPConversationUpdate.h; path = Sources/Core/Networking/Templates/Messaging/Model/CMPConversationUpdate.h; sourceTree = "<group>"; };
+		7B87604922E3458A85550BD4614048B0 /* CMPProfile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPProfile.h; path = Sources/Core/Networking/Templates/Profile/Model/CMPProfile.h; sourceTree = "<group>"; };
+		7CCA367C13AF2F2999B9BF7904C6DF36 /* CMPMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPMessage.h; path = Sources/Core/Networking/Templates/Messaging/Model/CMPMessage.h; sourceTree = "<group>"; };
+		7CDF047B1E9590FB50AD6BE5C4F49725 /* CMPAPIConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPAPIConfiguration.h; path = Sources/Core/Comapi/Config/CMPAPIConfiguration.h; sourceTree = "<group>"; };
+		7F6FB00373802F6A558DD0E4DB1A93FD /* CMPStartNewSessionTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPStartNewSessionTemplate.h; path = Sources/Core/Networking/Templates/Session/CMPStartNewSessionTemplate.h; sourceTree = "<group>"; };
+		803FBA4C317172C211F3C69AD566330C /* NSDate+CMPUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+CMPUtility.h"; path = "Sources/Core/Utilities/NSDate+CMPUtility.h"; sourceTree = "<group>"; };
+		80CCA5698D32BAA3FB38D9313477474E /* NSDateFormatter+CMPUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDateFormatter+CMPUtility.h"; path = "Sources/Core/Utilities/NSDateFormatter+CMPUtility.h"; sourceTree = "<group>"; };
+		81331BDB9A3DE621974703B717632481 /* CMPParticipantTypingOffTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPParticipantTypingOffTemplate.h; path = Sources/Core/Networking/Templates/Messaging/CMPParticipantTypingOffTemplate.h; sourceTree = "<group>"; };
+		819CE5496C66FD1652B4D73E008D28CC /* CMPMessagingService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPMessagingService.m; path = Sources/Core/Networking/Services/Messages/CMPMessagingService.m; sourceTree = "<group>"; };
+		8214C93B0DB992361B42829D26DF6885 /* CMPAddParticipantsTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPAddParticipantsTemplate.m; path = Sources/Core/Networking/Templates/Messaging/CMPAddParticipantsTemplate.m; sourceTree = "<group>"; };
+		824B80081EA99EA31343268C18B685A4 /* CMPComapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPComapi.h; path = Sources/Core/Comapi/Comapi/CMPComapi.h; sourceTree = "<group>"; };
+		8326D8C466495149D2000014B5DE0AA8 /* CMPParticipantTypingOffTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPParticipantTypingOffTemplate.m; path = Sources/Core/Networking/Templates/Messaging/CMPParticipantTypingOffTemplate.m; sourceTree = "<group>"; };
+		832FDEABCE805F23A9AA230A242B5681 /* CMPRoles.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPRoles.m; path = Sources/Core/Networking/Templates/Messaging/Model/CMPRoles.m; sourceTree = "<group>"; };
+		8434B8212CD3B6EBE38C04023F40A4F3 /* CMPFileDestination.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPFileDestination.h; path = Sources/Core/Log/Destinations/CMPFileDestination.h; sourceTree = "<group>"; };
+		85A01882ED06DFEA2E0CE78BCDB204A7 /* SocketRocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SocketRocket.framework; path = SocketRocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		882BB3DC143508EC308A3B1F74823257 /* CMPStartNewSessionTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPStartNewSessionTemplate.m; path = Sources/Core/Networking/Templates/Session/CMPStartNewSessionTemplate.m; sourceTree = "<group>"; };
+		88CB9AB72E25C29E60F9D3103563F9BC /* CMPBroadcastDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPBroadcastDelegate.h; path = Sources/Core/Networking/WebSocket/CMPBroadcastDelegate.h; sourceTree = "<group>"; };
+		892A63FA89DB484E1B4CAA7D565DAAA8 /* CMPDeleteSessionTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPDeleteSessionTemplate.m; path = Sources/Core/Networking/Templates/Session/CMPDeleteSessionTemplate.m; sourceTree = "<group>"; };
+		89445636F7416107C69661A3E58D4E15 /* CMPSendMessagesTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPSendMessagesTemplate.h; path = Sources/Core/Networking/Templates/Messaging/CMPSendMessagesTemplate.h; sourceTree = "<group>"; };
+		8B85400CDAE3203388E5C934F6F3AD61 /* CMPResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPResult.h; path = Sources/Core/Networking/Templates/RequestTemplate/CMPResult.h; sourceTree = "<group>"; };
+		8BA5636828C55031D686A62271DF69F3 /* Pods-raisr-ios-sdk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-raisr-ios-sdk-dummy.m"; sourceTree = "<group>"; };
+		8D20ED0B6F46F1621F3737E3FDCC91CC /* CMPJSONEncoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPJSONEncoding.h; path = Sources/Core/Networking/JSONCoding/CMPJSONEncoding.h; sourceTree = "<group>"; };
+		903D6EA9532F318A3B452634CC416812 /* CMPJSONRepresentable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPJSONRepresentable.h; path = Sources/Core/Networking/JSONCoding/CMPJSONRepresentable.h; sourceTree = "<group>"; };
+		9091C9BC375FF540935C838EE099CA4B /* Pods-raisr-ios-sdk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-raisr-ios-sdk-umbrella.h"; sourceTree = "<group>"; };
+		91031A058755BDD23B729EBFB3B1BA1A /* CMPContentData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPContentData.m; path = Sources/Core/Networking/Templates/Messaging/Model/CMPContentData.m; sourceTree = "<group>"; };
+		919C6DE17EBE644B562F6FB2102601E3 /* CMPAuthorizeSessionTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPAuthorizeSessionTemplate.m; path = Sources/Core/Networking/Templates/Session/CMPAuthorizeSessionTemplate.m; sourceTree = "<group>"; };
+		93A4DB78344A67F28C3C065851A57304 /* CMPRoles.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPRoles.h; path = Sources/Core/Networking/Templates/Messaging/Model/CMPRoles.h; sourceTree = "<group>"; };
+		9409226DC64C8FBF6F7D0CB96EE5BD0F /* CMPPatchProfileTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPPatchProfileTemplate.m; path = Sources/Core/Networking/Templates/Profile/CMPPatchProfileTemplate.m; sourceTree = "<group>"; };
+		98D7C3CA3B179C4A4A365ADD66AED129 /* CMPQueryBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPQueryBuilder.h; path = Sources/Core/Networking/Templates/Profile/Model/CMPQueryBuilder.h; sourceTree = "<group>"; };
+		991AB61F6D6FB1DA96F819221A9DB113 /* CMPSendableMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPSendableMessage.m; path = Sources/Core/Networking/Templates/Messaging/Model/CMPSendableMessage.m; sourceTree = "<group>"; };
+		9965178ED559E566910B49C4707B42B3 /* CMPComapiConfigBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPComapiConfigBuilder.h; path = Sources/Core/Comapi/Config/CMPComapiConfigBuilder.h; sourceTree = "<group>"; };
+		9AB81BD8B6D15AD3F34A954F62F59ABC /* CMPQueryProfilesTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPQueryProfilesTemplate.h; path = Sources/Core/Networking/Templates/Profile/CMPQueryProfilesTemplate.h; sourceTree = "<group>"; };
+		9C3146AFEFEE46E3D9C16CF0A2573740 /* CMPSendMessagesResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPSendMessagesResult.m; path = Sources/Core/Networking/Templates/Messaging/Model/CMPSendMessagesResult.m; sourceTree = "<group>"; };
+		9D62F21BE2C67914C97F5362CDDA64BD /* NSDateFormatter+CMPUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDateFormatter+CMPUtility.m"; path = "Sources/Core/Utilities/NSDateFormatter+CMPUtility.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A06C21AA8FF87423A8FA1BFBC5FF1239 /* CMPLogConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPLogConfig.h; path = Sources/Core/Comapi/Config/CMPLogConfig.h; sourceTree = "<group>"; };
+		A07897BF836BF58FA32C92FA6C8C71BE /* CMPRequestManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPRequestManager.h; path = Sources/Core/Networking/RequestManager/CMPRequestManager.h; sourceTree = "<group>"; };
+		A1AE240C405DFCBFC7F7259F17B33C10 /* CMPResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPResult.m; path = Sources/Core/Networking/Templates/RequestTemplate/CMPResult.m; sourceTree = "<group>"; };
+		A238C2D3DECF733376FD09EBD5FE8DFC /* CMPSocketEvents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPSocketEvents.m; path = Sources/Core/Networking/Templates/Event/Model/Socket/CMPSocketEvents.m; sourceTree = "<group>"; };
+		A31F8E4DD4B3CEF9098057EA40255E4A /* CMPBroadcastDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPBroadcastDelegate.m; path = Sources/Core/Networking/WebSocket/CMPBroadcastDelegate.m; sourceTree = "<group>"; };
+		A4C3161B69877E9622847A1A866A60D3 /* CMPContentUploadTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPContentUploadTemplate.h; path = Sources/Core/Networking/Templates/Messaging/CMPContentUploadTemplate.h; sourceTree = "<group>"; };
+		A4F10B68A46CB1B138634E7AE264A314 /* NSData+CMPUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+CMPUtility.h"; path = "Sources/Core/Utilities/NSData+CMPUtility.h"; sourceTree = "<group>"; };
+		A57C2ADF31CB2D3B0604E423C73FD5DE /* CMPMessageContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPMessageContext.m; path = Sources/Core/Networking/Templates/Messaging/Model/CMPMessageContext.m; sourceTree = "<group>"; };
+		A6265D7FFC563E09C127BD77BB237394 /* CMPGetConversationTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPGetConversationTemplate.h; path = Sources/Core/Networking/Templates/Messaging/CMPGetConversationTemplate.h; sourceTree = "<group>"; };
+		A7A98B4C5DD2D24DC472238E38EB4FB1 /* CMPRequestManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPRequestManager.m; path = Sources/Core/Networking/RequestManager/CMPRequestManager.m; sourceTree = "<group>"; };
+		AA884918135B7738A6AD94E57A238219 /* Pods-raisr-ios-sdk-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-raisr-ios-sdk-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AB44456778266D12DEF6EDC2FA50251E /* CMPKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPKeychain.h; path = Sources/Core/Security/CMPKeychain.h; sourceTree = "<group>"; };
+		AC233B4A6F0972291D272C30FCF65BBC /* CMPGetProfileTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPGetProfileTemplate.h; path = Sources/Core/Networking/Templates/Profile/CMPGetProfileTemplate.h; sourceTree = "<group>"; };
+		AD956C970EFD785BD88D4D539030C075 /* CMPRoleAttributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPRoleAttributes.m; path = Sources/Core/Networking/Templates/Messaging/Model/CMPRoleAttributes.m; sourceTree = "<group>"; };
+		AE287B1E2A39ABB0BDD61A104711FD8B /* CMPComapiFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CMPComapiFoundation-dummy.m"; sourceTree = "<group>"; };
+		AE9F217918C339ACB9E79D34080FDCBB /* NSString+CMPUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+CMPUtility.m"; path = "Sources/Core/Utilities/NSString+CMPUtility.m"; sourceTree = "<group>"; };
+		AF3190A73F72CF417CC709F588110840 /* CMPContentUploadResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPContentUploadResult.h; path = Sources/Core/Networking/Templates/Messaging/Model/CMPContentUploadResult.h; sourceTree = "<group>"; };
+		AFBE592DBAEA2446F3470785BEA35492 /* SocketRocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SocketRocket.modulemap; sourceTree = "<group>"; };
+		AFC53326AE93AF3C526081FF9996FC43 /* SocketRocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SocketRocket.h; path = SocketRocket/SocketRocket.h; sourceTree = "<group>"; };
+		B2A00D2255D45759A5549551E8CCB10E /* CMPRole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPRole.h; path = Sources/Core/Networking/Templates/Messaging/Model/CMPRole.h; sourceTree = "<group>"; };
+		B65A2C42607E313BEB5F3B32F3A1441C /* CMPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPSessionManager.m; path = Sources/Core/Networking/SessionManager/CMPSessionManager.m; sourceTree = "<group>"; };
+		B6686B131596461C96AAADDADF0DC2C0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		B6A9778A2DD666C1362FBC9EEF0C3072 /* CMPGetConversationsTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPGetConversationsTemplate.m; path = Sources/Core/Networking/Templates/Messaging/CMPGetConversationsTemplate.m; sourceTree = "<group>"; };
+		BD2C8A23B41921C3B9EFC9DCE9B87A23 /* CMPErrors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPErrors.m; path = Sources/Core/Errors/CMPErrors.m; sourceTree = "<group>"; };
+		BDE4A21206FA36AAC29BD9BE6268DB48 /* CMPComapiFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CMPComapiFoundation.debug.xcconfig; sourceTree = "<group>"; };
+		BFBEA84BA35A6E9FE558474931EDDF28 /* CMPMessageParticipant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPMessageParticipant.h; path = Sources/Core/Networking/Templates/Messaging/Model/CMPMessageParticipant.h; sourceTree = "<group>"; };
+		C0CF1A21F2FDADDDFC5EA39BCB1EFB38 /* CMPSendMessagesResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPSendMessagesResult.h; path = Sources/Core/Networking/Templates/Messaging/Model/CMPSendMessagesResult.h; sourceTree = "<group>"; };
+		C357C4FA32E728E61276D30E8E1C9C19 /* CMPAPIConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPAPIConfiguration.m; path = Sources/Core/Comapi/Config/CMPAPIConfiguration.m; sourceTree = "<group>"; };
+		C472C40DE9EC88FF4B757DD094E691A8 /* CMPServices.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPServices.m; path = Sources/Core/Networking/Services/CMPServices.m; sourceTree = "<group>"; };
+		C47CDC0222D768EEABF812FDA1C37166 /* CMPSetAPNSDetailsTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPSetAPNSDetailsTemplate.h; path = Sources/Core/Networking/Templates/Push/CMPSetAPNSDetailsTemplate.h; sourceTree = "<group>"; };
+		C4E3C36EA73F4A5DFEDBF548F3EA357B /* Pods-raisr-ios-sdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-raisr-ios-sdk.release.xcconfig"; sourceTree = "<group>"; };
+		C5075EB4E23C21EEB51C189386D1A026 /* SocketRocket-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SocketRocket-Info.plist"; sourceTree = "<group>"; };
+		C637BB1F11B8F595654FEFBA173BC428 /* CMPRequestPerformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPRequestPerformer.h; path = Sources/Core/Networking/RequestManager/CMPRequestPerformer.h; sourceTree = "<group>"; };
+		C7956B0108DCFED48505C5A089F14475 /* CMPAddParticipantsTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPAddParticipantsTemplate.h; path = Sources/Core/Networking/Templates/Messaging/CMPAddParticipantsTemplate.h; sourceTree = "<group>"; };
+		C7AF780AD71571BCFC6F66F7CEAEE1E3 /* CMPLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPLog.m; path = Sources/Core/Log/CMPLog.m; sourceTree = "<group>"; };
+		CA2ACC723C73DAA72AAA9D80A4863865 /* CMPAuthenticationChallenge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPAuthenticationChallenge.m; path = Sources/Core/Networking/Templates/Session/Model/CMPAuthenticationChallenge.m; sourceTree = "<group>"; };
+		CA60FE37F95FF891F8E7A7C3C38C6535 /* CMPConversation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPConversation.m; path = Sources/Core/Networking/Templates/Messaging/Model/CMPConversation.m; sourceTree = "<group>"; };
+		CA7800B42F919117512222FE758CA2C1 /* CMPSocketEvents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPSocketEvents.h; path = Sources/Core/Networking/Templates/Event/Model/Socket/CMPSocketEvents.h; sourceTree = "<group>"; };
+		CAD75987450BBC7317ABD28B466C49C4 /* SRWebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SRWebSocket.h; path = SocketRocket/SRWebSocket.h; sourceTree = "<group>"; };
+		CB0F514575941E3D305CCEE548FD9907 /* SocketRocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SocketRocket-dummy.m"; sourceTree = "<group>"; };
+		CB93E5E24CF408A3DC22314675FC3419 /* CMPEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPEvent.h; path = Sources/Core/Networking/Templates/Event/Model/CMPEvent.h; sourceTree = "<group>"; };
+		CD80F7A1DF66F800F5E32234A8AFBFC0 /* CMPGetMessagesTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPGetMessagesTemplate.m; path = Sources/Core/Networking/Templates/Messaging/CMPGetMessagesTemplate.m; sourceTree = "<group>"; };
+		CDB98346ACF4A67E5772E25E564F3EFE /* CMPGetMessagesResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPGetMessagesResult.h; path = Sources/Core/Networking/Templates/Messaging/Model/CMPGetMessagesResult.h; sourceTree = "<group>"; };
+		CF84761A9BB49928912615B1A94F6CDB /* SocketRocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocketRocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFA74F054C8D0F9EF4F4A0092C4BE667 /* CMPParticipantTypingTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPParticipantTypingTemplate.h; path = Sources/Core/Networking/Templates/Messaging/CMPParticipantTypingTemplate.h; sourceTree = "<group>"; };
+		CFF64EAB72A1FCF0497B38C5D4AFD7CF /* NSURLResponse+CMPUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLResponse+CMPUtility.h"; path = "Sources/Core/Utilities/NSURLResponse+CMPUtility.h"; sourceTree = "<group>"; };
+		D2AB33D0B32EF3A9408645C4ACEFBBFC /* CMPSessionService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPSessionService.m; path = Sources/Core/Networking/Services/Session/CMPSessionService.m; sourceTree = "<group>"; };
+		D429D515D92CAB744807847EE6BD6792 /* CMPMessageAlertPlatforms.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPMessageAlertPlatforms.m; path = Sources/Core/Networking/Templates/Messaging/Model/CMPMessageAlertPlatforms.m; sourceTree = "<group>"; };
+		D53AF241472C97D6D1822E973FD09D50 /* CMPJSONConstructable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPJSONConstructable.h; path = Sources/Core/Networking/JSONCoding/CMPJSONConstructable.h; sourceTree = "<group>"; };
+		D570E55F22220F59888CAC2F87C65BEA /* CMPConversationMessageEvents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPConversationMessageEvents.m; path = Sources/Core/Networking/Templates/Event/Model/ConversationMessage/CMPConversationMessageEvents.m; sourceTree = "<group>"; };
+		D66D5368283BCAB151BEB38338317065 /* CMPSocketDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPSocketDelegate.h; path = Sources/Core/Networking/WebSocket/CMPSocketDelegate.h; sourceTree = "<group>"; };
+		D6B512C20964E6D752EA32F1B6ABD05E /* CMPMessageStatus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPMessageStatus.m; path = Sources/Core/Networking/Templates/Messaging/Model/CMPMessageStatus.m; sourceTree = "<group>"; };
+		D7949F82880ECAD292637626EEE0ADA4 /* CMPPendingOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPPendingOperation.h; path = Sources/Core/Networking/RequestManager/CMPPendingOperation.h; sourceTree = "<group>"; };
+		DA3487ADF0654F24B94D597068F81465 /* NSString+CMPUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+CMPUtility.h"; path = "Sources/Core/Utilities/NSString+CMPUtility.h"; sourceTree = "<group>"; };
+		DA938498C56EEC3BF3A95CA31B4A13AF /* CMPSessionAuthProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPSessionAuthProvider.h; path = Sources/Core/Networking/SessionManager/CMPSessionAuthProvider.h; sourceTree = "<group>"; };
+		DB420D1EAD9028307B605C4E8ACEDDCA /* CMPRemoveParticipantsTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPRemoveParticipantsTemplate.h; path = Sources/Core/Networking/Templates/Messaging/CMPRemoveParticipantsTemplate.h; sourceTree = "<group>"; };
+		DB867880E2D75D5D48DA56509A29B30D /* CMPUpdateConversationTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPUpdateConversationTemplate.h; path = Sources/Core/Networking/Templates/Messaging/CMPUpdateConversationTemplate.h; sourceTree = "<group>"; };
+		DBE0A8BEC51C8CA482BF99B3F50CBFD3 /* Pods-raisr-ios-sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-raisr-ios-sdk.debug.xcconfig"; sourceTree = "<group>"; };
+		DECA6ADC81CE44095213206421B8AA78 /* CMPAddConversationTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPAddConversationTemplate.m; path = Sources/Core/Networking/Templates/Messaging/CMPAddConversationTemplate.m; sourceTree = "<group>"; };
+		DEFEEE02FF6F139E6FEF1C369AD03966 /* CMPHTTPHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPHTTPHeader.h; path = Sources/Core/Networking/HTTPHeader/CMPHTTPHeader.h; sourceTree = "<group>"; };
+		DF8DB05925AC028D2D9A1207E19555EC /* CMPDeleteSessionTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPDeleteSessionTemplate.h; path = Sources/Core/Networking/Templates/Session/CMPDeleteSessionTemplate.h; sourceTree = "<group>"; };
+		E0F1418486C0F9D6FE274F61F5FA5599 /* CMPErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPErrors.h; path = Sources/Core/Errors/CMPErrors.h; sourceTree = "<group>"; };
+		E1F5A4522FFDD746AE94DE7AB62C9268 /* CMPPatchProfileTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPPatchProfileTemplate.h; path = Sources/Core/Networking/Templates/Profile/CMPPatchProfileTemplate.h; sourceTree = "<group>"; };
+		E2EF62EE5A0D2FB60A6432A2B906BBA7 /* Pods-raisr-ios-sdk-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-raisr-ios-sdk-Info.plist"; sourceTree = "<group>"; };
+		E491DB90FBDF6F65080A3E8F864CA89E /* SRWebSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SRWebSocket.m; path = SocketRocket/SRWebSocket.m; sourceTree = "<group>"; };
+		E4B3E7ED4F9BD15446C43C75773AE7BE /* CMPConversationEvents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPConversationEvents.m; path = Sources/Core/Networking/Templates/Event/Model/Conversation/CMPConversationEvents.m; sourceTree = "<group>"; };
+		E503564C5FF7E4D67FD85C172BE7B43E /* CMPAPNSDetailsBody.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPAPNSDetailsBody.m; path = Sources/Core/Networking/Templates/Push/Model/CMPAPNSDetailsBody.m; sourceTree = "<group>"; };
+		E547B833451E62AEC06B3D0428E6F9BA /* CMPMessageAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPMessageAlert.h; path = Sources/Core/Networking/Templates/Messaging/Model/CMPMessageAlert.h; sourceTree = "<group>"; };
+		E6D121CAC7448F30C279104259A3CAA4 /* CMPEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPEvent.m; path = Sources/Core/Networking/Templates/Event/Model/CMPEvent.m; sourceTree = "<group>"; };
+		E88ECCB43291B856DE207C31CD6E1C77 /* CMPParticipantTypingTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPParticipantTypingTemplate.m; path = Sources/Core/Networking/Templates/Messaging/CMPParticipantTypingTemplate.m; sourceTree = "<group>"; };
+		EB7651A5F0BE695228ADE50DCBF60347 /* CMPComapiClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPComapiClient.h; path = Sources/Core/Comapi/Client/CMPComapiClient.h; sourceTree = "<group>"; };
+		ECC7AD82DFF2C818A249531D7890665B /* CMPSendStatusUpdateTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPSendStatusUpdateTemplate.h; path = Sources/Core/Networking/Templates/Messaging/CMPSendStatusUpdateTemplate.h; sourceTree = "<group>"; };
+		EDD9783AFFDE7D7F76C81A655F903DBB /* CMPRemoveParticipantsTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPRemoveParticipantsTemplate.m; path = Sources/Core/Networking/Templates/Messaging/CMPRemoveParticipantsTemplate.m; sourceTree = "<group>"; };
+		EE5DA4AB3FC78B371A8F52A48A271CFA /* CMPOrphanedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPOrphanedEvent.m; path = Sources/Core/Networking/Templates/Messaging/Model/CMPOrphanedEvent.m; sourceTree = "<group>"; };
+		F1A995FC927F79ED9B789F04F27CAB0A /* Pods-raisr-ios-sdk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-raisr-ios-sdk.modulemap"; sourceTree = "<group>"; };
+		F3AE333F3514F8CE06624EE6152690C2 /* CMPDeleteConversationTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPDeleteConversationTemplate.m; path = Sources/Core/Networking/Templates/Messaging/CMPDeleteConversationTemplate.m; sourceTree = "<group>"; };
+		F4787B0C705FA2D2BE63D006179C80A0 /* CMPMessageStatusUpdate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPMessageStatusUpdate.m; path = Sources/Core/Networking/Templates/Messaging/Model/CMPMessageStatusUpdate.m; sourceTree = "<group>"; };
+		F5DEC6587DFBBA0F57C01A4E34143EF8 /* NSURLRequest+CMPUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+CMPUtility.h"; path = "Sources/Core/Utilities/NSURLRequest+CMPUtility.h"; sourceTree = "<group>"; };
+		F5EA9A90A85380AE53124BFD50D5B2CE /* CMPHTTPHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPHTTPHeader.m; path = Sources/Core/Networking/HTTPHeader/CMPHTTPHeader.m; sourceTree = "<group>"; };
+		F6575627D3B00FF29D0A2B104B5CEE32 /* NSURLResponse+CMPUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLResponse+CMPUtility.m"; path = "Sources/Core/Utilities/NSURLResponse+CMPUtility.m"; sourceTree = "<group>"; };
+		F730A5C01147FBEB9D22C6E50DDF9189 /* CMPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPSessionManager.h; path = Sources/Core/Networking/SessionManager/CMPSessionManager.h; sourceTree = "<group>"; };
+		F7798D515A535D7BC925555D55123D9A /* CMPUpdateConversationTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPUpdateConversationTemplate.m; path = Sources/Core/Networking/Templates/Messaging/CMPUpdateConversationTemplate.m; sourceTree = "<group>"; };
+		F8A027E00FD0864D96242974EF503CA3 /* CMPMessageDeliveryStatus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPMessageDeliveryStatus.m; path = Sources/Core/Networking/Templates/Messaging/Model/CMPMessageDeliveryStatus.m; sourceTree = "<group>"; };
+		FACBEEB3AE6F0994C6527AA4A1FDEFD1 /* CMPOrphanedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPOrphanedEvent.h; path = Sources/Core/Networking/Templates/Messaging/Model/CMPOrphanedEvent.h; sourceTree = "<group>"; };
+		FBCC3F80B254A2219C826F352BFA2B69 /* CMPGetConversationTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPGetConversationTemplate.m; path = Sources/Core/Networking/Templates/Messaging/CMPGetConversationTemplate.m; sourceTree = "<group>"; };
+		FE49B754FC11A23C4D7415E467D63903 /* CMPSocketManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPSocketManager.h; path = Sources/Core/Networking/WebSocket/CMPSocketManager.h; sourceTree = "<group>"; };
+		FFCE2363D63769C520865E9E5234E019 /* NSURLRequest+CMPUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLRequest+CMPUtility.m"; path = "Sources/Core/Utilities/NSURLRequest+CMPUtility.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A93184D3F11D32B022AC79306EBAA9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB789B057CE3F9526EEE86388AAEF0AA /* Foundation.framework in Frameworks */,
+				7D5184CDE1813F9BBAAD07E35122AEF0 /* SocketRocket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53CABA8E63BC9BF6DC08446438C680A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				479B19D3D95B449A2188E60BB2C9CDB2 /* CFNetwork.framework in Frameworks */,
+				E11CE66D0DF693ADC5FC2BB8427EDAE4 /* Foundation.framework in Frameworks */,
+				61E87147455B9B1CA128A637B223785A /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBD8506E5C17E430FA60FBB88A8FF550 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B699C9782B1FF0EC6BD15DC1628CB140 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09F3E6A1737F6BAC5C6BB2A9EAE1C413 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF84761A9BB49928912615B1A94F6CDB /* SocketRocket.framework */,
+				84F34EABADC4425D0B6A066617C46D81 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21978D51319376153C763DB21C4AD3B3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1DBF5A51F34AA5761078CF712B9F341 /* Pods-raisr-ios-sdk */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2D8F317577EE13E9961C4F48940D924E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BF2069826ADBA019EF71096118D8352 /* CMPComapiFoundation.framework */,
+				6459F50D88287C61D3C515346AD63CE8 /* Pods_raisr_ios_sdk.framework */,
+				85A01882ED06DFEA2E0CE78BCDB204A7 /* SocketRocket.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33CB8D5CA7F9D0694CC1205F63ADAC64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				365E76A1827568268ABF4F55166A7608 /* CMPComapiFoundation */,
+				F039D2A4EDA545BF7B94B45022EDBC56 /* SocketRocket */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		365E76A1827568268ABF4F55166A7608 /* CMPComapiFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				461E92ABC1866BF89FA16EF3CDDC9519 /* CMPAddConversationTemplate.h */,
+				DECA6ADC81CE44095213206421B8AA78 /* CMPAddConversationTemplate.m */,
+				C7956B0108DCFED48505C5A089F14475 /* CMPAddParticipantsTemplate.h */,
+				8214C93B0DB992361B42829D26DF6885 /* CMPAddParticipantsTemplate.m */,
+				7CDF047B1E9590FB50AD6BE5C4F49725 /* CMPAPIConfiguration.h */,
+				C357C4FA32E728E61276D30E8E1C9C19 /* CMPAPIConfiguration.m */,
+				7668092440059CDA8EAC3490C74CDFEF /* CMPAPNSDetails.h */,
+				62079A97FB9B71B72D9ACEEACA72C22D /* CMPAPNSDetails.m */,
+				1608FBF7A7392842BDB4BE72B650572F /* CMPAPNSDetailsBody.h */,
+				E503564C5FF7E4D67FD85C172BE7B43E /* CMPAPNSDetailsBody.m */,
+				0F9441BE5D60D2E36B44FE086F52D1DA /* CMPAuthChallengeHandler.h */,
+				57E3081CA24F91072052DC25A9FC8BBC /* CMPAuthenticationChallenge.h */,
+				CA2ACC723C73DAA72AAA9D80A4863865 /* CMPAuthenticationChallenge.m */,
+				2D5E6ED3B15439B08BA37EC06C192A7A /* CMPAuthenticationDelegate.h */,
+				532716A352D3873F395A8610D50E19C8 /* CMPAuthorizeSessionBody.h */,
+				14D96CE15485759C1B50EA8BC2C66091 /* CMPAuthorizeSessionBody.m */,
+				0592C1608C6EF2E26A830F57BF4229F4 /* CMPAuthorizeSessionTemplate.h */,
+				919C6DE17EBE644B562F6FB2102601E3 /* CMPAuthorizeSessionTemplate.m */,
+				432BF604F1FD848615DC45BC69C9E3BA /* CMPBaseService.h */,
+				75CCCE43E4651B019AAB8711E8C064C5 /* CMPBaseService.m */,
+				88CB9AB72E25C29E60F9D3103563F9BC /* CMPBroadcastDelegate.h */,
+				A31F8E4DD4B3CEF9098057EA40255E4A /* CMPBroadcastDelegate.m */,
+				824B80081EA99EA31343268C18B685A4 /* CMPComapi.h */,
+				546168708C5D490DA0B16C75EFEC68D9 /* CMPComapi.m */,
+				EB7651A5F0BE695228ADE50DCBF60347 /* CMPComapiClient.h */,
+				6EEB7A522F7640B1A1530D8C14F3379C /* CMPComapiClient.m */,
+				4C67DB9F0CA45F2D2BDC1D58E25FB14F /* CMPComapiConfig.h */,
+				437B47F9C24144B62D1A03A65DF000EC /* CMPComapiConfig.m */,
+				9965178ED559E566910B49C4707B42B3 /* CMPComapiConfigBuilder.h */,
+				13A2C7F69E740FA36A4A52481F21163B /* CMPComapiConfigBuilder.m */,
+				10542490AAE30C0DE96A5664D93357D3 /* CMPComapiFoundation.h */,
+				2A5D11327947466DD899823747281AFE /* CMPConstants.h */,
+				0D27FDBCF30F7F6D43F6688C9A64D380 /* CMPConstants.m */,
+				60B8D128111E58B1F46F083D8AFC102C /* CMPContentData.h */,
+				91031A058755BDD23B729EBFB3B1BA1A /* CMPContentData.m */,
+				AF3190A73F72CF417CC709F588110840 /* CMPContentUploadResult.h */,
+				3B27FCB99A099BF44999FA1AAE9BA312 /* CMPContentUploadResult.m */,
+				A4C3161B69877E9622847A1A866A60D3 /* CMPContentUploadTemplate.h */,
+				64A52204D09A0B8CABE7109EDE8AFB4E /* CMPContentUploadTemplate.m */,
+				39CD4FB3410ECC213611C784B0A856E0 /* CMPConversation.h */,
+				CA60FE37F95FF891F8E7A7C3C38C6535 /* CMPConversation.m */,
+				2BA835C61B6D4A63C72C5C241DFD70CC /* CMPConversationEvents.h */,
+				E4B3E7ED4F9BD15446C43C75773AE7BE /* CMPConversationEvents.m */,
+				67B6AE95AD5F8964BD373037C84ADF09 /* CMPConversationMessageEvents.h */,
+				D570E55F22220F59888CAC2F87C65BEA /* CMPConversationMessageEvents.m */,
+				752CEEAABF642BF10B56FBDEB0E0AB69 /* CMPConversationParticipant.h */,
+				325F88B1E4BB5FE0691FF21EEE8F4028 /* CMPConversationParticipant.m */,
+				54D255BC438673D999484F53D910466C /* CMPConversationScope.h */,
+				7AE5813865E468848C3B68BA6D4AFEA0 /* CMPConversationUpdate.h */,
+				04C03D765B46D9190324E5D7064A801D /* CMPConversationUpdate.m */,
+				54A715AFB02B9A498A58E011E3039A61 /* CMPDeleteConversationTemplate.h */,
+				F3AE333F3514F8CE06624EE6152690C2 /* CMPDeleteConversationTemplate.m */,
+				DF8DB05925AC028D2D9A1207E19555EC /* CMPDeleteSessionTemplate.h */,
+				892A63FA89DB484E1B4CAA7D565DAAA8 /* CMPDeleteSessionTemplate.m */,
+				E0F1418486C0F9D6FE274F61F5FA5599 /* CMPErrors.h */,
+				BD2C8A23B41921C3B9EFC9DCE9B87A23 /* CMPErrors.m */,
+				CB93E5E24CF408A3DC22314675FC3419 /* CMPEvent.h */,
+				E6D121CAC7448F30C279104259A3CAA4 /* CMPEvent.m */,
+				6E156A2848FF23DEC5F5668D5428886A /* CMPEventDelegate.h */,
+				726A2EC61027E0DFDD75FD5D1AF10F50 /* CMPEventParser.h */,
+				73BE332D320CA4181ED091A84864897A /* CMPEventParser.m */,
+				5D3F47ACA3B7EAFDF5CB80A369A75EB6 /* CMPEventQueryTemplate.h */,
+				1B78F82AF0EC488BC37A1F6EC4363C38 /* CMPEventQueryTemplate.m */,
+				8434B8212CD3B6EBE38C04023F40A4F3 /* CMPFileDestination.h */,
+				74A1AB815BDEA4E2812596186338B52F /* CMPFileDestination.m */,
+				6050D38ACCCD7F68AF562D2A3A43AD7C /* CMPGetConversationsTemplate.h */,
+				B6A9778A2DD666C1362FBC9EEF0C3072 /* CMPGetConversationsTemplate.m */,
+				A6265D7FFC563E09C127BD77BB237394 /* CMPGetConversationTemplate.h */,
+				FBCC3F80B254A2219C826F352BFA2B69 /* CMPGetConversationTemplate.m */,
+				CDB98346ACF4A67E5772E25E564F3EFE /* CMPGetMessagesResult.h */,
+				2C48147BAD0AE76169C914865B93AF2C /* CMPGetMessagesResult.m */,
+				025BDC39537B627CDFD437A97CB0ECCC /* CMPGetMessagesTemplate.h */,
+				CD80F7A1DF66F800F5E32234A8AFBFC0 /* CMPGetMessagesTemplate.m */,
+				3AA5609766C49A78052141049E29D16C /* CMPGetParticipantsTemplate.h */,
+				2E7226974F7FF1FB5EBFA640DF62AEAD /* CMPGetParticipantsTemplate.m */,
+				AC233B4A6F0972291D272C30FCF65BBC /* CMPGetProfileTemplate.h */,
+				07AC650C012BDFC1114EB5DB6BAA5A77 /* CMPGetProfileTemplate.m */,
+				DEFEEE02FF6F139E6FEF1C369AD03966 /* CMPHTTPHeader.h */,
+				F5EA9A90A85380AE53124BFD50D5B2CE /* CMPHTTPHeader.m */,
+				092DD45BAEA02301362F5A4C20307132 /* CMPHTTPRequestTemplate.h */,
+				D53AF241472C97D6D1822E973FD09D50 /* CMPJSONConstructable.h */,
+				4CCC19C4211CBF52D82B872B793E5718 /* CMPJSONDecoding.h */,
+				8D20ED0B6F46F1621F3737E3FDCC91CC /* CMPJSONEncoding.h */,
+				903D6EA9532F318A3B452634CC416812 /* CMPJSONRepresentable.h */,
+				AB44456778266D12DEF6EDC2FA50251E /* CMPKeychain.h */,
+				68D5434A737E0AC891C054E3C5731426 /* CMPKeychain.m */,
+				337D67FF119E2F7DD67B89D567EEE03F /* CMPLog.h */,
+				C7AF780AD71571BCFC6F66F7CEAEE1E3 /* CMPLog.m */,
+				A06C21AA8FF87423A8FA1BFBC5FF1239 /* CMPLogConfig.h */,
+				3207801291384E64DDAF574BC38823E2 /* CMPLogConfig.m */,
+				4D27F3649BB469133ED514640CF9E0DD /* CMPLogger.h */,
+				1D038511CA4ABCF2390FFCF04214FB59 /* CMPLogger.m */,
+				18C8D243F9C8A218A19620CC58942C82 /* CMPLoggingDestination.h */,
+				2D3AC32B6BD7C8974D4252E6735E4E95 /* CMPLogLevel.h */,
+				6DF94694B30B70F37DBCA2C5B6E9D369 /* CMPLogLevel.m */,
+				7CCA367C13AF2F2999B9BF7904C6DF36 /* CMPMessage.h */,
+				2CD28A7DFD1E48C5DBDAB89914AB0CC3 /* CMPMessage.m */,
+				E547B833451E62AEC06B3D0428E6F9BA /* CMPMessageAlert.h */,
+				24356BB2CCCB42520BD73F95604860DA /* CMPMessageAlert.m */,
+				31DFE55BF0F5D9162E142CB4DCB55E7A /* CMPMessageAlertPlatforms.h */,
+				D429D515D92CAB744807847EE6BD6792 /* CMPMessageAlertPlatforms.m */,
+				21A35324C59069CC3EDE42BCCFF8B477 /* CMPMessageContext.h */,
+				A57C2ADF31CB2D3B0604E423C73FD5DE /* CMPMessageContext.m */,
+				1D9A4279DFEDD74AE904A45CC4D85F34 /* CMPMessageDeliveryStatus.h */,
+				F8A027E00FD0864D96242974EF503CA3 /* CMPMessageDeliveryStatus.m */,
+				12A9E3FC40886EA410407A3114EE3A92 /* CMPMessagePart.h */,
+				2C79C925F535B58A02AFDA42EFCDFE5D /* CMPMessagePart.m */,
+				BFBEA84BA35A6E9FE558474931EDDF28 /* CMPMessageParticipant.h */,
+				55C71552ADE6AF7C010D170D3B32E056 /* CMPMessageParticipant.m */,
+				36E0DB8218EE5AD483EAEB69A65D5F5D /* CMPMessageStatus.h */,
+				D6B512C20964E6D752EA32F1B6ABD05E /* CMPMessageStatus.m */,
+				0AF4E12881EF4708F80C26172D55E046 /* CMPMessageStatusUpdate.h */,
+				F4787B0C705FA2D2BE63D006179C80A0 /* CMPMessageStatusUpdate.m */,
+				45F16D09910FEA8A06C2C3D69FA0FF28 /* CMPMessagingService.h */,
+				819CE5496C66FD1652B4D73E008D28CC /* CMPMessagingService.m */,
+				0875CC7DD30DE3D2941509D2CEA85BB2 /* CMPNewConversation.h */,
+				038E303AF17AF6C6935F8D3715E02180 /* CMPNewConversation.m */,
+				FACBEEB3AE6F0994C6527AA4A1FDEFD1 /* CMPOrphanedEvent.h */,
+				EE5DA4AB3FC78B371A8F52A48A271CFA /* CMPOrphanedEvent.m */,
+				81331BDB9A3DE621974703B717632481 /* CMPParticipantTypingOffTemplate.h */,
+				8326D8C466495149D2000014B5DE0AA8 /* CMPParticipantTypingOffTemplate.m */,
+				CFA74F054C8D0F9EF4F4A0092C4BE667 /* CMPParticipantTypingTemplate.h */,
+				E88ECCB43291B856DE207C31CD6E1C77 /* CMPParticipantTypingTemplate.m */,
+				E1F5A4522FFDD746AE94DE7AB62C9268 /* CMPPatchProfileTemplate.h */,
+				9409226DC64C8FBF6F7D0CB96EE5BD0F /* CMPPatchProfileTemplate.m */,
+				D7949F82880ECAD292637626EEE0ADA4 /* CMPPendingOperation.h */,
+				7B87604922E3458A85550BD4614048B0 /* CMPProfile.h */,
+				638ED98E3252D9B841F632CE5D10F095 /* CMPProfile.m */,
+				1C719DB099701D67F48F5FC0C6C0922A /* CMPProfileEvents.h */,
+				36969B201790CE9FB99536ABA51D5BCE /* CMPProfileEvents.m */,
+				44B214219A475BCB4961E6BA07EC0E72 /* CMPProfileService.h */,
+				29B9F10B2FB76DA53F9DD58099B1C667 /* CMPProfileService.m */,
+				98D7C3CA3B179C4A4A365ADD66AED129 /* CMPQueryBuilder.h */,
+				5B24B4288DC0C800CBE983D1F93C5B57 /* CMPQueryBuilder.m */,
+				9AB81BD8B6D15AD3F34A954F62F59ABC /* CMPQueryProfilesTemplate.h */,
+				3F68578494B60C95EEFA6E1FB610DC28 /* CMPQueryProfilesTemplate.m */,
+				DB420D1EAD9028307B605C4E8ACEDDCA /* CMPRemoveParticipantsTemplate.h */,
+				EDD9783AFFDE7D7F76C81A655F903DBB /* CMPRemoveParticipantsTemplate.m */,
+				A07897BF836BF58FA32C92FA6C8C71BE /* CMPRequestManager.h */,
+				A7A98B4C5DD2D24DC472238E38EB4FB1 /* CMPRequestManager.m */,
+				146CCAB172372602FF53C5E209019AAE /* CMPRequestManagerDelegate.h */,
+				C637BB1F11B8F595654FEFBA173BC428 /* CMPRequestPerformer.h */,
+				7423A33A15ECDE5EC2B2F7E5207E3654 /* CMPRequestPerformer.m */,
+				57EC8BACF258E28EF0BF075B35CA2B40 /* CMPRequestPerforming.h */,
+				12C623E2EF63A1417BCD858BAE74EB42 /* CMPRequestTemplate.h */,
+				70E0314C62C5661688D748F33DFBEC10 /* CMPRequestTemplate.m */,
+				8B85400CDAE3203388E5C934F6F3AD61 /* CMPResult.h */,
+				A1AE240C405DFCBFC7F7259F17B33C10 /* CMPResult.m */,
+				B2A00D2255D45759A5549551E8CCB10E /* CMPRole.h */,
+				7049A23F898D5BF3EEB7E111542E970D /* CMPRole.m */,
+				648F865E07F813FDA75CBBD23B83523C /* CMPRoleAttributes.h */,
+				AD956C970EFD785BD88D4D539030C075 /* CMPRoleAttributes.m */,
+				93A4DB78344A67F28C3C065851A57304 /* CMPRoles.h */,
+				832FDEABCE805F23A9AA230A242B5681 /* CMPRoles.m */,
+				1301719AACD546E551AFB8C57F0EC799 /* CMPSDKState.h */,
+				0CB1D1040150973C37FDF89DB797D256 /* CMPSendableMessage.h */,
+				991AB61F6D6FB1DA96F819221A9DB113 /* CMPSendableMessage.m */,
+				C0CF1A21F2FDADDDFC5EA39BCB1EFB38 /* CMPSendMessagesResult.h */,
+				9C3146AFEFEE46E3D9C16CF0A2573740 /* CMPSendMessagesResult.m */,
+				89445636F7416107C69661A3E58D4E15 /* CMPSendMessagesTemplate.h */,
+				412E2CA76F882B022B8F5D856D5C69B6 /* CMPSendMessagesTemplate.m */,
+				ECC7AD82DFF2C818A249531D7890665B /* CMPSendStatusUpdateTemplate.h */,
+				2E8790F7263790A0F27364EAB57E5E5E /* CMPSendStatusUpdateTemplate.m */,
+				5A6712625ABF00814725D3C16B5E8D8E /* CMPServices.h */,
+				C472C40DE9EC88FF4B757DD094E691A8 /* CMPServices.m */,
+				6D5FFC445A7A1ABFD727CDF1EB23DA2B /* CMPSession.h */,
+				017A2C6E1DCCF234D766BA38A817A6A0 /* CMPSession.m */,
+				473DDF37192450B585A7A2379E2BD303 /* CMPSessionAuth.h */,
+				3E93D4622F75A4117D9DDECA441142A6 /* CMPSessionAuth.m */,
+				DA938498C56EEC3BF3A95CA31B4A13AF /* CMPSessionAuthProvider.h */,
+				67A87B5A28DBE0BBF3F41AD78CA2F359 /* CMPSessionDelegate.h */,
+				F730A5C01147FBEB9D22C6E50DDF9189 /* CMPSessionManager.h */,
+				B65A2C42607E313BEB5F3B32F3A1441C /* CMPSessionManager.m */,
+				4C4CCBFB924E0F17D282B6DDABD3E562 /* CMPSessionService.h */,
+				D2AB33D0B32EF3A9408645C4ACEFBBFC /* CMPSessionService.m */,
+				C47CDC0222D768EEABF812FDA1C37166 /* CMPSetAPNSDetailsTemplate.h */,
+				193B8EC46DCA08E65FE24EF17DA27BFE /* CMPSetAPNSDetailsTemplate.m */,
+				D66D5368283BCAB151BEB38338317065 /* CMPSocketDelegate.h */,
+				CA7800B42F919117512222FE758CA2C1 /* CMPSocketEvents.h */,
+				A238C2D3DECF733376FD09EBD5FE8DFC /* CMPSocketEvents.m */,
+				FE49B754FC11A23C4D7415E467D63903 /* CMPSocketManager.h */,
+				32BA0CB13091169206CA745B93EF386F /* CMPSocketManager.m */,
+				5076172B15AD92BF3A4670796BFE7063 /* CMPSocketTemplate.h */,
+				4C9F639F90587C1AA26D2AD293120B72 /* CMPSocketTemplate.m */,
+				7F6FB00373802F6A558DD0E4DB1A93FD /* CMPStartNewSessionTemplate.h */,
+				882BB3DC143508EC308A3B1F74823257 /* CMPStartNewSessionTemplate.m */,
+				604FC493552F1D0CA0E5D1A926737813 /* CMPStateDelegate.h */,
+				2A9EFF600BF3097DB174FA20C746DF95 /* CMPTokenState.h */,
+				DB867880E2D75D5D48DA56509A29B30D /* CMPUpdateConversationTemplate.h */,
+				F7798D515A535D7BC925555D55123D9A /* CMPUpdateConversationTemplate.m */,
+				19F011E6CBBD5F98C9E734B84C8B7D2B /* CMPUpdateProfileTemplate.h */,
+				550D111986308612BCD6628BF5151D71 /* CMPUpdateProfileTemplate.m */,
+				31892F824BA3FA6487E1CF847FEB2DFD /* CMPURLResult.h */,
+				19E10668FD0B4E14689E54AB2002A2D1 /* CMPURLResult.m */,
+				51C3999D92BE2863AF7E3CC5D52A7386 /* CMPXcodeConsoleDestination.h */,
+				4C1457739CD7E7EC8B811F20C419DF70 /* CMPXcodeConsoleDestination.m */,
+				A4F10B68A46CB1B138634E7AE264A314 /* NSData+CMPUtility.h */,
+				55F28429E7DDCD9CF27EF0F5B769987E /* NSData+CMPUtility.m */,
+				803FBA4C317172C211F3C69AD566330C /* NSDate+CMPUtility.h */,
+				541880D10F488304C3307902930AD8C8 /* NSDate+CMPUtility.m */,
+				80CCA5698D32BAA3FB38D9313477474E /* NSDateFormatter+CMPUtility.h */,
+				9D62F21BE2C67914C97F5362CDDA64BD /* NSDateFormatter+CMPUtility.m */,
+				DA3487ADF0654F24B94D597068F81465 /* NSString+CMPUtility.h */,
+				AE9F217918C339ACB9E79D34080FDCBB /* NSString+CMPUtility.m */,
+				F5DEC6587DFBBA0F57C01A4E34143EF8 /* NSURLRequest+CMPUtility.h */,
+				FFCE2363D63769C520865E9E5234E019 /* NSURLRequest+CMPUtility.m */,
+				CFF64EAB72A1FCF0497B38C5D4AFD7CF /* NSURLResponse+CMPUtility.h */,
+				F6575627D3B00FF29D0A2B104B5CEE32 /* NSURLResponse+CMPUtility.m */,
+				3753AEBEE6B3433578FEC13834288C88 /* Support Files */,
+			);
+			name = CMPComapiFoundation;
+			path = CMPComapiFoundation;
+			sourceTree = "<group>";
+		};
+		3753AEBEE6B3433578FEC13834288C88 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				31B51871E9C2C2B560F331ECFB6861CD /* CMPComapiFoundation.modulemap */,
+				AE287B1E2A39ABB0BDD61A104711FD8B /* CMPComapiFoundation-dummy.m */,
+				75EA5EB03F88E1BFE644388D0BE4AE98 /* CMPComapiFoundation-Info.plist */,
+				390FF3B46115E1DB76E6BD5BA7C0EA4C /* CMPComapiFoundation-prefix.pch */,
+				BDE4A21206FA36AAC29BD9BE6268DB48 /* CMPComapiFoundation.debug.xcconfig */,
+				36D424265DD0850C9C93235D6D59F2DA /* CMPComapiFoundation.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CMPComapiFoundation";
+			sourceTree = "<group>";
+		};
+		84F34EABADC4425D0B6A066617C46D81 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5CA5607281B977E9F73E77EA51BCAFE7 /* CFNetwork.framework */,
+				2F8916CD1D3F2CBEE911D94D346FC9DC /* Foundation.framework */,
+				B6686B131596461C96AAADDADF0DC2C0 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C650B33B79E1B36DD743253DF4E9D66F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFBE592DBAEA2446F3470785BEA35492 /* SocketRocket.modulemap */,
+				CB0F514575941E3D305CCEE548FD9907 /* SocketRocket-dummy.m */,
+				C5075EB4E23C21EEB51C189386D1A026 /* SocketRocket-Info.plist */,
+				44BA5847ADF16A99F99D6E49638B875C /* SocketRocket-prefix.pch */,
+				068BADD5644A9E0C70AB2A3FEB86C0B3 /* SocketRocket-umbrella.h */,
+				750DB639431994DE9841B842AA2E1B14 /* SocketRocket.debug.xcconfig */,
+				40878E0FBC8FE608EEC8362E149DDB16 /* SocketRocket.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SocketRocket";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				09F3E6A1737F6BAC5C6BB2A9EAE1C413 /* Frameworks */,
+				33CB8D5CA7F9D0694CC1205F63ADAC64 /* Pods */,
+				2D8F317577EE13E9961C4F48940D924E /* Products */,
+				21978D51319376153C763DB21C4AD3B3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D1DBF5A51F34AA5761078CF712B9F341 /* Pods-raisr-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				F1A995FC927F79ED9B789F04F27CAB0A /* Pods-raisr-ios-sdk.modulemap */,
+				AA884918135B7738A6AD94E57A238219 /* Pods-raisr-ios-sdk-acknowledgements.markdown */,
+				67CCF92D608D454254C4A2097A28F229 /* Pods-raisr-ios-sdk-acknowledgements.plist */,
+				8BA5636828C55031D686A62271DF69F3 /* Pods-raisr-ios-sdk-dummy.m */,
+				E2EF62EE5A0D2FB60A6432A2B906BBA7 /* Pods-raisr-ios-sdk-Info.plist */,
+				9091C9BC375FF540935C838EE099CA4B /* Pods-raisr-ios-sdk-umbrella.h */,
+				DBE0A8BEC51C8CA482BF99B3F50CBFD3 /* Pods-raisr-ios-sdk.debug.xcconfig */,
+				C4E3C36EA73F4A5DFEDBF548F3EA357B /* Pods-raisr-ios-sdk.release.xcconfig */,
+			);
+			name = "Pods-raisr-ios-sdk";
+			path = "Target Support Files/Pods-raisr-ios-sdk";
+			sourceTree = "<group>";
+		};
+		F039D2A4EDA545BF7B94B45022EDBC56 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				AFC53326AE93AF3C526081FF9996FC43 /* SocketRocket.h */,
+				CAD75987450BBC7317ABD28B466C49C4 /* SRWebSocket.h */,
+				E491DB90FBDF6F65080A3E8F864CA89E /* SRWebSocket.m */,
+				C650B33B79E1B36DD743253DF4E9D66F /* Support Files */,
+			);
+			name = SocketRocket;
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0A84A4BFEC238F26695193A7A7129A95 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				257A76A22FF08B4AD5EEBA2E40425768 /* SocketRocket-umbrella.h in Headers */,
+				0609D67DA2B272806A82DAAB6F0AC37A /* SocketRocket.h in Headers */,
+				47581CD17AF3450299931310AA370C26 /* SRWebSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58631303DAA48164C17372DB5C4438DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9E892E6D1C5712D3940B4DD1D665A7 /* Pods-raisr-ios-sdk-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E56D125A54B619E5F512DE4268802675 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EFAD2A19C88595EE67BE612E594C206 /* CMPAddConversationTemplate.h in Headers */,
+				90E54181809BD966E3F5C6E897A5C420 /* CMPAddParticipantsTemplate.h in Headers */,
+				174EEB7AD7C29635A10EAFF276CD17F0 /* CMPAPIConfiguration.h in Headers */,
+				30550B3B36AF10DD9F6566207B81F934 /* CMPAPNSDetails.h in Headers */,
+				EDC364AEBE91571368368A9131ECE049 /* CMPAPNSDetailsBody.h in Headers */,
+				ED90241861E9B4FDD2485C1B2DD6A7AE /* CMPAuthChallengeHandler.h in Headers */,
+				88D46AF1B3855BDE134CB40E27E8D702 /* CMPAuthenticationChallenge.h in Headers */,
+				BADAAE8EDD82485F8D5EBBE0A7F1A88D /* CMPAuthenticationDelegate.h in Headers */,
+				9C8FA952AEF78D42902A2B02A44E5618 /* CMPAuthorizeSessionBody.h in Headers */,
+				9CDCB4987AF1D587F5D935A995C30BD3 /* CMPAuthorizeSessionTemplate.h in Headers */,
+				A96995E34D6C7EB881FF7514FCA293E1 /* CMPBaseService.h in Headers */,
+				732AB807B7C2E11D68CFA8330024D30D /* CMPBroadcastDelegate.h in Headers */,
+				92FF1167B3749742BA65CE330204C4DE /* CMPComapi.h in Headers */,
+				B9C19E92BFFA259AFEF0D32A0178795C /* CMPComapiClient.h in Headers */,
+				98B64D9E74E48B8DA86AAA5720CF13E4 /* CMPComapiConfig.h in Headers */,
+				62B345E81C8B8A25C2C63036FCB13978 /* CMPComapiConfigBuilder.h in Headers */,
+				1F4F72778374FE163A4245B69A8FA890 /* CMPComapiFoundation.h in Headers */,
+				F7223FE1D558A3980F202DD0064D8025 /* CMPConstants.h in Headers */,
+				0F260D507C98C60C688BB8C4588F1BE1 /* CMPContentData.h in Headers */,
+				492DC93E4A523A40C0BADA99D3B2D3C3 /* CMPContentUploadResult.h in Headers */,
+				83E587C2D8304A52BC2034DDC78315D2 /* CMPContentUploadTemplate.h in Headers */,
+				CFEDC399E4B863C2FDAD26C45115AF87 /* CMPConversation.h in Headers */,
+				A2EA4EE7DCC238992EE99B9F5C6157BF /* CMPConversationEvents.h in Headers */,
+				416D0832541B0D971FBAE52734E78BDA /* CMPConversationMessageEvents.h in Headers */,
+				17EE1AC14E11F972FF97EDEA5FD367EF /* CMPConversationParticipant.h in Headers */,
+				221A69731CFC22FF63C437AC7523AD8F /* CMPConversationScope.h in Headers */,
+				87D56C727F292B83973871129D2DA61F /* CMPConversationUpdate.h in Headers */,
+				7EFAF6DC273B12DBE751D1E7E5054670 /* CMPDeleteConversationTemplate.h in Headers */,
+				712ED8118F3F2B5FB20A6DE851C54912 /* CMPDeleteSessionTemplate.h in Headers */,
+				F7433E708F493DF59851691401CF9C88 /* CMPErrors.h in Headers */,
+				D4780EF40C065CE498F2DE34F2E7DA67 /* CMPEvent.h in Headers */,
+				1640DABBB773E336F81B36AB8A6B9777 /* CMPEventDelegate.h in Headers */,
+				8BCA01542E01FCCCB9ECA49F5FDFA049 /* CMPEventParser.h in Headers */,
+				3054CDC4AB41F23DFA211D43F71E0301 /* CMPEventQueryTemplate.h in Headers */,
+				565D7ECFE672E22AEF459805A6C917B8 /* CMPFileDestination.h in Headers */,
+				89DC2AEE8A9F6A56FB048590C3CD6270 /* CMPGetConversationsTemplate.h in Headers */,
+				EB31345E45D56D8839144BE969DA2B41 /* CMPGetConversationTemplate.h in Headers */,
+				BAD360420107B8196F77A93E148CEEB6 /* CMPGetMessagesResult.h in Headers */,
+				3EFC3CF1198DCF7B3DABD13DA2B9D599 /* CMPGetMessagesTemplate.h in Headers */,
+				3F7E5DEA2A8C02BF91DED899580EB2D4 /* CMPGetParticipantsTemplate.h in Headers */,
+				A2298BDE7F4BB37E2D7D483ED2D598B6 /* CMPGetProfileTemplate.h in Headers */,
+				8AC74EF6E5BE9C1772CB0A6BCE7AA76F /* CMPHTTPHeader.h in Headers */,
+				E06368F84ECBB44064D1C87C19300B0D /* CMPHTTPRequestTemplate.h in Headers */,
+				5F650455525080A779071ACB3A4B2890 /* CMPJSONConstructable.h in Headers */,
+				3F6DC2AD259BD7853A5E5B9CB86F5336 /* CMPJSONDecoding.h in Headers */,
+				6DCD5F29D8B589743F8EBF481E6B1E40 /* CMPJSONEncoding.h in Headers */,
+				9A9FC899D1949B51915F25B1E4D94AD8 /* CMPJSONRepresentable.h in Headers */,
+				7E1CEEEEF32ECCDBA9482A28E580564E /* CMPKeychain.h in Headers */,
+				4EEF360DE840F260202699AAADC66B76 /* CMPLog.h in Headers */,
+				B021E2F3B527955AA76CD40F36E7CED7 /* CMPLogConfig.h in Headers */,
+				E7A1994C3014E3316EB6F280B5BAA040 /* CMPLogger.h in Headers */,
+				EE7EBF6C4F4AA474EFF2F59B6639A830 /* CMPLoggingDestination.h in Headers */,
+				AF41E0AACCC0A65EC36C5B044110B829 /* CMPLogLevel.h in Headers */,
+				53194F7C88BC60E8945BDAD1B805A120 /* CMPMessage.h in Headers */,
+				21CA9457D9FDBDB4A6BF5D090B5B26B4 /* CMPMessageAlert.h in Headers */,
+				C86FEE0D241FD1E37FBA4356B1A32D75 /* CMPMessageAlertPlatforms.h in Headers */,
+				4CBEAE07CFB0A7DF2DA10A8A23219BF5 /* CMPMessageContext.h in Headers */,
+				5329FC58A8CF99937BC906A073712432 /* CMPMessageDeliveryStatus.h in Headers */,
+				06AA4D4FC66E06CA775AD66648A6263D /* CMPMessagePart.h in Headers */,
+				5DD6651271D7DC4704686A1DFB2DB170 /* CMPMessageParticipant.h in Headers */,
+				266F2AC0EDCE2179BA418764701C4C92 /* CMPMessageStatus.h in Headers */,
+				DBB012EC66219B26D38E067443FD7DA4 /* CMPMessageStatusUpdate.h in Headers */,
+				8B6A7BFD4C4BB693CB22DA93B14C3182 /* CMPMessagingService.h in Headers */,
+				85F675A54EE8D1D84B02D6F0C532633A /* CMPNewConversation.h in Headers */,
+				2A2D1D88A40445717D9985DF69AE3E5B /* CMPOrphanedEvent.h in Headers */,
+				BBAE4E119BB0AF170454EF76C31E53DD /* CMPParticipantTypingOffTemplate.h in Headers */,
+				285A60DA540761BC71C912644465D57A /* CMPParticipantTypingTemplate.h in Headers */,
+				B1535C2EEF96303C0AB584C4FC4A4D3A /* CMPPatchProfileTemplate.h in Headers */,
+				59EBE03D36C7B4FF547C45742FA6AAFC /* CMPPendingOperation.h in Headers */,
+				7D2A262000A34EF4B0C920CBD45D36D3 /* CMPProfile.h in Headers */,
+				61F1DA4982F402EFCFC161085826F2A5 /* CMPProfileEvents.h in Headers */,
+				8EFF845C5D12E7E7E7B14901A0F36C1B /* CMPProfileService.h in Headers */,
+				7B2E184FBD434D58876F53540AC3381D /* CMPQueryBuilder.h in Headers */,
+				A8625B5AD0C4CBD5E8FD7B3B4D10B6A6 /* CMPQueryProfilesTemplate.h in Headers */,
+				D1105FF008BF58793B67C5D4EA052E5B /* CMPRemoveParticipantsTemplate.h in Headers */,
+				D6AF5859C573FE7BAD4C9B3E7550CF93 /* CMPRequestManager.h in Headers */,
+				D349B7200504BF36CA9A4D169E3F7297 /* CMPRequestManagerDelegate.h in Headers */,
+				A66717D4D948A95665438AFA7CE8EECF /* CMPRequestPerformer.h in Headers */,
+				83953911E2F7562F05799B78058A58DE /* CMPRequestPerforming.h in Headers */,
+				A62FECDDB6674586D65E9BDF09D872AB /* CMPRequestTemplate.h in Headers */,
+				67345BA20A8FD6F4A735AE64F7EAD4E5 /* CMPResult.h in Headers */,
+				4043170EA6B558DEE7ADA6EB3020A41E /* CMPRole.h in Headers */,
+				C953C90867F436BC4FAD27D07A786EF0 /* CMPRoleAttributes.h in Headers */,
+				DAC2508CEDE7B2D05DB065F6BE1FB0CC /* CMPRoles.h in Headers */,
+				464D62BCF955D173EDE191169394113C /* CMPSDKState.h in Headers */,
+				5ACF14611BD5C20A849D95D1DD292EDE /* CMPSendableMessage.h in Headers */,
+				73B79463599FCC22E86973ADCC6BF310 /* CMPSendMessagesResult.h in Headers */,
+				71FF79E509EDD13A553552C922B47105 /* CMPSendMessagesTemplate.h in Headers */,
+				0F345C6F19D851032501129C944EB52E /* CMPSendStatusUpdateTemplate.h in Headers */,
+				0A462C4229B894FCC6AE742F137F8374 /* CMPServices.h in Headers */,
+				2077723814F86A5C1CEE5B952028D1E3 /* CMPSession.h in Headers */,
+				815A5642E602FD32662DF4AEAA3002AC /* CMPSessionAuth.h in Headers */,
+				B1B166C8946D00DE565A18056FFEF2DD /* CMPSessionAuthProvider.h in Headers */,
+				3D334826EF798D62F9DFFCA8AA52167A /* CMPSessionDelegate.h in Headers */,
+				DB2AFEEB928879506D3188510F9E4156 /* CMPSessionManager.h in Headers */,
+				2BC87CBDDEECC1C5CDE528C99F2CB1E1 /* CMPSessionService.h in Headers */,
+				C11E49F54BC4A42332F2100F019C98B4 /* CMPSetAPNSDetailsTemplate.h in Headers */,
+				A06A2623ED14C9A74F249E2F85F6C109 /* CMPSocketDelegate.h in Headers */,
+				3AE6D9298CFF9B6D30D19741E2423919 /* CMPSocketEvents.h in Headers */,
+				C8707026A906CC9D66E3EBA88C8E6068 /* CMPSocketManager.h in Headers */,
+				D8EB628206D43B67E2B100FDBF8C7D7F /* CMPSocketTemplate.h in Headers */,
+				5D2428AE42C27F7E3875F31602CCCF81 /* CMPStartNewSessionTemplate.h in Headers */,
+				798B3B66FD897189BB874DE2BD055035 /* CMPStateDelegate.h in Headers */,
+				9040D5748AC634573625BD1C9DC19B1A /* CMPTokenState.h in Headers */,
+				456FC17CD92074F9CF27F9CDF96C68C0 /* CMPUpdateConversationTemplate.h in Headers */,
+				59C235FABC16C5764F659E2B60C57D0E /* CMPUpdateProfileTemplate.h in Headers */,
+				17A395B675E7064119F2A7F9C7B3DBF9 /* CMPURLResult.h in Headers */,
+				DEB60BD668797A396A0C90D4DD81C195 /* CMPXcodeConsoleDestination.h in Headers */,
+				FF19D4023C83D537EEB176F8EC82E8F5 /* NSData+CMPUtility.h in Headers */,
+				A6CD4C68828820BAA0EE49A8969A899D /* NSDate+CMPUtility.h in Headers */,
+				FB1C0DFC0BCDA1370AA42F6621333E17 /* NSDateFormatter+CMPUtility.h in Headers */,
+				2BCBE62F28597BAA263B0643DBB09DEC /* NSString+CMPUtility.h in Headers */,
+				0E2A75EF40D6B7A076B9C35B72260DD6 /* NSURLRequest+CMPUtility.h in Headers */,
+				9CEE5739479EC11401A85E9AB49EA81A /* NSURLResponse+CMPUtility.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1948D0B63D2CF6A48E18B0B292BC6091 /* SocketRocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 576FCCB54103DD71F9F0D693DBF12FCB /* Build configuration list for PBXNativeTarget "SocketRocket" */;
+			buildPhases = (
+				0A84A4BFEC238F26695193A7A7129A95 /* Headers */,
+				E3234E3BB24DC14E88D826F178E6FE7A /* Sources */,
+				53CABA8E63BC9BF6DC08446438C680A2 /* Frameworks */,
+				548C64F3605B1BF674CFC99071742B80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocketRocket;
+			productName = SocketRocket;
+			productReference = 85A01882ED06DFEA2E0CE78BCDB204A7 /* SocketRocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1C7A96D89DC72E230031937663AE5453 /* CMPComapiFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C06346B503BFD646A07EEE5AA75291D /* Build configuration list for PBXNativeTarget "CMPComapiFoundation" */;
+			buildPhases = (
+				E56D125A54B619E5F512DE4268802675 /* Headers */,
+				4142DF38031F3FE925D82FCB446B27C8 /* Sources */,
+				1A93184D3F11D32B022AC79306EBAA9D /* Frameworks */,
+				7FC74983C5A2BFCA957423AB83C1F8FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				424411F4F353A68904F310543D86A168 /* PBXTargetDependency */,
+			);
+			name = CMPComapiFoundation;
+			productName = CMPComapiFoundation;
+			productReference = 2BF2069826ADBA019EF71096118D8352 /* CMPComapiFoundation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E3FE668495EA70E8D9FCD2BDB57105C8 /* Pods-raisr-ios-sdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28C13198AA561DB9DD091E9D34F0D0E3 /* Build configuration list for PBXNativeTarget "Pods-raisr-ios-sdk" */;
+			buildPhases = (
+				58631303DAA48164C17372DB5C4438DA /* Headers */,
+				387F49843FBDD158544E846EC6B511D7 /* Sources */,
+				CBD8506E5C17E430FA60FBB88A8FF550 /* Frameworks */,
+				37DE80759B984D60ED70F9F2C8DC1CFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EBA46AB79997F3FFF1D53740324DE6B /* PBXTargetDependency */,
+				554F299562359F6A16406C5780B5AAEC /* PBXTargetDependency */,
+			);
+			name = "Pods-raisr-ios-sdk";
+			productName = "Pods-raisr-ios-sdk";
+			productReference = 6459F50D88287C61D3C515346AD63CE8 /* Pods_raisr_ios_sdk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 2D8F317577EE13E9961C4F48940D924E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C7A96D89DC72E230031937663AE5453 /* CMPComapiFoundation */,
+				E3FE668495EA70E8D9FCD2BDB57105C8 /* Pods-raisr-ios-sdk */,
+				1948D0B63D2CF6A48E18B0B292BC6091 /* SocketRocket */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37DE80759B984D60ED70F9F2C8DC1CFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		548C64F3605B1BF674CFC99071742B80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FC74983C5A2BFCA957423AB83C1F8FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		387F49843FBDD158544E846EC6B511D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D965F66568A89BAFD656564A7575E02B /* Pods-raisr-ios-sdk-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4142DF38031F3FE925D82FCB446B27C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58DAE96CEEB157575C84AC8A1771E2E6 /* CMPAddConversationTemplate.m in Sources */,
+				3326521B5AEDCEB7E92E1457B829E585 /* CMPAddParticipantsTemplate.m in Sources */,
+				237420D9DD78F3ED24402B18F74CB9A2 /* CMPAPIConfiguration.m in Sources */,
+				6EFD1EFF8E78BB1224EE7A6B85EEA34E /* CMPAPNSDetails.m in Sources */,
+				D84917AE81DFFA215ACABF098FA6FFB7 /* CMPAPNSDetailsBody.m in Sources */,
+				32B8F23CA94C680E54D165A968F7CCCF /* CMPAuthenticationChallenge.m in Sources */,
+				82E07DB4EB168C8E2F45160D9E510CBF /* CMPAuthorizeSessionBody.m in Sources */,
+				84324792FF28DD0F37ADB6A192149F6B /* CMPAuthorizeSessionTemplate.m in Sources */,
+				8D77E69C50F303C056934783736036B4 /* CMPBaseService.m in Sources */,
+				B1A7901A6012E56BB662DB589842E1AA /* CMPBroadcastDelegate.m in Sources */,
+				36ACC3A9C838C04F3D283BF82FE276D5 /* CMPComapi.m in Sources */,
+				5601ACF7CC6F0AA3B5D5B507F8BC1E0B /* CMPComapiClient.m in Sources */,
+				08272C37179B428518EC82C65E4D5664 /* CMPComapiConfig.m in Sources */,
+				60D71BBEC5AFD7F8AF99F7063BDA72E3 /* CMPComapiConfigBuilder.m in Sources */,
+				4C53B6BFECE4E98977C177BBCF313B54 /* CMPComapiFoundation-dummy.m in Sources */,
+				B482E7F8373B21A0FEE1E41E4DFE4A80 /* CMPConstants.m in Sources */,
+				27F34902125D52A863F6626C0BE1C128 /* CMPContentData.m in Sources */,
+				30228E0187FBF7F303FB744C589FB70E /* CMPContentUploadResult.m in Sources */,
+				80F5BA99310A04AD7C1A8E09E96EA4A7 /* CMPContentUploadTemplate.m in Sources */,
+				A389130791CC86EA2445756380FCFEFC /* CMPConversation.m in Sources */,
+				A1C7D87674654DA6844E6BFFCEC7BFB4 /* CMPConversationEvents.m in Sources */,
+				1CCC3755F32965421F4742FCDCA42685 /* CMPConversationMessageEvents.m in Sources */,
+				6129E4362446FA6247A4174DAA3DA088 /* CMPConversationParticipant.m in Sources */,
+				99CAC8C7C0784E4532533646568BDA66 /* CMPConversationUpdate.m in Sources */,
+				63A50116F437BA7AAC6E986B30B8E4ED /* CMPDeleteConversationTemplate.m in Sources */,
+				DF23A03423E3F0CD740EE2006ED774BC /* CMPDeleteSessionTemplate.m in Sources */,
+				937C7E24F237B70D342927F984639822 /* CMPErrors.m in Sources */,
+				5AE5F4BC455E4431D8463278A7D59C27 /* CMPEvent.m in Sources */,
+				FEE214BA99C795A094BB8F9FF6FA5570 /* CMPEventParser.m in Sources */,
+				EDFD17B748D34400980A06488CD0A8AD /* CMPEventQueryTemplate.m in Sources */,
+				559B35EE15C8B8637CB839E9850FF169 /* CMPFileDestination.m in Sources */,
+				8712951D1A1121D14B704704387CCA7C /* CMPGetConversationsTemplate.m in Sources */,
+				A1D1A80DE10ED33C801074FAF12C76FA /* CMPGetConversationTemplate.m in Sources */,
+				D248E2C2668C2A7DEEB34D6E61A51E16 /* CMPGetMessagesResult.m in Sources */,
+				0B41AC612C1D04F3CD15A4FE6D48BB79 /* CMPGetMessagesTemplate.m in Sources */,
+				B127DEAFCB388C37710A5993B657A4AB /* CMPGetParticipantsTemplate.m in Sources */,
+				E46DAF7C12C91BCEA54D0355B60BDCDE /* CMPGetProfileTemplate.m in Sources */,
+				FE2A0FFE97BF77F68D54A9D62F036604 /* CMPHTTPHeader.m in Sources */,
+				25C09F84F97F26849752A9DCBD30F173 /* CMPKeychain.m in Sources */,
+				26A5D5924C6B5E1720AECB8A4F11117F /* CMPLog.m in Sources */,
+				D69F2C2D6A5AB93C0C4D1D5BCAD3B550 /* CMPLogConfig.m in Sources */,
+				D955B9986756ECEE2027546C4D9F7471 /* CMPLogger.m in Sources */,
+				45AFA355D822DDAF45FB83CE2377AE3F /* CMPLogLevel.m in Sources */,
+				3A5CC768EBD424F06E125FBB6065703A /* CMPMessage.m in Sources */,
+				E071E313BC13A8ABD0EBD3BF6525E041 /* CMPMessageAlert.m in Sources */,
+				3F9AA777D0D41F56A457EFDEB3F5CE44 /* CMPMessageAlertPlatforms.m in Sources */,
+				CB6A7A8FCE8D2C936450CA527C70AA01 /* CMPMessageContext.m in Sources */,
+				1229A1020D65A198EF5F4B7BEF5355CD /* CMPMessageDeliveryStatus.m in Sources */,
+				2D93B85CE26F590681572A12E7CCB137 /* CMPMessagePart.m in Sources */,
+				1605A733FDA4E858FBF600C7EDB4C48F /* CMPMessageParticipant.m in Sources */,
+				E1AE8557C317176A72D1725AEA62C62E /* CMPMessageStatus.m in Sources */,
+				987B921C868EE33DDE4071EFA59AC0AF /* CMPMessageStatusUpdate.m in Sources */,
+				2A852BCF5058B1F65C79E9CDA96A64AA /* CMPMessagingService.m in Sources */,
+				5E3F25337972710F1C10D0945F67AFB5 /* CMPNewConversation.m in Sources */,
+				C7647941E44AD218EF91FE8403426125 /* CMPOrphanedEvent.m in Sources */,
+				92B1BDAFCAB840168C25037EC6ECE278 /* CMPParticipantTypingOffTemplate.m in Sources */,
+				AAF6291D60E954219127DAFEC5DF904C /* CMPParticipantTypingTemplate.m in Sources */,
+				172F097FAD774EDD884A60A65AB4804B /* CMPPatchProfileTemplate.m in Sources */,
+				FD70BB284FE54ACC1C4B2EE876FB1425 /* CMPProfile.m in Sources */,
+				1E1129AB8908BC109F5F2FCBBA92BD04 /* CMPProfileEvents.m in Sources */,
+				344323A2339C6325DC4D3E669884367B /* CMPProfileService.m in Sources */,
+				3C9760C89662C8EBDEF8823187BDEB0D /* CMPQueryBuilder.m in Sources */,
+				AD1CD8689710F425806F955DD33EE96E /* CMPQueryProfilesTemplate.m in Sources */,
+				A004E63AAAC51D57766D179AE7AD2D14 /* CMPRemoveParticipantsTemplate.m in Sources */,
+				CDACD80197465774FFE8D9C2FAE1B8C1 /* CMPRequestManager.m in Sources */,
+				C3587049BF1C39E347A10A8F6EEA97CD /* CMPRequestPerformer.m in Sources */,
+				53C2E73B6BEAB49C3271D4CE77A402DC /* CMPRequestTemplate.m in Sources */,
+				0C84374E0ED0CFBFE858DF7A1717C3E6 /* CMPResult.m in Sources */,
+				B794F51AC1AA101F4185142DDF5AEC44 /* CMPRole.m in Sources */,
+				4B9423CF9D615DFDD75C263A92AEC592 /* CMPRoleAttributes.m in Sources */,
+				B7611086A5F223267AE9F26BEFAF23CE /* CMPRoles.m in Sources */,
+				9E2BF9336C9D5380EB98214AD2534510 /* CMPSendableMessage.m in Sources */,
+				47DBB7DE84AB57D9C1D30AC35C4642A1 /* CMPSendMessagesResult.m in Sources */,
+				3902015EEE733DFFCF3BD04C691F68B7 /* CMPSendMessagesTemplate.m in Sources */,
+				2BDC9F2D572B84D9AF2E37317FF46EC7 /* CMPSendStatusUpdateTemplate.m in Sources */,
+				3308071B30FC7E43B4AD963A8BCAB955 /* CMPServices.m in Sources */,
+				8E43AD1304F51380352A56BB74B4C2DA /* CMPSession.m in Sources */,
+				C2D5F16C8DC3FAF3236F8B313553F664 /* CMPSessionAuth.m in Sources */,
+				1A9F5559A3F52C1233E4DF78548A2BD4 /* CMPSessionManager.m in Sources */,
+				635C99AC8C8D0CC1156FAA6F5FB6348C /* CMPSessionService.m in Sources */,
+				C485A6F61F7030883393B9B98F5B9B70 /* CMPSetAPNSDetailsTemplate.m in Sources */,
+				83AD1E5058535FB3146965EB5A561CC1 /* CMPSocketEvents.m in Sources */,
+				E7566ED28A12CBFDB2CA24807F39B8A7 /* CMPSocketManager.m in Sources */,
+				2A9CB7ED61679EE08E78A56A9B0AAC89 /* CMPSocketTemplate.m in Sources */,
+				86086A009E621158595C8C5F1E33A573 /* CMPStartNewSessionTemplate.m in Sources */,
+				E395954EC19DC71F7559F6CED3DB6452 /* CMPUpdateConversationTemplate.m in Sources */,
+				616307EC1195DE2A72DE0B91E407310E /* CMPUpdateProfileTemplate.m in Sources */,
+				3B2EC0F52BB3AE31DB0DBB6D94EB6165 /* CMPURLResult.m in Sources */,
+				8D651929FBC1B8BB7A391A892EAC2BD5 /* CMPXcodeConsoleDestination.m in Sources */,
+				8BDEEC3583EC5D16936A861CE9AF12FD /* NSData+CMPUtility.m in Sources */,
+				7C98B0EEBAD59DA7E537A556F5B293E6 /* NSDate+CMPUtility.m in Sources */,
+				D00D2538796C38B943FB6DAE8C29C4E6 /* NSDateFormatter+CMPUtility.m in Sources */,
+				C085D9762B7A7F418ACF0F0845295D52 /* NSString+CMPUtility.m in Sources */,
+				91CE2B52BADCDC3F34A16348436E74B5 /* NSURLRequest+CMPUtility.m in Sources */,
+				82555C7C2A26AAA24765F9D63D1F60E3 /* NSURLResponse+CMPUtility.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3234E3BB24DC14E88D826F178E6FE7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				113BF4C4E624E7A41A23A81D1A5A960E /* SocketRocket-dummy.m in Sources */,
+				231C5E872D101C6850D461E97948B074 /* SRWebSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		424411F4F353A68904F310543D86A168 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SocketRocket;
+			target = 1948D0B63D2CF6A48E18B0B292BC6091 /* SocketRocket */;
+			targetProxy = 7A848ABBB87F17F152F9EAED28F4035F /* PBXContainerItemProxy */;
+		};
+		4EBA46AB79997F3FFF1D53740324DE6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CMPComapiFoundation;
+			target = 1C7A96D89DC72E230031937663AE5453 /* CMPComapiFoundation */;
+			targetProxy = 0D80F7CD138E4A58CB5020A6A4752CF9 /* PBXContainerItemProxy */;
+		};
+		554F299562359F6A16406C5780B5AAEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SocketRocket;
+			target = 1948D0B63D2CF6A48E18B0B292BC6091 /* SocketRocket */;
+			targetProxy = B15B3948A1D157571A005DDB73528DF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		32079BD7D1F126F6FB140A739C4D2689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36D424265DD0850C9C93235D6D59F2DA /* CMPComapiFoundation.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CMPComapiFoundation/CMPComapiFoundation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CMPComapiFoundation/CMPComapiFoundation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CMPComapiFoundation/CMPComapiFoundation.modulemap";
+				PRODUCT_MODULE_NAME = CMPComapiFoundation;
+				PRODUCT_NAME = CMPComapiFoundation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		48373BE6BEBF723BA07800AA5210B5BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4E3C36EA73F4A5DFEDBF548F3EA357B /* Pods-raisr-ios-sdk.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-raisr-ios-sdk/Pods-raisr-ios-sdk-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-raisr-ios-sdk/Pods-raisr-ios-sdk.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6B4F19C86F33534A0580BC55724A110C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 750DB639431994DE9841B842AA2E1B14 /* SocketRocket.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SocketRocket/SocketRocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SocketRocket/SocketRocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SocketRocket/SocketRocket.modulemap";
+				PRODUCT_MODULE_NAME = SocketRocket;
+				PRODUCT_NAME = SocketRocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6ECC9E2F999D4D64079D82864D97A531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDE4A21206FA36AAC29BD9BE6268DB48 /* CMPComapiFoundation.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CMPComapiFoundation/CMPComapiFoundation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CMPComapiFoundation/CMPComapiFoundation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CMPComapiFoundation/CMPComapiFoundation.modulemap";
+				PRODUCT_MODULE_NAME = CMPComapiFoundation;
+				PRODUCT_NAME = CMPComapiFoundation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A27713CB74E99AF202AADC23200A32F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		BA9F7E831733FCBDC403BD6A86147ABE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBE0A8BEC51C8CA482BF99B3F50CBFD3 /* Pods-raisr-ios-sdk.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-raisr-ios-sdk/Pods-raisr-ios-sdk-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-raisr-ios-sdk/Pods-raisr-ios-sdk.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED9CB72C7231F0ACF7C8314F319649F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40878E0FBC8FE608EEC8362E149DDB16 /* SocketRocket.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SocketRocket/SocketRocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SocketRocket/SocketRocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SocketRocket/SocketRocket.modulemap";
+				PRODUCT_MODULE_NAME = SocketRocket;
+				PRODUCT_NAME = SocketRocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28C13198AA561DB9DD091E9D34F0D0E3 /* Build configuration list for PBXNativeTarget "Pods-raisr-ios-sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA9F7E831733FCBDC403BD6A86147ABE /* Debug */,
+				48373BE6BEBF723BA07800AA5210B5BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C06346B503BFD646A07EEE5AA75291D /* Build configuration list for PBXNativeTarget "CMPComapiFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ECC9E2F999D4D64079D82864D97A531 /* Debug */,
+				32079BD7D1F126F6FB140A739C4D2689 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */,
+				A27713CB74E99AF202AADC23200A32F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		576FCCB54103DD71F9F0D693DBF12FCB /* Build configuration list for PBXNativeTarget "SocketRocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B4F19C86F33534A0580BC55724A110C /* Debug */,
+				ED9CB72C7231F0ACF7C8314F319649F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

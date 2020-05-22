@@ -1,0 +1,6 @@
+framework module Pods_raisr_ios_sdk {
+  umbrella header "Pods-raisr-ios-sdk-umbrella.h"
+
+  export *
+  module * { export * }
+}
