@@ -1,4 +1,5 @@
-github "comapi/comapi-sdk-ios-objc"
+#github "comapi/comapi-sdk-ios-objc"
+github "yourkarma/JWT"
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseProtobufBinary.json"
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAnalyticsBinary.json"
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseMessagingBinary.json"

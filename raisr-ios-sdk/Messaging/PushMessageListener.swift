@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import FirebaseMessaging
 
 public protocol PushMessageListener {
     func onMessageReceived(message: MessagingRemoteMessage)

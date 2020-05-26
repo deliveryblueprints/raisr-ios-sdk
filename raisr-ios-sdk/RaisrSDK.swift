@@ -7,14 +7,21 @@
 //
 
 import Foundation
-
+import CMPComapiFoundation
 
 class RaisrSDK {
     
+    class func initialise(config: RaisrConfig) -> RaisrInstance {
+        let dotDigitalConfig = RaisrSDK.initialseDotDigital(config: config)
+        return MockRaisrInstance(dotDigitalConfig: dotDigitalConfig, config: config);
     
-    class func initialise() {
-        
-        
+    }
+    
+    private class func initialseDotDigital(config: RaisrConfig) -> ComapiConfig {
+        return ComapiConfig.builder()
+            .setApiSpaceID(config.getSpaceId())
+            .setAuthDelegate(DotDigitalAuthenticator(secret: config.getMessagingSecret()))
+            .build();
     }
     
 }

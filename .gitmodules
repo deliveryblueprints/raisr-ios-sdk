@@ -1,3 +1,9 @@
 [submodule "Carthage/Checkouts/comapi-sdk-ios-objc"]
 	path = Carthage/Checkouts/comapi-sdk-ios-objc
 	url = https://github.com/comapi/comapi-sdk-ios-objc.git
+[submodule "Carthage/Checkouts/JWT"]
+	path = Carthage/Checkouts/JWT
+	url = https://github.com/yourkarma/JWT.git
+[submodule "Carthage/Checkouts/Base64"]
+	path = Carthage/Checkouts/Base64
+	url = https://github.com/soheilbm/Base64.git

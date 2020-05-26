@@ -1,4 +1,5 @@
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAnalyticsBinary.json" "6.24.0"
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseMessagingBinary.json" "6.24.0"
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseProtobufBinary.json" "6.24.0"
-github "comapi/comapi-sdk-ios-objc" "2.0.1"
+github "soheilbm/Base64" "67083ec1e3e970ec920cbf126e6957c6e9e88ae4"
+github "yourkarma/JWT" "2.2.0"

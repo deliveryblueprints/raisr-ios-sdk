@@ -14,6 +14,9 @@
 		80D52F042477C19A00E96996 /* RaisrSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52F032477C19A00E96996 /* RaisrSDK.swift */; };
 		80D52F072477C1FB00E96996 /* RaisrConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52F062477C1FB00E96996 /* RaisrConfig.swift */; };
 		80D52F0A2477C29F00E96996 /* PushMessageListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52F092477C29F00E96996 /* PushMessageListener.swift */; };
+		80D52F0F2477D25E00E96996 /* RaisrInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52F0E2477D25E00E96996 /* RaisrInstance.swift */; };
+		80D52F122477D6B600E96996 /* DotDigitalAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52F112477D6B600E96996 /* DotDigitalAuthenticator.swift */; };
+		80D52F2D2477F5EF00E96996 /* MockRaisrInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52F2C2477F5EF00E96996 /* MockRaisrInstance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,6 +195,48 @@
 			remoteGlobalIDString = F62417E314D52F3C003CE997;
 			remoteInfo = TestChat;
 		};
+		80D52F202477DBE700E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52F172477DBE700E96996 /* JWT.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 04DEBCA31DBCDB8600C1DF52;
+			remoteInfo = JWT;
+		};
+		80D52F222477DBE700E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52F172477DBE700E96996 /* JWT.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 045146681D5E2A78007B1D7A;
+			remoteInfo = JWT_iOS_Static;
+		};
+		80D52F242477DBE700E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52F172477DBE700E96996 /* JWT.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 045146761D5E2AA1007B1D7A;
+			remoteInfo = JWT_iOS_Framework;
+		};
+		80D52F262477DBE700E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52F172477DBE700E96996 /* JWT.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 045146831D5E2AAF007B1D7A;
+			remoteInfo = JWT_iOS_Swift;
+		};
+		80D52F282477DBE700E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52F172477DBE700E96996 /* JWT.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 045146901D5E2AC3007B1D7A;
+			remoteInfo = JWT_macOS_Framework;
+		};
+		80D52F2A2477DBE700E96996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D52F172477DBE700E96996 /* JWT.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0451469D1D5E2AD2007B1D7A;
+			remoteInfo = JWT_macOS_Swift;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -208,6 +253,11 @@
 		80D52F032477C19A00E96996 /* RaisrSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaisrSDK.swift; sourceTree = "<group>"; };
 		80D52F062477C1FB00E96996 /* RaisrConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaisrConfig.swift; sourceTree = "<group>"; };
 		80D52F092477C29F00E96996 /* PushMessageListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushMessageListener.swift; sourceTree = "<group>"; };
+		80D52F0B2477CEDD00E96996 /* FirebaseMessaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseMessaging.framework; path = Carthage/Build/iOS/FirebaseMessaging.framework; sourceTree = "<group>"; };
+		80D52F0E2477D25E00E96996 /* RaisrInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaisrInstance.swift; sourceTree = "<group>"; };
+		80D52F112477D6B600E96996 /* DotDigitalAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotDigitalAuthenticator.swift; sourceTree = "<group>"; };
+		80D52F172477DBE700E96996 /* JWT.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JWT.xcodeproj; path = Carthage/Checkouts/JWT/Framework/JWT.xcodeproj; sourceTree = "<group>"; };
+		80D52F2C2477F5EF00E96996 /* MockRaisrInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRaisrInstance.swift; sourceTree = "<group>"; };
 		9F51CA672D5035238AA4F8AB /* Pods-raisr-ios-sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-raisr-ios-sdk.debug.xcconfig"; path = "Target Support Files/Pods-raisr-ios-sdk/Pods-raisr-ios-sdk.debug.xcconfig"; sourceTree = "<group>"; };
 		BBE95D5B18507CCAAA2962FD /* Pods-raisr-ios-sdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-raisr-ios-sdk.release.xcconfig"; path = "Target Support Files/Pods-raisr-ios-sdk/Pods-raisr-ios-sdk.release.xcconfig"; sourceTree = "<group>"; };
 		CE8DD303F4C7991DC3E0A0F8 /* Pods_raisr_ios_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_raisr_ios_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -236,6 +286,8 @@
 		80D52E3D2474332E00E96996 = {
 			isa = PBXGroup;
 			children = (
+				80D52F172477DBE700E96996 /* JWT.xcodeproj */,
+				80D52F0B2477CEDD00E96996 /* FirebaseMessaging.framework */,
 				80D52E492474332E00E96996 /* raisr-ios-sdk */,
 				80D52E542474332F00E96996 /* raisr-ios-sdkTests */,
 				80D52E482474332E00E96996 /* Products */,
@@ -256,6 +308,8 @@
 		80D52E492474332E00E96996 /* raisr-ios-sdk */ = {
 			isa = PBXGroup;
 			children = (
+				80D52F102477D6AA00E96996 /* Auth */,
+				80D52F0D2477D24800E96996 /* Instance */,
 				80D52F082477C28D00E96996 /* Messaging */,
 				80D52F052477C1EE00E96996 /* Config */,
 				80D52E4A2474332F00E96996 /* raisr_ios_sdk.h */,
@@ -354,6 +408,36 @@
 			path = Messaging;
 			sourceTree = "<group>";
 		};
+		80D52F0D2477D24800E96996 /* Instance */ = {
+			isa = PBXGroup;
+			children = (
+				80D52F0E2477D25E00E96996 /* RaisrInstance.swift */,
+				80D52F2C2477F5EF00E96996 /* MockRaisrInstance.swift */,
+			);
+			path = Instance;
+			sourceTree = "<group>";
+		};
+		80D52F102477D6AA00E96996 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				80D52F112477D6B600E96996 /* DotDigitalAuthenticator.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		80D52F182477DBE700E96996 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80D52F212477DBE700E96996 /* JWT.framework */,
+				80D52F232477DBE700E96996 /* libJWT_iOS_Static.a */,
+				80D52F252477DBE700E96996 /* JWT_iOS_Framework.framework */,
+				80D52F272477DBE700E96996 /* JWT_iOS_Swift.framework */,
+				80D52F292477DBE700E96996 /* JWT_macOS_Framework.framework */,
+				80D52F2B2477DBE700E96996 /* JWT_macOS_Swift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		D123959EF90842799EAB038F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -444,6 +528,10 @@
 			productRefGroup = 80D52E482474332E00E96996 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 80D52F182477DBE700E96996 /* Products */;
+					ProjectRef = 80D52F172477DBE700E96996 /* JWT.xcodeproj */;
+				},
 				{
 					ProductGroup = 80D52EB62477B17300E96996 /* Products */;
 					ProjectRef = 80D52EB52477B17300E96996 /* SocketRocket.xcodeproj */;
@@ -638,6 +726,48 @@
 			remoteRef = 80D52ECC2477B17300E96996 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		80D52F212477DBE700E96996 /* JWT.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JWT.framework;
+			remoteRef = 80D52F202477DBE700E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52F232477DBE700E96996 /* libJWT_iOS_Static.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libJWT_iOS_Static.a;
+			remoteRef = 80D52F222477DBE700E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52F252477DBE700E96996 /* JWT_iOS_Framework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JWT_iOS_Framework.framework;
+			remoteRef = 80D52F242477DBE700E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52F272477DBE700E96996 /* JWT_iOS_Swift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JWT_iOS_Swift.framework;
+			remoteRef = 80D52F262477DBE700E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52F292477DBE700E96996 /* JWT_macOS_Framework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JWT_macOS_Framework.framework;
+			remoteRef = 80D52F282477DBE700E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80D52F2B2477DBE700E96996 /* JWT_macOS_Swift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JWT_macOS_Swift.framework;
+			remoteRef = 80D52F2A2477DBE700E96996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -687,9 +817,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80D52F0F2477D25E00E96996 /* RaisrInstance.swift in Sources */,
 				80D52F042477C19A00E96996 /* RaisrSDK.swift in Sources */,
 				80D52F0A2477C29F00E96996 /* PushMessageListener.swift in Sources */,
 				80D52F072477C1FB00E96996 /* RaisrConfig.swift in Sources */,
+				80D52F2D2477F5EF00E96996 /* MockRaisrInstance.swift in Sources */,
+				80D52F122477D6B600E96996 /* DotDigitalAuthenticator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -846,6 +979,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "raisr-ios-sdk/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -853,6 +990,20 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"icucore\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CMPComapiFoundation\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SocketRocket\"",
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.raisr.raisr-ios-sdk";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -875,6 +1026,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "raisr-ios-sdk/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -882,6 +1037,20 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"icucore\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CMPComapiFoundation\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SocketRocket\"",
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.raisr.raisr-ios-sdk";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
