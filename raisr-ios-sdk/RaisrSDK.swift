@@ -9,12 +9,11 @@
 import Foundation
 import CMPComapiFoundation
 
-class RaisrSDK {
+public class RaisrSDK {
     
-    class func initialise(config: RaisrConfig) -> RaisrInstance {
+    public class func initialise(config: RaisrConfig) -> RaisrInstance {
         let dotDigitalConfig = RaisrSDK.initialseDotDigital(config: config)
         return MockRaisrInstance(dotDigitalConfig: dotDigitalConfig, config: config);
-    
     }
     
     private class func initialseDotDigital(config: RaisrConfig) -> ComapiConfig {

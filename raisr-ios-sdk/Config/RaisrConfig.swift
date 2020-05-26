@@ -10,18 +10,12 @@ import Foundation
 
 public class RaisrConfig {
     
-    private var listener: PushMessageListener;
     private var spaceId: String;
     private var messagingSecret: String;
     
-    init(listener: PushMessageListener, spaceId: String, secret: String) {
-        self.listener = listener;
+    public init(spaceId: String, secret: String) {
         self.spaceId = spaceId;
         self.messagingSecret = secret;
-    }
-    
-    public func getPushMessageListener() -> PushMessageListener {
-        return self.listener;
     }
     
     public func getSpaceId() -> String {
@@ -35,19 +29,13 @@ public class RaisrConfig {
     
     public class Builder {
         
-        private var listener: PushMessageListener?;
         private var spaceId: String?;
         private var messagingSecret: String?;
         
-        init() {
+        public init() {
             
         }
-        
-        public func pushMessageListener(listener: PushMessageListener) -> Builder {
-            self.listener = listener;
-            return self;
-        }
-        
+    
         public func spaceId(spaceId: String) -> Builder {
             self.spaceId = spaceId;
             return self;
@@ -59,7 +47,7 @@ public class RaisrConfig {
         }
         
         public func build() -> RaisrConfig {
-            return RaisrConfig(listener: self.listener!, spaceId: self.spaceId!, secret: self.messagingSecret!);
+            return RaisrConfig(spaceId: self.spaceId!, secret: self.messagingSecret!);
         }
         
     }

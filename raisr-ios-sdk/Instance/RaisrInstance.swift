@@ -12,4 +12,6 @@ public protocol RaisrInstance {
     
     func authenticate(username: String, password: String) -> Void
     
+    func updatePushToken(token: String) -> Void
+    
 }

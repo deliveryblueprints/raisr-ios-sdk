@@ -9,7 +9,7 @@
 import Foundation
 import CMPComapiFoundation
 
-public class MockRaisrInstance: RaisrInstance {
+class MockRaisrInstance: RaisrInstance {
     
     private var dotDigitalConfig: ComapiConfig;
     private var config: RaisrConfig;
@@ -61,6 +61,13 @@ public class MockRaisrInstance: RaisrInstance {
             
         })
     
+    }
+    
+    public func updatePushToken(token: String) {
+        self.client?.set(pushToken: token, completion: { (success, error) in
+        
+            var i = 0;
+        })
     }
     
     

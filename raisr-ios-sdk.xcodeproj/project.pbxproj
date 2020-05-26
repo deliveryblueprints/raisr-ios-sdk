@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		33AD6B6C725AA56902CCE121 /* Pods_raisr_ios_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8DD303F4C7991DC3E0A0F8 /* Pods_raisr_ios_sdk.framework */; };
 		80D52E512474332F00E96996 /* raisr_ios_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D52E472474332E00E96996 /* raisr_ios_sdk.framework */; };
 		80D52E562474332F00E96996 /* raisr_ios_sdkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52E552474332F00E96996 /* raisr_ios_sdkTests.swift */; };
 		80D52E582474332F00E96996 /* raisr_ios_sdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 80D52E4A2474332F00E96996 /* raisr_ios_sdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -268,7 +267,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33AD6B6C725AA56902CCE121 /* Pods_raisr_ios_sdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
