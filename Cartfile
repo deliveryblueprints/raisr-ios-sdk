@@ -1,6 +1,4 @@
 #github "comapi/comapi-sdk-ios-objc"
 github "yourkarma/JWT"
-binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseProtobufBinary.json"
-binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAnalyticsBinary.json"
-binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseMessagingBinary.json"
+github "auth0/JWTDecode.swift" ~> 2.4
 

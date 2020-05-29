@@ -7,3 +7,6 @@
 [submodule "Carthage/Checkouts/Base64"]
 	path = Carthage/Checkouts/Base64
 	url = https://github.com/soheilbm/Base64.git
+[submodule "Carthage/Checkouts/JWTDecode.swift"]
+	path = Carthage/Checkouts/JWTDecode.swift
+	url = https://github.com/auth0/JWTDecode.swift.git

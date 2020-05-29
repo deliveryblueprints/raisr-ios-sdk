@@ -1,8 +1,9 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CMPComapiFoundation" "${PODS_CONFIGURATION_BUILD_DIR}/SocketRocket"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Base64" "${PODS_CONFIGURATION_BUILD_DIR}/CMPComapiFoundation" "${PODS_CONFIGURATION_BUILD_DIR}/JWT" "${PODS_CONFIGURATION_BUILD_DIR}/JWTDecode" "${PODS_CONFIGURATION_BUILD_DIR}/SocketRocket"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CMPComapiFoundation/CMPComapiFoundation.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SocketRocket/SocketRocket.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Base64/Base64.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/CMPComapiFoundation/CMPComapiFoundation.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/JWT/JWT.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/JWTDecode/JWTDecode.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SocketRocket/SocketRocket.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks' '@executable_path/../../Frameworks'
-OTHER_LDFLAGS = $(inherited) -l"icucore" -framework "CFNetwork" -framework "CMPComapiFoundation" -framework "Security" -framework "SocketRocket"
+OTHER_LDFLAGS = $(inherited) -l"icucore" -framework "Base64" -framework "CFNetwork" -framework "CMPComapiFoundation" -framework "JWT" -framework "JWTDecode" -framework "Security" -framework "SocketRocket"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

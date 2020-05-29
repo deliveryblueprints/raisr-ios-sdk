@@ -8,14 +8,16 @@
 
 import Foundation
 
-public class RaisrConfig {
+@objc public class RaisrConfig: NSObject {
     
     private var spaceId: String;
     private var messagingSecret: String;
+    private var authDelegate: RaisrAuthenticationDelegate;
     
-    public init(spaceId: String, secret: String) {
+    public init(spaceId: String, secret: String, authDelegate: RaisrAuthenticationDelegate) {
         self.spaceId = spaceId;
         self.messagingSecret = secret;
+        self.authDelegate = authDelegate;
     }
     
     public func getSpaceId() -> String {
@@ -26,11 +28,16 @@ public class RaisrConfig {
         return self.messagingSecret;
     }
     
+    public func getAuthDelegate() -> RaisrAuthenticationDelegate {
+        return self.authDelegate;
+    }
+    
     
     public class Builder {
         
         private var spaceId: String?;
         private var messagingSecret: String?;
+        private var authDelegate: RaisrAuthenticationDelegate?;
         
         public init() {
             
@@ -46,8 +53,18 @@ public class RaisrConfig {
             return self;
         }
         
-        public func build() -> RaisrConfig {
-            return RaisrConfig(spaceId: self.spaceId!, secret: self.messagingSecret!);
+        public func authDelegate(authDelegate: RaisrAuthenticationDelegate) -> Builder {
+            self.authDelegate = authDelegate;
+            return self;
+        }
+        
+        public func build() throws -> RaisrConfig {
+            
+            if(self.spaceId == nil || self.messagingSecret == nil || self.authDelegate == nil) {
+                throw RaisrError.InvalidConfig("Invalid Raisr configuration. SpaceID, Messaging Secret and Auth Delegate are required");
+            }
+            
+            return RaisrConfig(spaceId: self.spaceId!, secret: self.messagingSecret!, authDelegate: self.authDelegate!);
         }
         
     }

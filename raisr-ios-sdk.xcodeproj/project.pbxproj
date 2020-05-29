@@ -7,18 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8017A60524810AF7003383B2 /* RaisrResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017A60424810AF7003383B2 /* RaisrResult.swift */; };
+		8017A60824811FA4003383B2 /* RaisrSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017A60724811FA4003383B2 /* RaisrSession.swift */; };
+		8017A60A248122DE003383B2 /* RaisrAuthenticationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017A609248122DE003383B2 /* RaisrAuthenticationDelegate.swift */; };
+		8017A60D24812503003383B2 /* RaisrError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017A60C24812503003383B2 /* RaisrError.swift */; };
+		8017A60F24812B02003383B2 /* DefaultRaisrSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017A60E24812B02003383B2 /* DefaultRaisrSession.swift */; };
+		8017A6112481317E003383B2 /* DecodedUserJWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017A6102481317E003383B2 /* DecodedUserJWT.swift */; };
 		80D52E512474332F00E96996 /* raisr_ios_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D52E472474332E00E96996 /* raisr_ios_sdk.framework */; };
 		80D52E562474332F00E96996 /* raisr_ios_sdkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52E552474332F00E96996 /* raisr_ios_sdkTests.swift */; };
 		80D52E582474332F00E96996 /* raisr_ios_sdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 80D52E4A2474332F00E96996 /* raisr_ios_sdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		80D52F042477C19A00E96996 /* RaisrSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52F032477C19A00E96996 /* RaisrSDK.swift */; };
 		80D52F072477C1FB00E96996 /* RaisrConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52F062477C1FB00E96996 /* RaisrConfig.swift */; };
-		80D52F0A2477C29F00E96996 /* PushMessageListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52F092477C29F00E96996 /* PushMessageListener.swift */; };
-		80D52F0F2477D25E00E96996 /* RaisrInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52F0E2477D25E00E96996 /* RaisrInstance.swift */; };
+		80D52F0F2477D25E00E96996 /* RaisrClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52F0E2477D25E00E96996 /* RaisrClient.swift */; };
 		80D52F122477D6B600E96996 /* DotDigitalAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52F112477D6B600E96996 /* DotDigitalAuthenticator.swift */; };
-		80D52F2D2477F5EF00E96996 /* MockRaisrInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52F2C2477F5EF00E96996 /* MockRaisrInstance.swift */; };
+		80D52F2D2477F5EF00E96996 /* DefaultRaisrClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52F2C2477F5EF00E96996 /* DefaultRaisrClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8017A640248149F4003383B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8017A630248149F3003383B2 /* JWTDecode.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5F0068E21B3B46240048928E;
+			remoteInfo = "JWTDecode-iOS";
+		};
+		8017A642248149F4003383B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8017A630248149F3003383B2 /* JWTDecode.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5F0068ED1B3B46240048928E;
+			remoteInfo = "JWTDecode-iOSTests";
+		};
+		8017A644248149F4003383B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8017A630248149F3003383B2 /* JWTDecode.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5F0069091B3B532E0048928E;
+			remoteInfo = "JWTDecode-OSX";
+		};
+		8017A646248149F4003383B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8017A630248149F3003383B2 /* JWTDecode.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5F0069131B3B532E0048928E;
+			remoteInfo = "JWTDecode-OSXTests";
+		};
+		8017A648248149F4003383B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8017A630248149F3003383B2 /* JWTDecode.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 918A8E5B1D63D2E1001F787B;
+			remoteInfo = "JWTDecode-tvOS";
+		};
+		8017A64A248149F4003383B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8017A630248149F3003383B2 /* JWTDecode.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 918A8E6C1D63D4E5001F787B;
+			remoteInfo = "JWTDecode-tvOSTests";
+		};
+		8017A64C248149F4003383B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8017A630248149F3003383B2 /* JWTDecode.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E390BAE22288E6AF00780D6C;
+			remoteInfo = "JWTDecode-watchOS";
+		};
 		80D52E522474332F00E96996 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 80D52E3E2474332E00E96996 /* Project object */;
@@ -239,6 +293,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8017A60424810AF7003383B2 /* RaisrResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaisrResult.swift; sourceTree = "<group>"; };
+		8017A60724811FA4003383B2 /* RaisrSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaisrSession.swift; sourceTree = "<group>"; };
+		8017A609248122DE003383B2 /* RaisrAuthenticationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaisrAuthenticationDelegate.swift; sourceTree = "<group>"; };
+		8017A60C24812503003383B2 /* RaisrError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaisrError.swift; sourceTree = "<group>"; };
+		8017A60E24812B02003383B2 /* DefaultRaisrSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRaisrSession.swift; sourceTree = "<group>"; };
+		8017A6102481317E003383B2 /* DecodedUserJWT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodedUserJWT.swift; sourceTree = "<group>"; };
+		8017A630248149F3003383B2 /* JWTDecode.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JWTDecode.xcodeproj; path = Carthage/Checkouts/JWTDecode.swift/JWTDecode.xcodeproj; sourceTree = "<group>"; };
 		80D52E472474332E00E96996 /* raisr_ios_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = raisr_ios_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D52E4A2474332F00E96996 /* raisr_ios_sdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = raisr_ios_sdk.h; sourceTree = "<group>"; };
 		80D52E4B2474332F00E96996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -251,12 +312,10 @@
 		80D52EB52477B17300E96996 /* SocketRocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SocketRocket.xcodeproj; path = Carthage/Checkouts/SocketRocket/SocketRocket.xcodeproj; sourceTree = "<group>"; };
 		80D52F032477C19A00E96996 /* RaisrSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaisrSDK.swift; sourceTree = "<group>"; };
 		80D52F062477C1FB00E96996 /* RaisrConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaisrConfig.swift; sourceTree = "<group>"; };
-		80D52F092477C29F00E96996 /* PushMessageListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushMessageListener.swift; sourceTree = "<group>"; };
-		80D52F0B2477CEDD00E96996 /* FirebaseMessaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseMessaging.framework; path = Carthage/Build/iOS/FirebaseMessaging.framework; sourceTree = "<group>"; };
-		80D52F0E2477D25E00E96996 /* RaisrInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaisrInstance.swift; sourceTree = "<group>"; };
+		80D52F0E2477D25E00E96996 /* RaisrClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaisrClient.swift; sourceTree = "<group>"; };
 		80D52F112477D6B600E96996 /* DotDigitalAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotDigitalAuthenticator.swift; sourceTree = "<group>"; };
 		80D52F172477DBE700E96996 /* JWT.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JWT.xcodeproj; path = Carthage/Checkouts/JWT/Framework/JWT.xcodeproj; sourceTree = "<group>"; };
-		80D52F2C2477F5EF00E96996 /* MockRaisrInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRaisrInstance.swift; sourceTree = "<group>"; };
+		80D52F2C2477F5EF00E96996 /* DefaultRaisrClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRaisrClient.swift; sourceTree = "<group>"; };
 		9F51CA672D5035238AA4F8AB /* Pods-raisr-ios-sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-raisr-ios-sdk.debug.xcconfig"; path = "Target Support Files/Pods-raisr-ios-sdk/Pods-raisr-ios-sdk.debug.xcconfig"; sourceTree = "<group>"; };
 		BBE95D5B18507CCAAA2962FD /* Pods-raisr-ios-sdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-raisr-ios-sdk.release.xcconfig"; path = "Target Support Files/Pods-raisr-ios-sdk/Pods-raisr-ios-sdk.release.xcconfig"; sourceTree = "<group>"; };
 		CE8DD303F4C7991DC3E0A0F8 /* Pods_raisr_ios_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_raisr_ios_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -281,11 +340,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8017A5FD24810ADC003383B2 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				8017A60424810AF7003383B2 /* RaisrResult.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		8017A60624811F97003383B2 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				8017A60724811FA4003383B2 /* RaisrSession.swift */,
+				8017A60E24812B02003383B2 /* DefaultRaisrSession.swift */,
+				8017A6102481317E003383B2 /* DecodedUserJWT.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		8017A60B248124F8003383B2 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				8017A60C24812503003383B2 /* RaisrError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		8017A631248149F3003383B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8017A641248149F4003383B2 /* JWTDecode.framework */,
+				8017A643248149F4003383B2 /* JWTDecode-iOSTests.xctest */,
+				8017A645248149F4003383B2 /* JWTDecode.framework */,
+				8017A647248149F4003383B2 /* JWTDecode-OSXTests.xctest */,
+				8017A649248149F4003383B2 /* JWTDecode.framework */,
+				8017A64B248149F4003383B2 /* JWTDecode-tvOSTests.xctest */,
+				8017A64D248149F4003383B2 /* JWTDecode.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		80D52E3D2474332E00E96996 = {
 			isa = PBXGroup;
 			children = (
+				8017A630248149F3003383B2 /* JWTDecode.xcodeproj */,
 				80D52F172477DBE700E96996 /* JWT.xcodeproj */,
-				80D52F0B2477CEDD00E96996 /* FirebaseMessaging.framework */,
 				80D52E492474332E00E96996 /* raisr-ios-sdk */,
 				80D52E542474332F00E96996 /* raisr-ios-sdkTests */,
 				80D52E482474332E00E96996 /* Products */,
@@ -306,9 +405,11 @@
 		80D52E492474332E00E96996 /* raisr-ios-sdk */ = {
 			isa = PBXGroup;
 			children = (
+				8017A60B248124F8003383B2 /* Error */,
+				8017A60624811F97003383B2 /* Session */,
+				8017A5FD24810ADC003383B2 /* Result */,
 				80D52F102477D6AA00E96996 /* Auth */,
 				80D52F0D2477D24800E96996 /* Instance */,
-				80D52F082477C28D00E96996 /* Messaging */,
 				80D52F052477C1EE00E96996 /* Config */,
 				80D52E4A2474332F00E96996 /* raisr_ios_sdk.h */,
 				80D52E4B2474332F00E96996 /* Info.plist */,
@@ -398,19 +499,11 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
-		80D52F082477C28D00E96996 /* Messaging */ = {
-			isa = PBXGroup;
-			children = (
-				80D52F092477C29F00E96996 /* PushMessageListener.swift */,
-			);
-			path = Messaging;
-			sourceTree = "<group>";
-		};
 		80D52F0D2477D24800E96996 /* Instance */ = {
 			isa = PBXGroup;
 			children = (
-				80D52F0E2477D25E00E96996 /* RaisrInstance.swift */,
-				80D52F2C2477F5EF00E96996 /* MockRaisrInstance.swift */,
+				80D52F0E2477D25E00E96996 /* RaisrClient.swift */,
+				80D52F2C2477F5EF00E96996 /* DefaultRaisrClient.swift */,
 			);
 			path = Instance;
 			sourceTree = "<group>";
@@ -419,6 +512,7 @@
 			isa = PBXGroup;
 			children = (
 				80D52F112477D6B600E96996 /* DotDigitalAuthenticator.swift */,
+				8017A609248122DE003383B2 /* RaisrAuthenticationDelegate.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -531,6 +625,10 @@
 					ProjectRef = 80D52F172477DBE700E96996 /* JWT.xcodeproj */;
 				},
 				{
+					ProductGroup = 8017A631248149F3003383B2 /* Products */;
+					ProjectRef = 8017A630248149F3003383B2 /* JWTDecode.xcodeproj */;
+				},
+				{
 					ProductGroup = 80D52EB62477B17300E96996 /* Products */;
 					ProjectRef = 80D52EB52477B17300E96996 /* SocketRocket.xcodeproj */;
 				},
@@ -556,6 +654,55 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		8017A641248149F4003383B2 /* JWTDecode.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JWTDecode.framework;
+			remoteRef = 8017A640248149F4003383B2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8017A643248149F4003383B2 /* JWTDecode-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "JWTDecode-iOSTests.xctest";
+			remoteRef = 8017A642248149F4003383B2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8017A645248149F4003383B2 /* JWTDecode.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JWTDecode.framework;
+			remoteRef = 8017A644248149F4003383B2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8017A647248149F4003383B2 /* JWTDecode-OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "JWTDecode-OSXTests.xctest";
+			remoteRef = 8017A646248149F4003383B2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8017A649248149F4003383B2 /* JWTDecode.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JWTDecode.framework;
+			remoteRef = 8017A648248149F4003383B2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8017A64B248149F4003383B2 /* JWTDecode-tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "JWTDecode-tvOSTests.xctest";
+			remoteRef = 8017A64A248149F4003383B2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8017A64D248149F4003383B2 /* JWTDecode.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JWTDecode.framework;
+			remoteRef = 8017A64C248149F4003383B2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		80D52E7C2477B15600E96996 /* libSocketRocket.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -815,12 +962,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80D52F0F2477D25E00E96996 /* RaisrInstance.swift in Sources */,
+				80D52F0F2477D25E00E96996 /* RaisrClient.swift in Sources */,
 				80D52F042477C19A00E96996 /* RaisrSDK.swift in Sources */,
-				80D52F0A2477C29F00E96996 /* PushMessageListener.swift in Sources */,
 				80D52F072477C1FB00E96996 /* RaisrConfig.swift in Sources */,
-				80D52F2D2477F5EF00E96996 /* MockRaisrInstance.swift in Sources */,
+				80D52F2D2477F5EF00E96996 /* DefaultRaisrClient.swift in Sources */,
+				8017A60F24812B02003383B2 /* DefaultRaisrSession.swift in Sources */,
+				8017A60824811FA4003383B2 /* RaisrSession.swift in Sources */,
+				8017A6112481317E003383B2 /* DecodedUserJWT.swift in Sources */,
+				8017A60D24812503003383B2 /* RaisrError.swift in Sources */,
 				80D52F122477D6B600E96996 /* DotDigitalAuthenticator.swift in Sources */,
+				8017A60A248122DE003383B2 /* RaisrAuthenticationDelegate.swift in Sources */,
+				8017A60524810AF7003383B2 /* RaisrResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

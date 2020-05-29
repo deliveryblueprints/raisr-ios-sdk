@@ -9,18 +9,10 @@
 import Foundation
 import CMPComapiFoundation
 
-public class RaisrSDK {
+@objc public class RaisrSDK: NSObject {
     
-    public class func initialise(config: RaisrConfig) -> RaisrInstance {
-        let dotDigitalConfig = RaisrSDK.initialseDotDigital(config: config)
-        return MockRaisrInstance(dotDigitalConfig: dotDigitalConfig, config: config);
-    }
-    
-    private class func initialseDotDigital(config: RaisrConfig) -> ComapiConfig {
-        return ComapiConfig.builder()
-            .setApiSpaceID(config.getSpaceId())
-            .setAuthDelegate(DotDigitalAuthenticator(secret: config.getMessagingSecret()))
-            .build();
+    public class func initialise(config: RaisrConfig) throws -> RaisrClient {
+        return DefaultRaisrClient(config: config);
     }
     
 }
