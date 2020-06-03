@@ -13,13 +13,12 @@
 		8017A60D24812503003383B2 /* RaisrError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017A60C24812503003383B2 /* RaisrError.swift */; };
 		8017A60F24812B02003383B2 /* DefaultRaisrSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017A60E24812B02003383B2 /* DefaultRaisrSession.swift */; };
 		8017A6112481317E003383B2 /* DecodedUserJWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017A6102481317E003383B2 /* DecodedUserJWT.swift */; };
-		80D52E512474332F00E96996 /* raisr_ios_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D52E472474332E00E96996 /* raisr_ios_sdk.framework */; };
+		80D52E512474332F00E96996 /* RaisrSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D52E472474332E00E96996 /* RaisrSDK.framework */; };
 		80D52E562474332F00E96996 /* raisr_ios_sdkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52E552474332F00E96996 /* raisr_ios_sdkTests.swift */; };
-		80D52E582474332F00E96996 /* raisr_ios_sdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 80D52E4A2474332F00E96996 /* raisr_ios_sdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80D52E582474332F00E96996 /* RaisrSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 80D52E4A2474332F00E96996 /* RaisrSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		80D52F042477C19A00E96996 /* RaisrSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52F032477C19A00E96996 /* RaisrSDK.swift */; };
 		80D52F072477C1FB00E96996 /* RaisrConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52F062477C1FB00E96996 /* RaisrConfig.swift */; };
 		80D52F0F2477D25E00E96996 /* RaisrClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52F0E2477D25E00E96996 /* RaisrClient.swift */; };
-		80D52F122477D6B600E96996 /* DotDigitalAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52F112477D6B600E96996 /* DotDigitalAuthenticator.swift */; };
 		80D52F2D2477F5EF00E96996 /* DefaultRaisrClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D52F2C2477F5EF00E96996 /* DefaultRaisrClient.swift */; };
 /* End PBXBuildFile section */
 
@@ -300,8 +299,8 @@
 		8017A60E24812B02003383B2 /* DefaultRaisrSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRaisrSession.swift; sourceTree = "<group>"; };
 		8017A6102481317E003383B2 /* DecodedUserJWT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodedUserJWT.swift; sourceTree = "<group>"; };
 		8017A630248149F3003383B2 /* JWTDecode.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JWTDecode.xcodeproj; path = Carthage/Checkouts/JWTDecode.swift/JWTDecode.xcodeproj; sourceTree = "<group>"; };
-		80D52E472474332E00E96996 /* raisr_ios_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = raisr_ios_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		80D52E4A2474332F00E96996 /* raisr_ios_sdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = raisr_ios_sdk.h; sourceTree = "<group>"; };
+		80D52E472474332E00E96996 /* RaisrSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RaisrSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80D52E4A2474332F00E96996 /* RaisrSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RaisrSDK.h; sourceTree = "<group>"; };
 		80D52E4B2474332F00E96996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80D52E502474332F00E96996 /* raisr-ios-sdkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "raisr-ios-sdkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D52E552474332F00E96996 /* raisr_ios_sdkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = raisr_ios_sdkTests.swift; sourceTree = "<group>"; };
@@ -313,7 +312,6 @@
 		80D52F032477C19A00E96996 /* RaisrSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaisrSDK.swift; sourceTree = "<group>"; };
 		80D52F062477C1FB00E96996 /* RaisrConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaisrConfig.swift; sourceTree = "<group>"; };
 		80D52F0E2477D25E00E96996 /* RaisrClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaisrClient.swift; sourceTree = "<group>"; };
-		80D52F112477D6B600E96996 /* DotDigitalAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotDigitalAuthenticator.swift; sourceTree = "<group>"; };
 		80D52F172477DBE700E96996 /* JWT.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JWT.xcodeproj; path = Carthage/Checkouts/JWT/Framework/JWT.xcodeproj; sourceTree = "<group>"; };
 		80D52F2C2477F5EF00E96996 /* DefaultRaisrClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRaisrClient.swift; sourceTree = "<group>"; };
 		9F51CA672D5035238AA4F8AB /* Pods-raisr-ios-sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-raisr-ios-sdk.debug.xcconfig"; path = "Target Support Files/Pods-raisr-ios-sdk/Pods-raisr-ios-sdk.debug.xcconfig"; sourceTree = "<group>"; };
@@ -333,7 +331,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80D52E512474332F00E96996 /* raisr_ios_sdk.framework in Frameworks */,
+				80D52E512474332F00E96996 /* RaisrSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,7 +394,7 @@
 		80D52E482474332E00E96996 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				80D52E472474332E00E96996 /* raisr_ios_sdk.framework */,
+				80D52E472474332E00E96996 /* RaisrSDK.framework */,
 				80D52E502474332F00E96996 /* raisr-ios-sdkTests.xctest */,
 			);
 			name = Products;
@@ -411,7 +409,7 @@
 				80D52F102477D6AA00E96996 /* Auth */,
 				80D52F0D2477D24800E96996 /* Instance */,
 				80D52F052477C1EE00E96996 /* Config */,
-				80D52E4A2474332F00E96996 /* raisr_ios_sdk.h */,
+				80D52E4A2474332F00E96996 /* RaisrSDK.h */,
 				80D52E4B2474332F00E96996 /* Info.plist */,
 				80D52F032477C19A00E96996 /* RaisrSDK.swift */,
 			);
@@ -511,7 +509,6 @@
 		80D52F102477D6AA00E96996 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				80D52F112477D6B600E96996 /* DotDigitalAuthenticator.swift */,
 				8017A609248122DE003383B2 /* RaisrAuthenticationDelegate.swift */,
 			);
 			path = Auth;
@@ -546,7 +543,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80D52E582474332F00E96996 /* raisr_ios_sdk.h in Headers */,
+				80D52E582474332F00E96996 /* RaisrSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,7 +566,7 @@
 			);
 			name = "raisr-ios-sdk";
 			productName = "raisr-ios-sdk";
-			productReference = 80D52E472474332E00E96996 /* raisr_ios_sdk.framework */;
+			productReference = 80D52E472474332E00E96996 /* RaisrSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		80D52E4F2474332F00E96996 /* raisr-ios-sdkTests */ = {
@@ -970,7 +967,6 @@
 				8017A60824811FA4003383B2 /* RaisrSession.swift in Sources */,
 				8017A6112481317E003383B2 /* DecodedUserJWT.swift in Sources */,
 				8017A60D24812503003383B2 /* RaisrError.swift in Sources */,
-				80D52F122477D6B600E96996 /* DotDigitalAuthenticator.swift in Sources */,
 				8017A60A248122DE003383B2 /* RaisrAuthenticationDelegate.swift in Sources */,
 				8017A60524810AF7003383B2 /* RaisrResult.swift in Sources */,
 			);
@@ -1156,7 +1152,7 @@
 					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.raisr.raisr-ios-sdk";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = RaisrSDK;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1203,7 +1199,7 @@
 					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.raisr.raisr-ios-sdk";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = RaisrSDK;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

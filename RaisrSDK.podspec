@@ -10,6 +10,7 @@ Pod::Spec.new do |spec|
   spec.source = { git: "https://github.com/deliveryblueprints/raisr-ios-sdk.git", tag: 'v0.0.2' }
   spec.source_files = "raisr-ios-sdk/**/*.{h,swift}"
   spec.static_framework = true
+  spec.swift_version = '5.0'
   spec.dependency "CMPComapiFoundation", "~> 2.0.1"
   spec.dependency "JWT"
   spec.dependency "JWTDecode"

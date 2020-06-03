@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc public class RaisrResult: NSObject {
+@objcMembers public class RaisrResult: NSObject {
     
     private let error: Error?;
     private let success: Bool;

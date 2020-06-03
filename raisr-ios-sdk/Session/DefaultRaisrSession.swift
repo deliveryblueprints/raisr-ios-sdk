@@ -10,7 +10,7 @@ import Foundation
 import JWT
 import JWTDecode
 
-@objc public class DefaultRaisrSession : NSObject, RaisrSession {
+@objcMembers public class DefaultRaisrSession : NSObject, RaisrSession {
 
     public var userId: String
     public var claims: Dictionary<AnyHashable, Any>;

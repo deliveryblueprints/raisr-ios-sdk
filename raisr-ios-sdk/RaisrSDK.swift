@@ -9,9 +9,9 @@
 import Foundation
 import CMPComapiFoundation
 
-@objc public class RaisrSDK: NSObject {
+@objcMembers public class RaisrSDK: NSObject {
     
-    public class func initialise(config: RaisrConfig) throws -> RaisrClient {
+    public class func initialise(config: RaisrConfig) throws -> DefaultRaisrClient {
         return DefaultRaisrClient(config: config);
     }
     

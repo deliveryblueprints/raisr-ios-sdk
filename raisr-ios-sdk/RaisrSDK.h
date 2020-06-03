@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double raisr_ios_sdkVersionNumber;
 FOUNDATION_EXPORT const unsigned char raisr_ios_sdkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <raisr_ios_sdk/PublicHeader.h>
-
-

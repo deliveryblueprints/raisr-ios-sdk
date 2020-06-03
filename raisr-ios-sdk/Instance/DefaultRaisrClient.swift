@@ -10,7 +10,7 @@ import Foundation
 import CMPComapiFoundation
 import JWT
 
-@objc class DefaultRaisrClient: NSObject, RaisrClient {
+@objcMembers public class DefaultRaisrClient: NSObject, RaisrClient {
     
     private var comConfig: ComapiConfig?;
     private var config: RaisrConfig;
@@ -23,7 +23,7 @@ import JWT
         self.config = config;
     }
 
-    func startSession(withEmail: String, withMobile: String, completion: @escaping (RaisrResult) -> Void) {
+    public func startSession(withEmail: String, withMobile: String, completion: @escaping (RaisrResult) -> Void) {
         self.startSession { (result) in
             if(result.isSuccessful()) {
                 self.updateUser(attributes: ["email": withEmail, "phoneNumber": withMobile], completion: { (result) in
@@ -40,7 +40,7 @@ import JWT
     }
 
     
-    func startSession(completion: @escaping (_ result: RaisrResult) -> Void) {
+    public func startSession(completion: @escaping (_ result: RaisrResult) -> Void) {
     
         if(self.hasActiveSession()) {
             completion(RaisrResult.Success());
@@ -85,11 +85,11 @@ import JWT
         
     }
     
-    func updateUser(attributes: Dictionary<String, String>, completion: @escaping (RaisrResult) -> Void) {
+    public func updateUser(attributes: Dictionary<String, String>, completion: @escaping (RaisrResult) -> Void) {
         self.syncUserProfile(attributes: attributes, completion: completion);
     }
     
-    func endSession(completion: @escaping (_ result: RaisrResult) -> Void) {
+    public func endSession(completion: @escaping (_ result: RaisrResult) -> Void) {
         if(self.hasActiveSession()) {
             self.comClient?.services.session.endSession(completion: { (result) in
                 if(result.error != nil) {
@@ -105,7 +105,7 @@ import JWT
         }
     }
     
-    func hasActiveSession() -> Bool {
+    public func hasActiveSession() -> Bool {
         return (
             self.session != nil &&
             self.comClient != nil
@@ -168,7 +168,7 @@ import JWT
 }
 
 extension DefaultRaisrClient: AuthenticationDelegate {
-    func client(_ client: ComapiClient, didReceive challenge: AuthenticationChallenge, completion continueWithToken: @escaping (String?) -> Void) {
+    public func client(_ client: ComapiClient, didReceive challenge: AuthenticationChallenge, completion continueWithToken: @escaping (String?) -> Void) {
 
         let now = Date();
         let exp = Calendar.current.date(byAdding: .day, value: 30, to: now)!;
