@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import JWT
 import JWTDecode
 
 @objcMembers public class DefaultRaisrSession : NSObject, RaisrSession {
@@ -23,13 +22,14 @@ import JWTDecode
         self.profileId = profileId;
     }
     
-    class func decodeJWT(token: String) throws -> DecodedUserJWT {
+    class func decodeJWT(token: String, userId: String?) throws -> DecodedUserJWT {
         let jwt = try decode(jwt: token)
         if(jwt.body["sub"] == nil) {
             throw RaisrError.BadToken;
         }
         
-        return DecodedUserJWT(userId: jwt.body["sub"] as! String, claims: jwt.body);
+        let decodedUserId = (userId == nil) ? jwt.body["sub"] as! String : userId!;
+        return DecodedUserJWT(userId: decodedUserId, claims: jwt.body);
     }
     
 }

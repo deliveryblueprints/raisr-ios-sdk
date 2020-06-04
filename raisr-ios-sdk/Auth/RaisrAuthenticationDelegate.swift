@@ -10,6 +10,6 @@ import Foundation
 
 @objc public protocol RaisrAuthenticationDelegate {
     
-    func authenticationChallenge(continueWithToken: @escaping (_ token: String) -> Void) -> Void
+    func authenticationChallenge(continueWithTokenAndUserId: @escaping (_ token: String, _ userId: String?) -> Void) -> Void
     
 }

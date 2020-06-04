@@ -46,12 +46,12 @@ import JWT
             completion(RaisrResult.Success());
         } else {
             
-            self.config.getAuthDelegate().authenticationChallenge(continueWithToken: { (token) in
+            self.config.getAuthDelegate().authenticationChallenge(continueWithTokenAndUserId: { (token, userId) in
             
                 do {
                     
-                    self.decodedJWT = try DefaultRaisrSession.decodeJWT(token: token);
-                    let comConfig = self.initialseDotDigital(userId: self.decodedJWT!.userId);
+                    self.decodedJWT = try DefaultRaisrSession.decodeJWT(token: token, userId: userId);
+                    let comConfig = self.initialseDotDigital();
                     self.comClient = Comapi.initialise(with: comConfig);
                     
                     self.comClient!.services.session.startSession(completion: {
@@ -117,7 +117,7 @@ import JWT
         self.syncPushToken(completion: completion);
     }
     
-    private func initialseDotDigital(userId: String) -> ComapiConfig {
+    private func initialseDotDigital() -> ComapiConfig {
         return ComapiConfig.builder()
             .setApiSpaceID(self.config.getSpaceId())
             .setAuthDelegate(self)
@@ -170,24 +170,38 @@ import JWT
 extension DefaultRaisrClient: AuthenticationDelegate {
     public func client(_ client: ComapiClient, didReceive challenge: AuthenticationChallenge, completion continueWithToken: @escaping (String?) -> Void) {
 
-        let now = Date();
-        let exp = Calendar.current.date(byAdding: .day, value: 30, to: now)!;
         
-        let headers = ["typ": "JWT"];
-        let payload: [AnyHashable: Any] = [
-            "nonce" : challenge.nonce,
-            "sub" : self.decodedJWT!.userId,
-            "iss" : "https://api.comapi.com/defaultauth",
-            "aud" : "https://api.comapi.com",
-            "iat" : Double(now.timeIntervalSince1970),
-            "exp" : Double(exp.timeIntervalSince1970)
-        ];
+        var request = URLRequest(url: URL(string: "https://mclapi.raisrdelivery.co.uk/auth/messaging")!);
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type");
+        request.httpMethod = "POST";
+        request.httpBody = try? JSONSerialization.data(withJSONObject: [
+            "userId": self.decodedJWT!.userId,
+            "nonce": challenge.nonce
+        ], options: [])
         
-        let algorithm = JWTAlgorithmFactory.algorithm(byName: "HS256")
-        let secret = self.config.getMessagingSecret();
-        let jwt = JWT.encodePayload(payload, withSecret: secret, algorithm: algorithm);
+        let configuration = URLSessionConfiguration.default;
+        let session = URLSession(configuration: configuration, delegate: self, delegateQueue: OperationQueue.main);
         
-        continueWithToken(jwt);
+        let requestTask = session.dataTask(with: request, completionHandler: { data, response, error -> Void in
+            
+            do {
+                let jsonResponse = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, String>;
+                continueWithToken(jsonResponse["authToken"])
+            } catch {
+                continueWithToken(nil);
+            }
+            
+        })
+        
+        requestTask.resume();
         
     }
+}
+
+extension DefaultRaisrClient: URLSessionDelegate {
+    
+    public func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+        completionHandler(URLSession.AuthChallengeDisposition.useCredential, URLCredential(trust: challenge.protectionSpace.serverTrust!) )
+    }
+    
 }

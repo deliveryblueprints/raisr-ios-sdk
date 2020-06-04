@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "RaisrSDK"
-  spec.version = "0.1.0"
+  spec.version = "1.0.0"
   spec.summary = "Raisr SDK Project"
   spec.homepage = "http://raisr.org"
   spec.license = { type: 'MIT', file: 'LICENSE' }
