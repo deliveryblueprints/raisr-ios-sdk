@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.authors = { "Nicky Thorne" => 'nicky.thorne@deliveryblueprints.com' }
   spec.platform = :ios, "10.0"
   spec.requires_arc = true
-  spec.source = { git: "https://github.com/deliveryblueprints/raisr-ios-sdk.git", tag: 'v0.1.0' }
+  spec.source = { git: "https://github.com/deliveryblueprints/raisr-ios-sdk.git", tag: 'v1.0.0' }
   spec.source_files = "raisr-ios-sdk/**/*.{h,swift}"
   spec.static_framework = true
   spec.swift_version = '5.0'
