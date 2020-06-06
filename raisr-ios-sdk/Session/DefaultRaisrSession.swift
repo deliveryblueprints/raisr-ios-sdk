@@ -24,7 +24,7 @@ import JWTDecode
     
     class func decodeJWT(token: String, userId: String?) throws -> DecodedUserJWT {
         let jwt = try decode(jwt: token)
-        if(jwt.body["sub"] == nil) {
+        if(userId == nil && jwt.body["sub"] == nil) {
             throw RaisrError.BadToken;
         }
         
